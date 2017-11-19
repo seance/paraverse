@@ -1,0 +1,28 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url(//fonts.googleapis.com/css?family=Halant:300,400|UnifrakturMaguntia);
+
+#project_title {
+    font-family: UnifrakturMaguntia;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+#project_tagline {
+    font-family: Halant;
+    font-weight: 300;
+}
+
+body {
+  font-family: Halant;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Halant;
+}
+
+a:hover, a:focus {
+    font-weight: normal;
+}
