@@ -1,7 +1,7 @@
 Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and sorcery setting.
 
 # Introduction
-Core principles, world history
+[Core principles](pages/introduction#core-principles), [history of the world](pages/introduction#history-of-the-world)
 
 # Characters
 [Races](pages/characters#races), stats, character creation, skills, abilities, non-player characters
