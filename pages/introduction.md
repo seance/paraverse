@@ -4,7 +4,7 @@ Welcome to Paraverse!
 
 Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and sorcery setting.
 
-Paraverse mainly uses a 20-sided die, with occasional use of other dice, for resolving probabilistic actions and events.
+Paraverse mainly uses a 20-sided die, with occasional use of other dice, for resolving probabilistic actions and events. There are no character classes and no strict limitations on equipment.
 
 ## Core Principles
 
@@ -15,10 +15,7 @@ Why have yet another RPG system? The design of Paraverse's system is based on th
 - Provide simple and sound mathematical basis for probabilistic mechanics
 - Encourage viewing each probabilistic branch as a valid, meaningful storyline
 - Provide suitable and consistent level of abstraction for various activities
-- Experience is recorded by group instead of by individual character
-  - Gained solely from quest objectives set by the Game Master
-  - Character progression is tied to experience, evening out the group
-  - Character turnover is acceptable and does not disrupt group mechanics due to experience disparity
+- Progression is based only on quest objectives and is equal for the whole group
 - Minimize recording of various tokens through alternative mechanics
 
 Paraverse aims to provide a Game Master driven, dice based, easy-to-learn and intuitive system for casual tabletop roleplay gaming.

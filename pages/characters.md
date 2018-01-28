@@ -147,6 +147,10 @@ Some skill checks are opposed, meaning that two characters directly oppose each 
 
 When you have *advantage*, you roll two `d20`'s for skill checks, and the natural roll value is the higher die result. With *disadvantage*, it's the lower result.
 
+If a dice roll has advantage or disadvantage from multiple sources, it is the same as having single advantage or disadvantage.
+
+If a dice roll has both advantage and disadvantage, it is resolved as if it had neither.
+
 ### Skill Target Difficulties
 
 To make gameplay faster, skill check target difficulties are by default limited to a set of predefined target values with standardized names.
@@ -161,40 +165,78 @@ To make gameplay faster, skill check target difficulties are by default limited 
 
 When a character is fatigued, each skill check is further modified by fatigue points. Roll value `R` is `d20` plus skill modifier `S` minus fatigue points `F`.
 
+Combat skills, used during combat, are not subject to fatigue.
+
 ### List of Skills
 
 Skills are divided into categories called skillsets. Some skills have associated keywords (e.g. *Melee.*) which can be used as a reference.
 
-| Martial | Stat | Notes |
-|-|-|-|
-| One-handed | PHY | *Melee.* Weapons wieldable by one hand. |
-| Two-handed | PHY | *Melee.* Two-handed weapons. |
-| Weapon-and-shield | PHY | *Melee.* Fighting with a shield. |
-| Fired weapons | DEX | *Ranged.* Bows, crossbows, guns etc. |
-| Thrown weapons | DEX | *Ranged.* Knives, hatchets, javelins etc. |
-| Evasion | DEX | Evading melee or ranged attacks passively. |
+| Martial | Stat | Notes | Resolution |
+|-|-|-|-|
+| One-handed | PHY | *Melee.* Weapons wieldable by one hand. For every 3 unused wield points, gain +1 skill modifier, up to +3. | Special, see TODO |
+| Two-handed | PHY | *Melee.* Two-handed weapons. | Special, see TODO |
+| Weapon-and-shield | PHY | *Melee.* Fighting with a shield. Weapon and shield share the wield point pool. | Special, see TODO |
+| Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. | Special, see TODO |
+| Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc. | Special, see TODO |
+| Evasion | DEX | Evading melee or ranged attacks passively. | Special, see TODO |
+| Athletics | PHY | Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
 
-| Cloak and dagger | Stat | Notes |
-|-|-|-|
-| Sneaking | DEX | Move without been noticed. |
-| Lockpicking | DEX | Silently pick locks on doors etc. |
-| Pickpocketing | DEX | Lift from or plant objects on persons unnoticed. |
-| Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. |
-| Forgery | PER | Forge or identify a forged document. |
+| Cloak and dagger | Stat | Notes | Resolution |
+|-|-|-|-|
+| Sneaking | DEX | *Stealth.* Move without been noticed. See NPC [awareness](#TODO). | **Partial:** Moved to destination, but cause [disturbance](#TODO). **Failure:** Noticeable mid-movement. |
+| Lock picking | DEX | *Stealth.* Silently pick locks on doors etc. | **Partial:** Lock unpicked, cause [disturbance](#disturbance), can retry. **Failure:** Lock jammed and unpickable, cause [disturbance](#disturbance).
+| Pickpocketing | DEX | *Stealth.* Lift from, or plant objects on persons unnoticed. See NPC [awareness](#npc-awareness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-pocketing. |
+| Acrobatics | DEX | Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
+| Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. | **Partial:** Failed, can retry. **Failure:** Failed, trap sprung/device malfunction. |
+| Forgery | PER | Forge or identify a forged document. [Opposed](#opposed-skill-resolution): Forgery. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
 
 | Magic and divinity | Stat | Notes |
 |-|-|-|
 |TODO|TODO|TODO|
 
-| Utility | Stat | Notes |
-|-|-|-|
-| Stabilization | COG | *Medical.* Stop bleeding. |
-| Trauma treatment | COG | *Medical.* Treat a critical wound. |
-| Investigation | PER | Actively search a scene for clues etc. |
-| Interaction | EMP | *Social.* Inquiry, interrogation, persuasion, deception. |
-| Mercantile | EMP | *Social.* Purchases of items. |
-| Field repair | PER |
+| Utility | Stat | Notes | Resolution |
+|-|-|-|-|
+| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next watch. **Failure:** Failed, patient cannot be stabilized. |
+| Trauma treatment | COG | *Medical.* Treat a critical wound. | **Partial:** Untreated, can retry at next opportunity. **Failure:** Untreated, cause 1 pain, can retry at next opportunity. |
+| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea. **Failure:** No clues, scene contaminated and cannot be investigated. |
+| Interaction | EMP | *Social.* Inquiry, persuasion, interrogation, deception. | **Partial:** Failed, can retry at next opportunity. **Failure:** Inquiry, persuasion, deception: [disposition](#npc-disposition) lowered. Interrogation: subject dead. |
+| Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Can purchase at double cost. **Failure:** Failed, can retry at next opportunity. |
+| Field repair | PER | *Mechanical.* Restore equipment in disrepair. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, can retry at next opportunity. |
 
 ## Abilities
 
+TODO
+
 ## Non-Player Characters
+
+Non-player characters are characters controlled by the Game Master.
+
+### NPC Disposition
+
+NPC *disposition* indicates how friendly a that character is toward the player characters.
+
+| Disposition | Notes |
+|-|-|
+| Friendly | Social skill rolls have [advantage](#advantage-and-disadvantage). |
+| Neutral | Default disposition. |
+| Unfriendly | Social skill rolls have [disadvantage](#advantage-and-disadvantage). |
+| Hostile | NPC may attack. Social skill rolls have [disadvantage](#advantage-and-disadvantage). |
+
+### NPC Awareness
+
+For purposes of stealth, NPCs have an *awareness* state, that affects how they react to *disturbances*.
+
+| Awareness | Notes |
+|-|-|
+| Relaxed | NPC is not paying attention, and is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
+| On duty | Default awareness. NPC may be patrolling [areas](#TODO).
+| Suspicious | NPC may investigate. Stealth rolls have [disadvantage](#advantage-and-disadvantage). |
+| Alerted | NPC raises [alarm](#alarms) and prepares for combat. Stealth rolls have [disadvantage](#advantage-and-disadvantage). |
+
+#### Disturbance
+
+A disturbance is a noise or other cue which causes a NPC to increase its awareness level. NPC awareness is generally reset in the next [watch](#TODO).
+
+#### Alarms
+
+When an NPC raises an alarm, other NPCs in the adjacent [areas](#TODO) or designated guard posts will respond.

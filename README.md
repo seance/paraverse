@@ -4,7 +4,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 [Core principles](pages/introduction#core-principles), [history of the world](pages/introduction#history-of-the-world)
 
 # Characters
-[Races](pages/characters#races), stats, character creation, skills, abilities, non-player characters
+[Races](pages/characters#races), [stats](pages/characters#stats), [character creation](pages/characters#character-creation), [skills](pages/characters#skills), [abilities](pages/characters#abilities), [non-player characters](pages/characters#non-player-characters)
 
 # Combat
 
@@ -17,6 +17,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 # Wealth
 
 # Quests and Experience
+Group experience
 
 # Game Props
 
