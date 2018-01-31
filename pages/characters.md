@@ -58,13 +58,13 @@ Primary stats describe the fundamental nature of a character, governing the char
 
 | Stat | Key | Description | Mechanics |
 |-|-|-|-|
-| Physique | PHY | Athleticism, strength and speed of body. | Athletics, melee combat, weapons, armor |
+| Physique | PHY | Athleticism, strength and speed. | Athletics, melee combat, weapons, armor |
 | Dexterity | DEX | Gracefulness, balance, hand-eye-coordination, flexibility, fine-motor skills. | Acrobatics, ranged combat, stealth, sleight of hand |
 | Constitution | CON | Health and robustness of body. | Endurance, critical wounds |
 | Willpower | WIL | Presence of mind, focus, mental control. | Fortitude, magical/divine ability |
-| Cognition | COG | Comprehension, deep learning, memory, judgment. | Professional skills, magical/divine ability |
+| Cognition | COG | Comprehension, learning, memory, judgment. | Professional skills, magical/divine ability |
 | Empathy | EMP | Ability to read, anticipate and manipulate persons based on social cues. | Social interaction, mercantile skills |
-| Perception | PER | Awareness, sensory acuteness, attention to discrepancy. | Traps, ambushes, secrets, forgery, forensics |
+| Perception | PER | Awareness, sensory acuteness, attention to discrepancy. | Traps, ambushes, secrets, forgery, investigation |
 
 ### Secondary Stats
 
@@ -73,7 +73,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 | Stat | Derived as | Description |
 |-|:-:|-|
 | Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. |
-| Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Pain threshold from injury. |
+| Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock. |
 | Wield | `PHY` | Soft limit on wieldable weapons and shields. |
 | Spell memory | `⌊COG / 2⌋`|Number of spells memorizable at once. |
 | Spell sustain | `COG - 10` | Number of sustainable spell points. Minimum zero. |
@@ -83,7 +83,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 Character creation proceeds with the following steps.
 
 1. Select your character's race and gender. Record the racial stat modifiers and traits on your character sheet. Record your primary stats.
-1. Select a name for your character.
+1. Select a name and gender for your character.
 1. Perform the [life path](#life-path) process.
 1. Derive and record your secondary stats.
 1. Record your base skill values.
@@ -91,7 +91,7 @@ Character creation proceeds with the following steps.
 1. Assign XP points from group experience pool.
 1. Acquire abilities based on your XP distribution.
 1. Purchase starting equipment.
-1. Bonus: Find a portrait image and print your character card.
+1. Bonus: Find a portrait image and print your [character card](#TODO).
 1. Bonus: Write a bio for your character based on the life path.
 
 ### Racial Stat Modifiers
@@ -115,7 +115,7 @@ The base value of every primary stat is `10`.
 
 ### Life Path
 
-The Life Path represents the formative years of character development, in abstract terms.
+The life path represents the formative years of character development, in abstract terms.
 
 ## Skills
 
@@ -135,7 +135,7 @@ The effect of success, partial failure and failure vary from skill to skill.
 
 ### Critical Success and Fumble
 
-A natural (i.e. unmodified) `20` is a critical success, and counts as a success, even if the roll value is insufficient.
+A natural (i.e. unmodified) `20` is a critical success, and counts as a success, even if the roll value is insufficient, unless otherwise specified.
 
 A natural `1` is a fumble, and counts as a failure, even if the roll value is sufficient.
 
@@ -173,12 +173,12 @@ Skills are divided into categories called skillsets. Some skills have associated
 
 | Martial | Stat | Notes | Resolution |
 |-|-|-|-|
-| One-handed | PHY | *Melee.* Weapons wieldable by one hand. For every 3 unused wield points, gain +1 skill modifier, up to +3. | Special, see TODO |
-| Two-handed | PHY | *Melee.* Two-handed weapons. | Special, see TODO |
-| Weapon-and-shield | PHY | *Melee.* Fighting with a shield. Weapon and shield share the wield point pool. | Special, see TODO |
-| Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. | Special, see TODO |
-| Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc. | Special, see TODO |
-| Evasion | DEX | Evading melee or ranged attacks passively. | Special, see TODO |
+| One-handed | PHY | *Melee.* Weapons wieldable by one hand. For every 3 unused wield points, gain +1 skill modifier, up to +3. | See [skirmishing](combat#melee-skirmish-resolution) |
+| Two-handed | PHY | *Melee.* Two-handed weapons. | See [skirmishing](combat#melee-skirmish-resolution) |
+| Weapon-and-shield | PHY | *Melee.* Fighting with a shield. Weapon and shield share the wield point pool. | See [skirmishing](combat#melee-skirmish-resolution) |
+| Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. If not engaged, target opponents in adjacent areas (line of sight), or own area. | See [ranged attacks](combat#ranged-attack-resolution) |
+| Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc. Target opponents in own are even if engaged. | See [ranged attacks](combat#ranged-attack-resolution) |
+| Evasion | DEX | Evading melee or ranged attacks passively. | See [combat](combat) |
 | Athletics | PHY | Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
 
 | Cloak and dagger | Stat | Notes | Resolution |
@@ -196,9 +196,9 @@ Skills are divided into categories called skillsets. Some skills have associated
 
 | Utility | Stat | Notes | Resolution |
 |-|-|-|-|
-| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next watch. **Failure:** Failed, patient cannot be stabilized. |
+| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](#TODO). **Failure:** Failed, patient cannot be stabilized. |
 | Trauma treatment | COG | *Medical.* Treat a critical wound. | **Partial:** Untreated, can retry at next opportunity. **Failure:** Untreated, cause 1 pain, can retry at next opportunity. |
-| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea. **Failure:** No clues, scene contaminated and cannot be investigated. |
+| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea, can retry next [watch](#TODO). **Failure:** No clues, scene contaminated and cannot be investigated. |
 | Interaction | EMP | *Social.* Inquiry, persuasion, interrogation, deception. | **Partial:** Failed, can retry at next opportunity. **Failure:** Inquiry, persuasion, deception: [disposition](#npc-disposition) lowered. Interrogation: subject dead. |
 | Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Can purchase at double cost. **Failure:** Failed, can retry at next opportunity. |
 | Field repair | PER | *Mechanical.* Restore equipment in disrepair. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, can retry at next opportunity. |
@@ -235,7 +235,7 @@ For purposes of stealth, NPCs have an *awareness* state, that affects how they r
 
 #### Disturbance
 
-A disturbance is a noise or other cue which causes a NPC to increase its awareness level. NPC awareness is generally reset in the next [watch](#TODO).
+A disturbance is a noise or other cue which causes any nearby NPC to increase its awareness level. NPC awareness is generally reset in the next [watch](#TODO).
 
 #### Alarms
 
