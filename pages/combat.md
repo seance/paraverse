@@ -64,7 +64,7 @@ A skirmish with one or more characters on either side is resolved as follows.
 1. Each character rolls `d20` and adds the skill modifier of the [*Melee*](characters#list-of-skills) skill they are using.
 1. The side with the highest roll value wins the skirmish. The character who rolled this value will deal damage. The character with the lowest natural roll on the losing side will sustain damage. If each side's results are equal, the side with the highest natural roll wins. If it's still a tie, no damage is dealt, and the resolution ends.
 1. Determine the attack hit location using [hit location resolution](#hit-location).
-1. Calculate [attack damage](#TODO) based on roll difference.
+1. Calculate [attack damage](#TODO) based on roll difference of the sides' rolls.
 1. Calculate and apply pain using [pain resolution](#TODO) and attack damage.
 1. Determine and apply critical wounds using [wounds resolution](#TODO) and attack damage.
 
@@ -109,16 +109,16 @@ The pain sustained by the target character is `⌈D / F⌉`.
 
 Let `D` be the damage dealt, `L` be the hit location and `C` be the target charater's [Constitution](characters#primary-stats) primary stat value.
 
-If `D` is *equal or greater than* `C` (but less than `3 * C`), the target character suffers a *critical wound* based on the hit location `L` from the table below.
+If `D` is *equal or greater than* `C`, but less than `3C`, the target character suffers a *critical wound* based on the hit location `L` from the table below.
 
-If the damage is *equal or greater than* `3 * C`, the target character instead suffers a *supercritical wound* based on the hit location `L` from the table below.
+If `D` is *equal or greater than* `3C`, the target character instead suffers a *supercritical wound* based on the hit location `L` from the table below.
 
 | Hit Location | Critical Wound | Supercritical Wound |
 |-|-|-|
-| Head | Skull Fracture | Severed Head |
-| Torso | Bleeder | Crushed Torso |
-| Arms | Fractured Arm | Severed Arm |
-| Legs | Fractured Leg | Severed Leg |
+| Head | Skull Fracture, Bleeding | Severed Head |
+| Torso | Bleeding | Crushed Torso |
+| Arms | Fractured Arm | Severed Arm, Bleeding |
+| Legs | Fractured Leg | Severed Leg, Bleeding |
 
 If a character has a critical wound in a given hit location, they cannot sustain another critical wound to that location, but can still suffer a supercritical wound to that hit location.
 
@@ -128,4 +128,42 @@ See also [critical wound effects](#critical-wound-effects).
 
 ### Critical Wound Effects
 
-TODO
+| Critical Wound | Effect |
+|-|-|
+| Skull Fracture | [Incapacitation](#TODO), Cognition and Willpower based skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
+| Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
+| Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
+| Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
+
+Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [camp](#TODO).
+
+| Supercritical Wound | Effect |
+|-|-|
+| Severed Head | Instant death. |
+| Crushed Torso | Instant death. |
+| Severed Arm | [Incapacitation](#incapacitation), permanent Fractured Arm effects. |
+| Severed Leg | [Incapacitation](#incapacitation), permanent Fractured Leg effects. |
+
+Supercritical wounds are beyond the skills of adventurers to treat, but [Temples](#TODO) may offer restoration and even resurrection services.
+
+### Incapacitation
+
+A character whose [Stamina](characters#secondary-stats) is equal or less than zero (i.e. their [Fatigue](characters#secondary-stats) is equal or greater than their [Endurance](characters#secondary-stats)), or who suffers a critical wound that causes Incapacitation, is *incapacitated*.
+
+Such a character is unconscious, but alive. An incapacitated character is *stable*, unless they are bleeding.
+
+A character regains consciousness when their Stamina is raised to one or more. A stable character regains one point of Stamina per [watch](#TODO).
+
+An incapacitated character who is also bleeding is *dying*. No amount of Fatigue by itself will cause a character to die. Note that a character can be dying even with positive Stamina.
+
+### Dying and Death
+
+A dying character must roll a *death check* each [watch](#TODO) for three watches, or until stabilized. If a character fails all three death checks, they die. If a character is stabilized, their death check failure counter is reset.
+
+A death check is a roll with Target Difficulty of XX and is modified by current Stamina.
+
+A dying character can be stabilized using the [Stabilization](characters#list-of-skills) skill by another character. See [rest](#TODO).
+
+> **Example**
+>
+> A character takes a knock in the head and becomes incapacitated and bleeding, with 4 current Stamina. As such, they are dying, and must make a death check each watch. The character rolls 10 + 4 = 14, failing their first check.

@@ -72,11 +72,12 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 | Stat | Derived as | Description |
 |-|:-:|-|
-| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. |
-| Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock. |
-| Wield | `PHY` | Soft limit on wieldable weapons and shields. |
+| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The "current Endurance" is called Stamina. The "missing Endurance" is called Fatigue. Suffering Fatigue is also called suffering Pain. |
+| Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
+| Wield | `PHY` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
 | Spell memory | `⌊COG / 2⌋`|Number of spells memorizable at once. |
 | Spell sustain | `COG - 10` | Number of sustainable spell points. Minimum zero. |
+| Awareness | `PER` | Passive perception. |
 
 ## Character Creation
 
@@ -98,20 +99,20 @@ Character creation proceeds with the following steps.
 
 The base value of every primary stat is `10`.
 
-| Race | PHY | DEX | CON | WIL | COG | EMP | PER |
+| Race               | PHY | DEX | CON | WIL | COG | EMP | PER |
 |-|-:|-:|-:|-:|-:|-:|-:|
-| **Men** ||||||||
-| Scythians ||+1|+1||-1|-1|+2|
-| Garrandines |+1|||+1|+1|+1|-1|
-| **Elves** ||||||||
-| Gray elves ||||||||
-| Sylvan elves ||||||||
-| **Dwarves** ||||||||
-| Redbeards ||||||||
-| Longbeards ||||||||
-| **Gnomes** ||||||||
-| Tinker gnomes ||||||||
-| Astromancer gnomes |||||||||
+| **Men**            ||||||||
+| Scythians          |     |  +1 |  +1 |     |  -1 |  -1 |  +2 |
+| Garrandines        |  +1 |     |     |  +1 |  +1 |  +2 |  -1 |
+| **Elves**          ||||||||
+| Gray elves         |  -1 |  +1 |  -3 |  +3 |  +2 |  +1 |  +3 |
+| Sylvan elves       |  +3 |  +3 |  -2 |     |  -2 |     |  +4 |
+| **Dwarves**        ||||||||
+| Redbeards          |  +3 |  -1 |  +4 |  -1 |  -2 |  -3 |  -2 |
+| Longbeards         |  +2 |  -2 |  +4 |  +2 |  +3 |  -2 |  -3 |
+| **Gnomes**         ||||||||
+| Tinker gnomes      |  -2 |  +3 |  +1 |     |     |  +2 |  +1 |
+| Astromancer gnomes |  -3 |  +1 |     |  +3 |  +4 |  +3 |     ||
 
 ### Life Path
 
@@ -163,7 +164,7 @@ To make gameplay faster, skill check target difficulties are by default limited 
 
 ### Fatigue in Skill Checks
 
-When a character is fatigued, each skill check is further modified by fatigue points. Roll value `R` is `d20` plus skill modifier `S` minus fatigue points `F`.
+When a character is *fatigued*, each skill check is further modified by fatigue points. Roll value `R` is `d20` plus skill modifier `S` minus fatigue points `F`.
 
 Combat skills, used during combat, are not subject to fatigue.
 
@@ -178,15 +179,15 @@ Skills are divided into categories called skillsets. Some skills have associated
 | Weapon-and-shield | PHY | *Melee.* Fighting with a shield. Weapon and shield share the wield point pool. | See [skirmishing](combat#melee-skirmish-resolution) |
 | Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. If not engaged, target opponents in adjacent areas (line of sight), or own area. | See [ranged attacks](combat#ranged-attack-resolution) |
 | Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc. Target opponents in own are even if engaged. | See [ranged attacks](combat#ranged-attack-resolution) |
-| Evasion | DEX | Evading melee or ranged attacks passively. | See [combat](combat) |
-| Athletics | PHY | Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
+| Evasion | DEX | *Physical.* Evading melee or ranged attacks passively. | See [combat](combat) |
+| Athletics | PHY | *Physical.* Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
 
-| Cloak and dagger | Stat | Notes | Resolution |
+| Cloak-and-dagger | Stat | Notes | Resolution |
 |-|-|-|-|
-| Sneaking | DEX | *Stealth.* Move without been noticed. See NPC [awareness](#TODO). | **Partial:** Moved to destination, but cause [disturbance](#TODO). **Failure:** Noticeable mid-movement. |
-| Lock picking | DEX | *Stealth.* Silently pick locks on doors etc. | **Partial:** Lock unpicked, cause [disturbance](#disturbance), can retry. **Failure:** Lock jammed and unpickable, cause [disturbance](#disturbance).
-| Pickpocketing | DEX | *Stealth.* Lift from, or plant objects on persons unnoticed. See NPC [awareness](#npc-awareness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-pocketing. |
-| Acrobatics | DEX | Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
+| Sneaking | DEX | *Stealth.* *Physical.* Move without been noticed. See NPC [alertness](#npc-alertness). | **Partial:** Moved to destination, but cause [disturbance](#TODO). **Failure:** Noticeable mid-movement. |
+| Lock picking | DEX | *Stealth.* *Manual.* Silently pick locks on doors etc. | **Partial:** Lock unpicked, cause [disturbance](#disturbance), can retry. **Failure:** Lock jammed and unpickable, cause [disturbance](#disturbance).
+| Pickpocketing | DEX | *Stealth.* *Manual.* Lift from, or plant objects on persons unnoticed. See NPC [alertness](#npc-alertness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-pocketing. |
+| Acrobatics | DEX | *Physical.* Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
 | Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. | **Partial:** Failed, can retry. **Failure:** Failed, trap sprung/device malfunction. |
 | Forgery | PER | Forge or identify a forged document. [Opposed](#opposed-skill-resolution): Forgery. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
 
@@ -222,20 +223,20 @@ NPC *disposition* indicates how friendly a that character is toward the player c
 | Unfriendly | Social skill rolls have [disadvantage](#advantage-and-disadvantage). |
 | Hostile | NPC may attack. Social skill rolls have [disadvantage](#advantage-and-disadvantage). |
 
-### NPC Awareness
+### NPC Alertness
 
-For purposes of stealth, NPCs have an *awareness* state, that affects how they react to *disturbances*.
+For purposes of stealth, NPCs have an *alertness* state, that affects how they react to *disturbances*.
 
-| Awareness | Notes |
+| Alertness | Notes |
 |-|-|
 | Relaxed | NPC is not paying attention, and is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
-| On duty | Default awareness. NPC may be patrolling [areas](#TODO).
+| On duty | Default alertness. NPC may be patrolling [areas](#TODO).
 | Suspicious | NPC may investigate. Stealth rolls have [disadvantage](#advantage-and-disadvantage). |
 | Alerted | NPC raises [alarm](#alarms) and prepares for combat. Stealth rolls have [disadvantage](#advantage-and-disadvantage). |
 
 #### Disturbance
 
-A disturbance is a noise or other cue which causes any nearby NPC to increase its awareness level. NPC awareness is generally reset in the next [watch](#TODO).
+A disturbance is a noise or other cue which causes any nearby NPC to increase its alertness level. NPC alertness is generally reset in the next [watch](#TODO).
 
 #### Alarms
 

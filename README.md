@@ -16,6 +16,9 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 
 # Wealth
 
+# Environment?
+Ambush, fall damage, swimming/diving, chasing, 
+
 # Quests and Experience
 Group experience
 
