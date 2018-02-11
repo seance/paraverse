@@ -18,10 +18,10 @@ TODO
 [Time and Space](pages/time-and-space): [Time frames](pages/time-and-space#time-frames), [space aka maps](pages/time-and-space#space-aka-maps).
 
 # Equipment
-[Equipment](equipment): [Weapons](equipment#weapons), [shields](equipment#shields), [equipment slots](equipment#equipment-slots), [wield limits](equipment#wield-limits), [armor](equipment#armor), [durability and disrepair](equipment#durability-and-disrepair), [equipment special traits](equipment#equipment-special-traits).
+[Equipment](pages/equipment): [Weapons](pages/equipment#weapons), [shields](pages/equipment#shields), [equipment slots](pages/equipment#equipment-slots), [wield limits](pages/equipment#wield-limits), [armor](pages/equipment#armor), [durability and disrepair](pages/equipment#durability-and-disrepair), [equipment special traits](pages/equipment#equipment-special-traits).
 
 # Wealth
-[Wealth](wealth): [Wealth level](wealth#wealth-level), [trading](wealth#trading), [attrition](wealth#attrition), [collecting junk](wealth#collecting-junk).
+[Wealth](pages/wealth): [Wealth level](pages/wealth#wealth-level), [trading](pages/wealth#trading), [attrition](pages/wealth#attrition), [collecting junk](pages/wealth#collecting-junk).
 
 # Environment?
 Ambush, fall damage, swimming/diving, chasing,

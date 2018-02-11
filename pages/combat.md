@@ -107,7 +107,7 @@ Then, the attack damage is calculated as `M × B - AV - SV` where damage multipl
 
 > **Example**
 >
-> The attack roll is 15. The defense roll is 4. The attacker's base weapon damage is 7, while the defender's armor value is 5. Hence the roll difference is 15 - 4 = 11, the damage multiplier is 3 and attack damage is 3 * 7 - 5 = 16.
+> The attack roll is 15. The defense roll is 4. The attacker's base weapon damage is 7, while the defender's armor value is 5. Hence the roll difference is 15 - 4 = 11, the damage multiplier is 3 and attack damage is 3 × 7 - 5 = 16.
 
 ### Pain Resolution
 
