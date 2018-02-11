@@ -57,7 +57,7 @@ Space, or maps, feature overland and local locations.
 
 Traveling from location to another occurs on overland maps. Such maps can represent a very large area, such as a continent, or a relatively small area, like a mountain valley.
 
-An overland map consists of *places of interest* (PoI) and *connections*, which link them.
+An overland map consists of *places of interest*, or PoIs, and *connections*, which link them.
 
 A place of interest can be for example a city or a village, a hillside containing a warren of underground tunnels, a military camp or fort, a traders' caravan etc.
 
@@ -81,7 +81,7 @@ A Sneaking check covers traversing a single area.
 
 Melee skirmish, as well as thrown weapon ranged attacks occur within a single area.
 
-Marksman ranged attacks occur within an area and *adjacent areas*, which are areas that are linked by a connection, provided that there is line of sight.
+Marksman ranged attacks occur within an area and *adjacent* areas, which are areas that are linked by a connection, provided that there is line of sight.
 
 A local area specification can feature things such as:
 
@@ -114,4 +114,4 @@ A character has a *zone of control* in the area they occupy.
 
 This means that other characters cannot traverse the area without engaging in melee combat with that character, if the controlling character wishes to block their passage.
 
-To forcibly traverse a zone of control, a character must engage the controlling character. Then, they must succeed in [Disengaging](combat#disengaging) from combat to continue through the area.
+To forcibly traverse a zone of control, a character must engage the controlling character. Then, they must succeed in [Disengaging](combat#engagement-and-disengaging) from combat to continue through the area.

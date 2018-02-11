@@ -12,13 +12,16 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 [Combat](pages/combat): [Combat rounds](pages/combat#combat-rounds), [combat resolution rules](pages/combat#combat-resolution-rules), [critical wound effects](pages/combat#critical-wound-effects), [incapacitation](pages/combat#incapacitation), [dying and death](pages/combat#dying-and-death).
 
 # Magic and Divinity
+TODO
 
 # Time and Space
 [Time and Space](pages/time-and-space): [Time frames](pages/time-and-space#time-frames), [space aka maps](pages/time-and-space#space-aka-maps).
 
 # Equipment
+[Equipment](equipment): [Weapons](equipment#weapons), [shields](equipment#shields), [equipment slots](equipment#equipment-slots), [wield limits](equipment#wield-limits), [armor](equipment#armor), [durability and disrepair](equipment#durability-and-disrepair), [equipment special traits](equipment#equipment-special-traits).
 
 # Wealth
+[Wealth](wealth): [Wealth level](wealth#wealth-level), [trading](wealth#trading), [attrition](wealth#attrition), [collecting junk](wealth#collecting-junk).
 
 # Environment?
 Ambush, fall damage, swimming/diving, chasing,

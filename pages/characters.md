@@ -144,6 +144,8 @@ A natural `1` is a fumble, and counts as a failure, even if the roll value is su
 
 Some skill checks are opposed, meaning that two characters directly oppose each other in their skill checks. In such cases, the character with higher roll value succeeds. If both characters roll a fumble or critical success, resolve as if neither had.
 
+On a tie, the "resisting" character wins &mdash; for example, in a Sneaking check, the character who is passively observing.
+
 ### Advantage and Disadvantage
 
 When you have *advantage*, you roll two `d20`'s for skill checks, and the natural roll value is the higher die result. With *disadvantage*, it's the lower result.
@@ -174,17 +176,17 @@ Skills are divided into categories called skillsets. Some skills have associated
 
 | Martial | Stat | Notes | Resolution |
 |-|-|-|-|
-| One-handed | PHY | *Melee.* Weapons wieldable by one hand. For every 3 unused wield points, gain +1 skill modifier, up to +3. | See [skirmishing](combat#melee-skirmish-resolution) |
-| Two-handed | PHY | *Melee.* Two-handed weapons. | See [skirmishing](combat#melee-skirmish-resolution) |
-| Weapon-and-shield | PHY | *Melee.* Fighting with a shield. Weapon and shield share the wield point pool. | See [skirmishing](combat#melee-skirmish-resolution) |
-| Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. If not engaged, target opponents in adjacent areas (line of sight), or own area. | See [ranged attacks](combat#ranged-attack-resolution) |
-| Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc. Target opponents in own area, even if engaged. | See [ranged attacks](combat#ranged-attack-resolution) |
-| Evasion | DEX | *Physical.* Evading melee or ranged attacks passively. | See [combat](combat) |
+| One-handed | PHY | *Melee.* Weapons wieldable by one hand. | See [skirmishing](combat#melee-skirmish-resolution), [wield limits](equipment#wield-limits). |
+| Two-handed | PHY | *Melee.* Two-handed weapons. | See [skirmishing](combat#melee-skirmish-resolution), [wield limits](equipment#wield-limits). |
+| Weapon-and-shield | PHY | *Melee.* Fighting with a shield.  | See [skirmishing](combat#melee-skirmish-resolution), [wield limits](equipment#wield-limits). |
+| Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. | See [ranged attacks](combat#ranged-attack-resolution), [ranged targeting](combat#ranged-targeting), [wield limits](equipment#wield-limits). |
+| Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc.  | See [ranged attacks](combat#ranged-attack-resolution), [ranged targeting](combat#ranged-targeting), [wield limits](equipment#wield-limits). |
+| Evasion | DEX | *Physical.* Evading melee or ranged attacks passively. | See [combat](combat). |
 | Athletics | PHY | *Physical.* Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
 
 | Cloak-and-dagger | Stat | Notes | Resolution |
 |-|-|-|-|
-| Sneaking | DEX | *Stealth.* *Physical.* Move without been noticed. See NPC [alertness](#npc-alertness). | **Partial:** Moved to destination, but cause [disturbance](#TODO). **Failure:** Noticeable mid-movement. |
+| Sneaking | DEX | *Stealth.* *Physical.* Move without being noticed. [Opposed](#opposed-skill-resolution): Awareness. See NPC [alertness](#npc-alertness). | **Partial:** Moved to destination, but cause [disturbance](#disturbance). **Failure:** Noticeable mid-movement. |
 | Lock picking | DEX | *Stealth.* *Manual.* Silently pick locks on doors etc. | **Partial:** Lock unpicked, cause [disturbance](#disturbance), can retry. **Failure:** Lock jammed and unpickable, cause [disturbance](#disturbance).
 | Sleight of hand | DEX | *Stealth.* *Manual.* Pick pockets, plant objects on persons, conceal weapons etc. See NPC [alertness](#npc-alertness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-attempt. |
 | Acrobatics | DEX | *Physical.* Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
@@ -197,9 +199,9 @@ Skills are divided into categories called skillsets. Some skills have associated
 
 | Utility | Stat | Notes | Resolution |
 |-|-|-|-|
-| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](#TODO). **Failure:** Failed, patient cannot be stabilized. |
+| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](time-and-space#watches). **Failure:** Failed, patient cannot be stabilized. |
 | Trauma treatment | COG | *Medical.* Treat a critical wound. | **Partial:** Untreated, can retry at next opportunity. **Failure:** Untreated, cause 1 pain, can retry at next opportunity. |
-| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea, can retry next [watch](#TODO). **Failure:** No clues, scene contaminated and cannot be investigated. |
+| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea, can retry next [watch](time-and-space#watches). **Failure:** No clues, scene contaminated and cannot be investigated. |
 | Interaction | EMP | *Social.* Inquiry, persuasion, interrogation, deception. | **Partial:** Failed, can retry at next opportunity. **Failure:** Inquiry, persuasion, deception: [disposition](#npc-disposition) lowered. Interrogation: subject dead. |
 | Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Can purchase at double cost. **Failure:** Failed, can retry at next opportunity. |
 | Field repair | PER | *Mechanical.* Restore equipment in disrepair. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, can retry at next opportunity. |
@@ -219,7 +221,7 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 | Taunt | | **Assigment:** Assign two opponents to yourself in a skirmish. |
 | Duelist | | Gain `+1` skill modifier when in melee with a single opponent. |
 | Skirmisher | | Gain `+2` skill modifier when in melee with multiple opponents. |
-| Shield Rush | | **Move:** When using a shield, push through opponents' [zone of control](#TODO). |
+| Shield Rush | | **Move:** When using a shield, push through opponents' [zone of control](time-and-space#zone-of-control). |
 | Precise Shot | | **Ranged:** When attacking with a ranged weapon against a target who is unaware of you, gain [advantage](#advantage-and-disadvantage). |
 | Double Shot | | **Ranged:** Attack a target with a ranged weapon twice in a round. During the next round, you cannot do ranged attacks and have [disadvantage](#advantage-and-disadvantage) to Evasion. |
 | Heavy Blow | | **Melee:** Gain `-2` skill modifier, but if you win, two opponents (by lowest natural roll) take damage. |
@@ -261,16 +263,16 @@ For purposes of stealth, NPCs have an *alertness* state, that affects how they r
 | Alertness | Notes |
 |-|-|
 | Relaxed | NPC is not paying attention, and is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
-| On duty | Default alertness. NPC may be patrolling [areas](#TODO).
+| On duty | Default alertness. NPC may be patrolling [areas](time-and-space#local-areas).
 | Suspicious | NPC may investigate. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |
 | Alerted | NPC raises [alarm](#alarms) and prepares for combat. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |
 
-NPCs are generally aware of characters in their [areas](#TODO) and adjacent areas, if those characters are not using stealth.
+NPCs are generally aware of characters in their [areas](time-and-space#local-areas) and adjacent areas, if those characters are not using stealth.
 
 #### Disturbance
 
-A disturbance is a noise or other cue which causes any nearby NPC to increase its alertness level by one step. NPC alertness is generally reset in the next [watch](#TODO).
+A disturbance is a noise or other cue which causes any nearby NPC to increase its alertness level by one step. NPC alertness is generally reset in the next [watch](time-and-space#watches).
 
 #### Alarms
 
-When an NPC raises an alarm, other NPCs in the adjacent [areas](#TODO) or designated guard posts will respond.
+When an NPC raises an alarm, other NPCs in the adjacent [areas](time-and-space#local-areas) or designated guard posts will respond.
