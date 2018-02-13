@@ -35,12 +35,12 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 	- [Wield Limits](pages/equipment#wield-limits)
 	- [Armor](pages/equipment#armor)
 	- [Durability and Disrepair](pages/equipment#durability-and-disrepair)
-	- [Equipment Special Traits](pages/equipment#equipment-special-traits).
+	- [Equipment Special Traits](pages/equipment#equipment-special-traits)
 - [Wealth](pages/wealth)
     - [Wealth level](pages/wealth#wealth-level)
 	- [Trading](pages/wealth#trading)
 	- [Attrition](pages/wealth#attrition)
-	- [Collecting Junk](pages/wealth#collecting-junk).
+	- [Collecting Junk](pages/wealth#collecting-junk)
 - [Environment](#)
     - TODO: Ambush, fall damage, swimming/diving, chasing,
 - [Quests and Experience](#)

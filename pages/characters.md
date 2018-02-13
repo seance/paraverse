@@ -203,14 +203,14 @@ Skills are divided into categories called skillsets. Some skills have associated
 |-|-|-|-|
 | Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](time-and-space#watches). **Failure:** Failed, patient cannot be stabilized by *Medical* checks. |
 | Trauma treatment | COG | *Medical.* Treat a critical wound. | **Partial:** Untreated, can retry at next opportunity. **Failure:** Untreated, cause 1 pain, can retry at next opportunity. |
-| Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea, can retry next [watch](time-and-space#watches). **Failure:** No clues, scene contaminated and cannot be investigated. |
+| Investigation/tracking | PER | Actively search a scene for clues, or follow tracks. | **Partial:** Gain vague idea, can retry next [watch](time-and-space#watches). **Failure:** No clues, scene contaminated and cannot be investigated. Tracks trampled. |
 | Interaction | EMP | *Social.* Inquiry, persuasion, interrogation, deception. | **Partial:** Failed, can retry at next opportunity. **Failure:** Inquiry, persuasion, deception: [disposition](#npc-disposition) lowered. Interrogation: subject dead. |
 | Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, lose `1` [wealth level](wealth#wealth-level). Can retry at next opportunity. |
 | Field repair | PER | *Mechanical.* Restore equipment in disrepair. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, can retry at next opportunity. |
 
 ## Abilities
 
-Abilities are special skills that characters can unlock. An *ability* becomes available when the total amount of Experience spent in that ability's skillset meets the required level and possible prerequisites.
+*Abilities* are special skills that characters can unlock. An ability becomes available when the total amount of XP spent in that ability's skillset meets the required level and possible prerequisites.
 
 Only one ability may be unlocked per required XP level, so if multiple abilities in the same skillset have the same required level, you must choose which one to acquire.
 
