@@ -18,7 +18,7 @@ When a one-handed weapon is used with a shield, the [Weapon-and-shield](characte
 | Example weapon | Base | Damage type | Notes |
 |-|-:|-|-|
 | Dagger | 4 | Blade | One-handed |
-| Wooden club | 5 | Impact | One-handed | |
+| Wooden club | 5 | Impact | One-handed |
 | Shortsword | 6 | Blade | One-handed |
 | Flanged mace | 6 | Impact | One-handed |
 | War axe, broadsword | 7 | Blade | One-handed |
