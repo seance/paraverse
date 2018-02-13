@@ -122,4 +122,4 @@ To forcibly traverse a zone of control, a character must engage the controlling 
 
 [&laquo; Table of Contents](..)
 
-[&laquo; Equipment](equipment)
+[&raquo; Equipment](equipment)

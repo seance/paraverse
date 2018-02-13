@@ -1,3 +1,5 @@
+[&laquo; Table of Contents](..)
+
 # Equipment
 
 Equipment includes weapons, shields, armor, quest items, and junk carried by characters.
@@ -196,3 +198,7 @@ Gnomish equipment is ingeniously constructed.
 Enchanted equipment is enhanced by magical or divine means.
 
 Enchanted weapons and armor can have skill modifiers or other effects. Some monsters can have resistance to corporeal (unenchanted) attacks.
+
+[&laquo; Table of Contents](..)
+
+[&raquo; Wealth](wealth)
