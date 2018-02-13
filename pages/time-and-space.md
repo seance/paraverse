@@ -1,3 +1,5 @@
+[&laquo; Table of Contents](..)
+
 # Time and Space
 
 ## Time Frames
@@ -117,3 +119,7 @@ A character has a *zone of control* in the area they occupy.
 This means that other characters cannot traverse the area without engaging in melee combat with that character, if the controlling character wishes to block their passage.
 
 To forcibly traverse a zone of control, a character must engage the controlling character. Then, they must succeed in [Disengaging](combat#engagement-and-disengaging) from combat to continue through the area.
+
+[&laquo; Table of Contents](..)
+
+[&laquo; Equipment](equipment)
