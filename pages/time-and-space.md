@@ -53,6 +53,15 @@ During a camp, each character heals all their Stamina, and may take one of the f
 
 > A camp consists of finding a suitable camp ground and preparing it, setting campfires, personal maintenance, medical and field tasks, sleeping and watch duty.
 
+### Interrupting a Rest or a Camp
+
+A player character group may be attacked while they take a break.
+
+- A *rest* will have been completed before the attack
+- A *camp* will be converted into a *rest*, which is completed before the attack
+
+These guidelines apply, unless otherwise ruled by the Game Master. As such, random encounters should be rolled before making camp, to see whether the characters have time for rest or camp actions. Players should indicate which actions they take first, in case the camp is interrupted.
+
 ## Space aka Maps
 
 Space, or maps, feature overland and local locations.

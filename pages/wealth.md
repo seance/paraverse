@@ -38,7 +38,9 @@ A group with wealth level zero is broke and cannot make purchases.
 
 ### Trading Target Difficulties
 
-The base trading target difficulty level for a piece of equipment is `10`.
+For items other than weapons, shields and armor, the target difficulty is set by the Game Master.
+
+The base trading target difficulty level for a piece of equipment, i.e. a weapon, shield or armor, is `10`.
 
 - For each point of [durability](equipment#durability-and-disrepair) above `10`, add `1` to the target level.
 - For one-handed and ranged weapons, add the weapon base damage.
@@ -46,7 +48,7 @@ The base trading target difficulty level for a piece of equipment is `10`.
 - For shields, add the Shield Value times `3`.
 - For armor, add the Armor Value.
 
-For equipment with [special traits](equipment#quipment-special-traits), futher multipliers are cumulatively added. Note that the cultural special traits (Elven, Dwarven, Gnomish) are mutually exclusive.
+For equipment with [special traits](equipment#quipment-special-traits), futher multipliers are cumulatively (multiplicatively) added. Note that the cultural special traits (Elven, Dwarven, Gnomish) are mutually exclusive.
 
 - Elven equipment has target value multiplier `1.3`
 - Dwarven equipment has target value multiplier `1.3`
