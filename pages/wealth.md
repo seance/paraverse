@@ -1,3 +1,5 @@
+[&laquo; Table of Contents](..)
+
 # Wealth
 
 There is no single currency in the world of Paraverse after the Scattering.
@@ -66,3 +68,7 @@ At the end of every session that the player character group did not gain more we
 Junk picked up from the battlefield is not worth its weight, other than to replace a sword or hammer, which may be dangerously worn out.
 
 Merchants do not usually buy mundane things from adventurers.
+
+[&laquo; Table of Contents](..)
+
+[&raquo; Environment](#TODO)

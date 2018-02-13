@@ -1,3 +1,5 @@
+[&laquo; Table of Contents](..)
+
 # Characters
 
 ## Races
@@ -83,7 +85,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 Character creation proceeds with the following steps.
 
-1. Select your character's race and gender. Record the racial stat modifiers and traits on your character sheet. Record your primary stats.
+1. Select your character's race. Record the racial stat modifiers and traits on your character sheet. Record your primary stats.
 1. Select a name and gender for your character.
 1. Perform the [life path](#life-path) process.
 1. Derive and record your secondary stats.
@@ -191,7 +193,7 @@ Skills are divided into categories called skillsets. Some skills have associated
 | Sleight of hand | DEX | *Stealth.* *Manual.* Pick pockets, plant objects on persons, conceal weapons etc. See NPC [alertness](#npc-alertness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-attempt. |
 | Acrobatics | DEX | *Physical.* Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
 | Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. | **Partial:** Failed, can retry. **Failure:** Failed, trap sprung/device malfunction. |
-| Forgery | PER | Forge or identify a forged document. [Opposed](#opposed-skill-resolution): Forgery. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
+| Forgery/disguise | PER | Forge or identify a forged document or disguise a person. [Opposed](#opposed-skill-resolution): Forgery/disguise. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
 
 | Magic and divinity | Stat | Notes |
 |-|-|-|
@@ -199,11 +201,11 @@ Skills are divided into categories called skillsets. Some skills have associated
 
 | Utility | Stat | Notes | Resolution |
 |-|-|-|-|
-| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](time-and-space#watches). **Failure:** Failed, patient cannot be stabilized. |
+| Stabilization | COG | *Medical.* Stop bleeding. | **Partial:** Failed, can retry next [watch](time-and-space#watches). **Failure:** Failed, patient cannot be stabilized by *Medical* checks. |
 | Trauma treatment | COG | *Medical.* Treat a critical wound. | **Partial:** Untreated, can retry at next opportunity. **Failure:** Untreated, cause 1 pain, can retry at next opportunity. |
 | Investigation | PER | Actively search a scene for clues etc. | **Partial:** Gain vague idea, can retry next [watch](time-and-space#watches). **Failure:** No clues, scene contaminated and cannot be investigated. |
 | Interaction | EMP | *Social.* Inquiry, persuasion, interrogation, deception. | **Partial:** Failed, can retry at next opportunity. **Failure:** Inquiry, persuasion, deception: [disposition](#npc-disposition) lowered. Interrogation: subject dead. |
-| Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Can purchase at double cost. **Failure:** Failed, can retry at next opportunity. |
+| Mercantile | EMP | *Social.* Purchases of items. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, lose `1` [wealth level](wealth#wealth-level). Can retry at next opportunity. |
 | Field repair | PER | *Mechanical.* Restore equipment in disrepair. | **Partial:** Failed, can retry at next opportunity. **Failure:** Failed, can retry at next opportunity. |
 
 ## Abilities
@@ -228,7 +230,7 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 
 | Cloak-and-dagger | XP | Description |
 |-|-:|-|
-| Back to Back | | Assignment: Join a friendly character's skirmish. |
+| Back to Back | | **Assignment:** Join a friendly character's skirmish. |
 | Backstab | | |
 | Bird Call | | If you succeed in a Sleight of hand ([Opposed](#opposed-skill-resolution): Awareness) check, lower the [alertness](#npc-alertness) of nearby NPCs from *Suspicious* to *On duty*. |
 | Sixth Sense | | When you are ambushed, instead of having [disadvantage](#advantage-and-disadvantage) to combat rolls on the first round, you have [advantage](#advantage-and-disadvantage).
@@ -251,10 +253,10 @@ NPC *disposition* indicates how friendly a that character is toward the player c
 
 | Disposition | Notes |
 |-|-|
-| Friendly | Social skill rolls have [advantage](#advantage-and-disadvantage). |
+| Friendly | *Social* skill checks have [advantage](#advantage-and-disadvantage). |
 | Neutral | Default disposition. |
-| Unfriendly | Social skill rolls have [disadvantage](#advantage-and-disadvantage). |
-| Hostile | NPC may attack. Social skill rolls have [disadvantage](#advantage-and-disadvantage). NPC will not do trading. |
+| Unfriendly | *Social* skill checks have [disadvantage](#advantage-and-disadvantage). |
+| Hostile | NPC may attack. *Social* skill checks have [disadvantage](#advantage-and-disadvantage). NPC will not do trading. |
 
 ### NPC Alertness
 
@@ -276,3 +278,7 @@ A disturbance is a noise or other cue which causes any nearby NPC to increase it
 #### Alarms
 
 When an NPC raises an alarm, other NPCs in the adjacent [areas](time-and-space#local-areas) or designated guard posts will respond.
+
+[&laquo; Table of Contents](..)
+
+[&raquo; Combat](combat)

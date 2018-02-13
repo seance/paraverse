@@ -1,3 +1,5 @@
+[&laquo; Table of Contents](..)
+
 # Introduction
 
 Welcome to Paraverse!
@@ -39,3 +41,7 @@ After years of war, with famine and disease rampant, both empires stood on the b
 It ended the war. It very nearly ended *all* life, as the destructive power of the weapon tore away from the control of its masters. The utter destruction of this event was later known by many names &mdash; the Cataclysm, the Scattering, and so forth. None now live that can tell for certain, but some scholars theorize that the fabric of the Material Plane was torn asunder, and destructive energies and extra-planar demons ripped apart cities and citizens alike. What is certain is that where great cities once stood are now hollow and abandoned places with strange creatures and presences at night.
 
 Has it been a hundred years? Two hundred? A new world slowly arose from the ashes of the old world. Yet a deadly legacy still lingers in the world. A kind of resonant, subliminal energy, known as the *Glow*, which severely affects the Elder races &mdash; Elves, Gnomes and Dwarves &mdash; but much less so Men. As such, the Age of Men is upon us.
+
+[&laquo; Table of Contents](..)
+
+[&raquo; Characters](characters)

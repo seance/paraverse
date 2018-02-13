@@ -1,12 +1,14 @@
+[&laquo; Table of Contents](..)
+
 # Combat
 
 Combat is resolved in *combat rounds*, during which each character can do *actions*.
 
-## Combat rounds
+## Combat Rounds
 
 During a combat round, each character acts simultaneously. Different *actions* are grouped into round *phases*, which occur in order.
 
-### Round actions
+### Round Actions
 
 During a combat round, a character can take one of the following actions.
 
@@ -16,7 +18,7 @@ During a combat round, a character can take one of the following actions.
 
 In addition, at the start of the round, a character may draw a weapon, or switch to another weapon as a free action.
 
-### Round phases
+### Round Phases
 
 The combat round phases are as follows.
 
@@ -200,3 +202,7 @@ A dying character can be stabilized using the [Stabilization](characters#list-of
 > **Example**
 >
 > A character takes a knock in the head and becomes incapacitated and bleeding, with 4 current Stamina. As such, they are dying, and must make a death check each watch. The character rolls 10 + 4 = 14, failing their first check.
+
+[&laquo; Table of Contents](..)
+
+[&raquo; Sorcery and Divinity](#TODO)
