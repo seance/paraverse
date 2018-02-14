@@ -42,7 +42,11 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 	- [Attrition](pages/wealth#attrition)
 	- [Collecting Junk](pages/wealth#collecting-junk)
 - [Environment](#)
-    - TODO: Ambush, fall damage, swimming/diving, chasing,
+    - [Ambushes](pages/environment#ambushes)
+    - [Climbing, Jumping and Falling](pages/environment#climbing-jumping-and-falling)
+    - [Swimming, Diving and Drowning](pages/environment#swimming-diving-and-drowning)
+    - [Chasing, Catching and Escaping](pages/environment#chasing-catching-and-escaping)
+    - [Cities and Villages](pages/environment#cities-and-villages)
 - [Quests and Experience](#)
     - TODO: Group experience
 - [Game Props](#)
