@@ -91,14 +91,15 @@ Gambling occurs normally by a simple `d20` roll, with a `12+` result winning the
 
 Smiths and armorers offer weapons, shields and armor for sale, as well as provide repair services.
 
-- Having a piece of equipment in [disrepair](equipment#durability-and-disrepair) repaired by a smith requires a [Mercantile](characters#list-of-skills) check with a target difficulty value *half* of item [sales target difficulty](wealth#trading-target-difficulties). Multiple pieces can be repaired at a single visit, but each requires separate check.
-- TODO: Generating equipment
+- Have a piece of equipment in [disrepair](equipment#durability-and-disrepair) repaired by a smith. Requires a [Mercantile](characters#list-of-skills) check with a target difficulty value *half* of item [sales target difficulty](wealth#trading-target-difficulties). Multiple pieces can be repaired at a single visit, but each requires separate check.
+- Peruse items for a rare find.
+- Purchase an item of a specific kind.
 
 #### Temples and Monasteries
 
-Temples and monasteries offer healing and divinely restorative services to travelers missing limbs, or even resurrection &mdash; if a corpse, and some coin, is procured.
+Temples and monasteries offer healing and divinely restorative services to travelers who are missing limbs, or even resurrection, if a corpse and some coin is procured.
 
-Divine acts of restoration and resurrection are not exclusive to the wealthy &mdash; they simply cost *all* your wealth &mdash; if you can first conclude a small negotiation.
+Divine acts of restoration and resurrection are not exclusive to the rich &mdash; they simply cost *all* of your [wealth](wealth#wealth-level) &mdash; but you must first conclude a small negotiation.
 
 - Healing, i.e. regaining Stamina at a temple or monastery is free and complete.
 - Restoration of a single limb requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `10`. The missing limb is not necessary.
@@ -110,7 +111,13 @@ While these attractions do not offer standardized services, they may be of inter
 
 - Public or Private Library
 - Gladiator Arena
+- Mine or Quarry
+- Local Government Office
+- Magical Artefact
+- Gnomish Machinery or Industry
+- Seaport
 - TODO
+
 
 [&laquo; Table of Contents](..)
 
