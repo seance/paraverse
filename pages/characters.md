@@ -2,7 +2,7 @@
 
 # Characters
 
-## Races
+## Player Character Races
 
 ### Men
 
@@ -52,7 +52,7 @@ While not strictly a separate ethnic group, Tinker gnomes ascribe to a somewhat 
 
 Astromancer gnomes are those of their kin who have long taken a more spiritual interest in the world. Although they share the mechanical aptitude of their gnomish brethren, they are also fascinated by the deep currents of magic and the divine. These gnomes, rather uniquely, can be found among all of the other cultures &mdash; even the reclusive Sylvan elves &mdash; but also build their own settlements which mix the natural and the technological.
 
-## Stats
+## Primary and Secondary Stats
 
 ### Primary Stats
 

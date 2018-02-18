@@ -92,8 +92,30 @@ Gambling occurs normally by a simple `d20` roll, with a `12+` result winning the
 Smiths and armorers offer weapons, shields and armor for sale, as well as provide repair services.
 
 - Have a piece of equipment in [disrepair](equipment#durability-and-disrepair) repaired by a smith. Requires a [Mercantile](characters#list-of-skills) check with a target difficulty value *half* of item [sales target difficulty](wealth#trading-target-difficulties). Multiple pieces can be repaired at a single visit, but each requires separate check.
-- Peruse items for a rare find.
-- Purchase an item of a specific kind.
+- Peruse items for a rare find. Roll according to Trader Level and refer to the [perusing finds table](equipment#perusing-at-a-store). Only one peruse roll can be performed per visit.
+- Purchase an item of a specific kind. Roll according to Trader Level and refer to the [specific item table](equipment#purchase-item-of-specific-kind). Separate specific item rolls can be performed for the following item categories per visit, unless each generated item is purchased.
+    - One-handed weapons
+    - Two-handed weapons
+    - Thrown weapons
+    - Marksman weapons
+    - Shields
+    - Armor
+
+| Trader Level | Roll |
+|-|-:|
+| Destitute | `d12` |
+| Poor | `d12 + 2` |
+| Moderate | `d12 + 4` |
+| Well-to-do | `d12 + 6` |
+| Wealthy |  `d12 + 8` |
+
+> **Example**
+>
+> A character visits a smith and inquires about purchasing a broadsword. The generated item has too low durability to interest the character.
+>
+> Since broadsword is categorized as a one-handed weapon, the character cannot attempt to roll up a different one-handed weapon, e.g. a war axe. However, if the broadsword is purchased, then another one-handed item can be generated.
+>
+> In either case, a piece of equipment in a different category can be rolled up.
 
 #### Temples and Monasteries
 
@@ -101,9 +123,9 @@ Temples and monasteries offer healing and divinely restorative services to trave
 
 Divine acts of restoration and resurrection are not exclusive to the rich &mdash; they simply cost *all* of your [wealth](wealth#wealth-level) &mdash; but you must first conclude a small negotiation.
 
-- Healing, i.e. regaining Stamina at a temple or monastery is free and complete.
-- Restoration of a single limb requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `10`. The missing limb is not necessary.
-- Resurrection requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `15`. The dead character's corpse is required. Resurrection may come with the catch of becoming a devout follower of the local deity.
+- Healing at a temple or monastery is free. Full [stamina](characters#secondary-stats) and all [critical wounds](combat#critical-wound-effects) are healed, in one or two [watches](time-and-space#watches), respectively.
+- Restoration of a single limb requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `15`. The missing limb is not necessary.
+- Resurrection requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `20`. The dead character's corpse is required. Resurrection may come with the catch of becoming a devout follower of the local deity.
 
 ### Other Points of Interest
 
@@ -116,8 +138,11 @@ While these attractions do not offer standardized services, they may be of inter
 - Magical Artefact
 - Gnomish Machinery or Industry
 - Seaport
-- TODO
+- ...
 
+## The Glow
+
+TODO
 
 [&laquo; Table of Contents](..)
 

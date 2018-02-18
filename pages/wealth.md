@@ -42,7 +42,7 @@ For items other than weapons, shields and armor, the target difficulty is set by
 
 The base trading target difficulty level for a piece of equipment, i.e. a weapon, shield or armor, is `10`.
 
-- For each point of [durability](equipment#durability-and-disrepair) above `10`, add `1` to the target level.
+- For each point of [durability](equipment#durability-and-disrepair) above `10`, add `1` to the target level, up to 15. Only Mastercrafted equipment has durability over 15.
 - For one-handed and ranged weapons, add the weapon base damage.
 - For two-handed weapons, add the weapon base damage minus `5`.
 - For shields, add the Shield Value times `3`.
@@ -50,16 +50,17 @@ The base trading target difficulty level for a piece of equipment, i.e. a weapon
 
 For equipment with [special traits](equipment#quipment-special-traits), futher multipliers are cumulatively (multiplicatively) added. Note that the cultural special traits (Elven, Dwarven, Gnomish) are mutually exclusive.
 
-- Elven equipment has target value multiplier `1.3`
-- Dwarven equipment has target value multiplier `1.3`
-- Gnomish equipment has target value multiplier `1.5`
-- Enchanted equipment has target value multiplier `1.5`
+- Mastercrafted equipment has target value `+2` for each point of durability above 15.
+- Elven equipment has target value multiplier `1.3`.
+- Dwarven equipment has target value multiplier `1.3`.
+- Gnomish equipment has target value multiplier `1.5`.
+- Enchanted equipment has target value multiplier `1.5`.
 
 The final trading target difficulty value is obtained by applying the multiplier and rounding normally.
 
 > **Example**
 >
-> A Dwarven broadsword (base damage 7) with durability 16 is offered for sale by a well-stocked merchant as a special purchase. The trading target difficulty value for purchasing this item is (10 + 6 + 7) × 1.3, which rounds to 30.
+> A Dwarven broadsword (base damage 7) with durability 15 is offered for sale by a well-stocked merchant as a special purchase. The trading target difficulty value for purchasing this item is (10 + 5 + 7) × 1.3, which rounds to 29.
 
 ## Attrition
 
