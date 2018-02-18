@@ -9,8 +9,8 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Golden Rules](pages/introduction#golden-rules)
     - [Setting and Lore](pages/introduction#setting-and-lore)
 - [Characters](pages/characters)
-    - [Races](pages/characters#races)
-    - [Stats](pages/characters#stats)
+    - [Player Character Races](pages/characters#player-character-races)
+    - [Primary and Secondary Stats](pages/characters#primary-and-secondary-stats)
     - [Character Creation](pages/characters#character-creation)
     - [Skills](pages/characters#skills)
     - [Abilities](pages/characters#abilities)
@@ -23,7 +23,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Engagement and Disengaging](pages/combat#engagement-and-disengaging)
     - [Incapacitation](pages/combat#incapacitation)
     - [Dying and Death](pages/combat#dying-and-death)
-- [Sorcery and Divinity](#)
+- [Sorcery and Divinity](#TODO)
     - TODO
 - [Time and Space](pages/time-and-space)
     - [Time Frames](pages/time-and-space#time-frames)
@@ -48,8 +48,9 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Swimming, Diving and Drowning](pages/environment#swimming-diving-and-drowning)
     - [Chasing, Catching and Escaping](pages/environment#chasing-catching-and-escaping)
     - [Cities and Villages](pages/environment#cities-and-villages)
-- [Quests and Experience](#)
-    - TODO: Group experience
+- [Quests and Experience](pages/quests-and-experience)
+    - [Quests](pages/quests-and-experience#quests)
+    - [Experience](pages/quests-and-experience#experience)
 - [Game Props](#)
     - TODO
 
