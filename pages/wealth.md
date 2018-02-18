@@ -74,4 +74,4 @@ Merchants do not usually buy mundane things from adventurers.
 
 [&laquo; Table of Contents](..)
 
-[&raquo; Environment](#TODO)
+[&raquo; Environment](environment)

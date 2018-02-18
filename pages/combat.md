@@ -62,7 +62,7 @@ However, at the Game Master's discretion, other targets can be designated. For e
 A ranged attack is resolved as follows.
 
 1. The attacker rolls `d20` and adds the skill modifier of the [*Ranged*](characters#list-of-skills) skill they are using.
-1. The defender rolls `d20` and adds the [Evasion](characters#list-of-skills) skill modifier and [Shield](#TODO) modifier, if using a shield.
+1. The defender rolls `d20` and adds the [Evasion](characters#list-of-skills) skill modifier and [shield](#shields) modifier, if using a shield.
 1. If the attack roll is *higher* than the defense roll, the attack hits. Otherwise, the attack misses, and the resolution ends.
 1. Determine the attack hit location using [hit location resolution](#hit-location).
 1. Calculate [attack damage](#attack-damage) based on roll difference.
@@ -82,7 +82,11 @@ A melee skirmish with one or more characters on either side is resolved as follo
 
 ### Critical Hit
 
-TODO
+In a skirmish, if a character rolls a natural `20`, it is a *critical hit*.
+
+A critical hit wins a skirmish against any non-critical hit and always has a [damage multiplier](#attack-damage) of at least `2`.
+
+If characters on both sides of a skirmish roll critical hits, resolve the skirmish as if neither had.
 
 ### Hit Location
 
@@ -160,7 +164,7 @@ Critical wounds can be treated using the [Trauma treatment](characters#list-of-s
 | Severed Arm | [Incapacitation](#incapacitation), permanent Fractured Arm effects. |
 | Severed Leg | [Incapacitation](#incapacitation), permanent Fractured Leg effects. |
 
-Supercritical wounds are beyond the skills of adventurers to treat, but [Temples](#TODO) may offer restoration and even resurrection services.
+Supercritical wounds are beyond the skills of adventurers to treat, but [temples](environment#temples-and-monasteries) may offer restoration and even resurrection services.
 
 ## Shields
 
@@ -197,7 +201,7 @@ A death check is a roll with Target Difficulty of `15` and is modified by curren
 
 A dying character can be stabilized using the [Stabilization](characters#list-of-skills) skill by another character. See [rest](#time-and-space#rest).
 
-[Temples](#TODO) may offer restoration and even resurrection services.
+[Temples](environment#temples-and-monasteries) may offer restoration and even resurrection services.
 
 > **Example**
 >

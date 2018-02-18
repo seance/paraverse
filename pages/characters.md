@@ -94,7 +94,7 @@ Character creation proceeds with the following steps.
 1. Assign XP points from group experience pool.
 1. Acquire abilities based on your XP distribution.
 1. Purchase starting equipment.
-1. Bonus: Find a portrait image and print your [character card](#TODO).
+1. Bonus: Find a portrait image and print your [character card](game-props#character-card).
 1. Bonus: Write a bio for your character based on the life path.
 
 ### Racial Stat Modifiers
@@ -125,8 +125,6 @@ The life path represents the formative years of character development, in abstra
 Most character actions are resolved through the application of skills.
 
 Each skill is governed by a primary stat, whose value is here denoted `P`. The base value of a skill is derived as `P - 10` (can be negative). See [list of skills](#list-of-skills) for a list of which stats govern which skills.
-
-See also TODO(experience, half plus one, skillsets, abilities).
 
 ### Skill Resolution
 

@@ -48,10 +48,15 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Swimming, Diving and Drowning](pages/environment#swimming-diving-and-drowning)
     - [Chasing, Catching and Escaping](pages/environment#chasing-catching-and-escaping)
     - [Cities and Villages](pages/environment#cities-and-villages)
+    - [The Glow](pages/environment#the-glow)
 - [Quests and Experience](pages/quests-and-experience)
     - [Quests](pages/quests-and-experience#quests)
     - [Experience](pages/quests-and-experience#experience)
-- [Game Props](#)
-    - TODO
+- [Game Props](pages/game-props)
+    - [Character Sheet](pages/game-props#character-sheet)
+    - [Group Sheet](pages/game-props#group-sheet)
+    - [Character Card](pages/game-props#character-card)
+    - [Effect Cards](pages/game-props#effect-cards)
+    - [Watch Clock](pages/game-props#watch-clock)
 
  <div style="text-align:center;"><a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">Creative Commons Attribution-NonCommercial 4.0 International License</a>.</div>
