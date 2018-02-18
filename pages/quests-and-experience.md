@@ -2,7 +2,7 @@
 
 # Quest and Experience
 
-## Quests
+## Quests and Objectives
 
 Quests are the scenarios crafted by the Game Master, which give the player characters purpose in the world.
 
@@ -38,7 +38,7 @@ Suggested XP rewards for completing secondary objectives are detailed below.
 | Bonus objective | 1 |
 | Story objective | 3-5 |
 
-## Experience
+## Experience and Character Progression
 
 ### Group Experience
 
