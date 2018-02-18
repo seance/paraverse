@@ -239,7 +239,7 @@ See [smiths and armorers](environment#smiths-and-armorers) for details on equipm
 | Roll | Result |
 |-:|-|
 | 1&ndash;5 | Item not in stock. |
-| 6&dash;15 | Item has durability equal to the roll value. |
+| 6&ndash;15 | Item has durability equal to the roll value. |
 | 16&ndash;18 | Mastercrafted(16) item. |
 | 19&ndash;20 | Mastercrafted(17) item. |
 
