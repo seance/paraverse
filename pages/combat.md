@@ -29,7 +29,7 @@ The combat round phases are as follows.
 | Melee combat | Melee combat is resolved using the [melee skirmish resolution](#melee-skirmish-resolution) rules. |
 | Magic and divinity | Magical spells and divine prayers are resolved. |
 | Miscellaneous actions | Other actions, such as climbing a wall, are resolved. A character being attacked while performing such action has [disadvantage](characters#advantage-and-disadvantage) in both that action and evading the attack. |
-| End phase | End-of-turn effects, such as bleeding, are applied. |
+| End phase | End-of-round effects, such as bleeding, are applied. |
 
 All actions in a phase are resolved simultaneously, i.e. if two characters fire arrows at each other, and the first arrow kills its target, the second attack is still resolved normally.
 

@@ -38,7 +38,7 @@ When a one-handed weapon is used with a shield, the [Weapon-and-shield](characte
 | Trait | Description |
 |-|-|
 | Versatile | Can be used either one or two-handed, for lower/higher damage stat. |
-| Curving | Curve around opponent's shield, negating armor bonus. |
+| Curving | Curve around opponent's shield, negating armor bonus from shield. |
 | Reach | TODO: Upside? Downside: malus in narrow spaces. |
 | Penetration | Target heavy armor protection is capped at 6. TODO: downside? |
 | Cumbersome(X) | Causes -X skill modifier to melee. |
@@ -198,6 +198,50 @@ Gnomish equipment is ingeniously constructed.
 Enchanted equipment is enhanced by magical or divine means.
 
 Enchanted weapons and armor can have skill modifiers or other effects. Some monsters can have resistance to corporeal (unenchanted) attacks.
+
+## Generating Equipment
+
+### Perusing at a Store
+
+See [smiths and armorers](environment#smiths-and-armorers) for details on equipment trade.
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;10 | Random item with durability 10. |
+| 11&ndash;15 | Random item with durability equal to the roll value. |
+| 16&ndash;17 | Random Mastercrafted(16) item. |
+| 18&ndash;19 | Random Mastercrafted(17) item. |
+| 20 | Reroll on the Jackpot table with `d12`. |
+
+### Jackpot Finds
+
+See [smiths and armorers](environment#smiths-and-armorers) for details on equipment trade.
+
+| Roll | Result |
+|-:|-|
+| 1 | Elven item. |
+| 2 | Dwarven item. |
+| 3 | Gnomish item. |
+| 4 | Enchanted `+1` item. |
+| 5 | Mastercrafted(17) Elven item. |
+| 6 | Mastercrafted(17) Dwarven item. |
+| 7 | Mastercrafted(17) Gnomish item. |
+| 8 | Mastercrafted(17) Enchanted `+1` item. |
+| 9 | Enchanted `+1` Elven item. |
+| 10 | Enchanted `+1` Dwarven item. |
+| 11 | Enchanted `+1` Gnomish item. |
+| 12 | Mastercrafted(17) Enchanted `+1` Gnomish item. |
+
+### Purchase Item of Specific Kind
+
+See [smiths and armorers](environment#smiths-and-armorers) for details on equipment trade.
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | Item not in stock. |
+| 6&dash;15 | Item has durability equal to the roll value. |
+| 16&ndash;18 | Mastercrafted(16) item. |
+| 19&ndash;20 | Mastercrafted(17) item. |
 
 [&laquo; Table of Contents](..)
 
