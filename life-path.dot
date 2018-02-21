@@ -1,0 +1,135 @@
+digraph {
+    graph [compound=true, layout=dot, overlap=false, bgcolor="#f2f2f2"];
+    node [style=filled, color="#212121", fontcolor="#ffffff"];
+    edge [len=1.2];
+
+    subgraph cluster_origin {
+        label="Place of Origin";
+
+        "Origin" [shape=box];
+
+        "Origin" -> "Urchin" -> "Thief";
+        "Origin" -> "Brawler" -> "Fighter";
+        "Origin" -> "Student" -> "Initiate";
+        "Origin" -> "Disciple" -> "Novice";
+    }
+
+    subgraph cluster_city {
+        label="Major City";
+
+        "City" [shape=box];
+
+        "City" -> city_college_loiter [label="Study Arcana"];
+        city_college_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_college_loiter -> "Arx Arcanum" [style=dashed, arrowhead=empty, label="1-2"];
+        city_college_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Arx Arcanum" -> college_scholar_college [label="Mastery"];
+        college_scholar_college [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        college_scholar_college -> "Scholar" [style=dashed, arrowhead=empty, label="1"];
+        college_scholar_college -> "Arx Arcanum" [style=dashed, arrowhead=empty, label="2-4"];
+
+        "City" -> city_monastery_loiter [label="Study Faith"];
+        city_monastery_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_monastery_loiter -> "Monastery" [style=dashed, arrowhead=empty, label="1-2"];
+        city_monastery_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Monastery" -> monastery_priest_monastery [label="Ordainment"];
+        monastery_priest_monastery [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        monastery_priest_monastery -> "Priest" [style=dashed, arrowhead=empty, label="1"];
+        monastery_priest_monastery -> "Monastery" [style=dashed, arrowhead=empty, label="2-4"];
+
+        "City" -> city_gladiator_loiter [label="Showfighting"];
+        city_gladiator_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_gladiator_loiter -> "Gladiator" [style=dashed, arrowhead=empty, label="1-2"];
+        city_gladiator_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Gladiator" -> gladiator_chamption_gladiator [label="Fame"];
+        gladiator_chamption_gladiator [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        gladiator_chamption_gladiator -> "Champion" [style=dashed, arrowhead=empty, label="1"];
+        gladiator_chamption_gladiator -> "Gladiator" [style=dashed, arrowhead=empty, label="2-4"];
+
+        "City" -> city_enforcer_loiter [label="Underworld"];
+        city_enforcer_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_enforcer_loiter -> "Enforcer" [style=dashed, arrowhead=empty, label="1-2"];
+        city_enforcer_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Enforcer" -> enforcer_assassin_enforcer [label="Wetwork"];
+        enforcer_assassin_enforcer [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        enforcer_assassin_enforcer -> "Assassin" [style=dashed, arrowhead=empty, label="1"];
+        enforcer_assassin_enforcer -> "Enforcer" [style=dashed, arrowhead=empty, label="2-4"];
+
+        "City" -> city_trader_loiter [label="Trade"];
+        city_trader_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_trader_loiter -> "Trader" [style=dashed, arrowhead=empty, label="1-2"];
+        city_trader_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Trader" -> trader_merchant_trader [label="Big Money"];
+        trader_merchant_trader [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        trader_merchant_trader -> "Merchant" [style=dashed, arrowhead=empty, label="1"];
+        trader_merchant_trader -> "Trader" [style=dashed, arrowhead=empty, label="2-4"];
+    }
+
+    subgraph cluster_adventuring {
+        label="Adventuring";
+
+        "Adventuring" [shape=box];
+
+        "Adventuring" -> "Wilderness" -> "Ranger";
+        "Adventuring" -> "Faraway Lands" -> "Journeyman";
+    }
+
+    subgraph cluster_war {
+        label="War";
+
+        war_root [label="War", shape=box];
+        war_root -> "War";
+
+        "War" -> war_won_lost [label="Battles"];
+        war_won_lost [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+
+        subgraph cluster_war_victory {
+            label="Victory"
+
+            "Veteran";
+            "Captain";
+        }
+
+        subgraph cluster_war_defeat {
+            label="Defeat"
+
+            "Drifter";
+            "Slave Pit";
+
+            "Slave Pit" -> slave_drifter_slave [label="Escape"];
+            slave_drifter_slave [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+            slave_drifter_slave -> "Drifter" [style=dashed, arrowhead=empty, label="1-2"];
+            slave_drifter_slave -> "Slave Pit" [style=dashed, arrowhead=empty, label="3-4"];
+        }
+
+        war_won_lost -> "Veteran" [style=dashed, arrowhead=empty, label="1"];
+        war_won_lost -> "Captain" [style=dashed, arrowhead=empty, label="2"];
+        war_won_lost -> "Drifter" [style=dashed, arrowhead=empty, label="3"];
+        war_won_lost -> "Slave Pit" [style=dashed, arrowhead=empty, label="4"];
+    }
+
+    /* "Origin" -> origin_city_war [label="Leave for City"];
+    origin_city_war [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+    origin_city_war -> "City" [style=dashed, arrowhead=empty, label="1-3"];
+    origin_city_war -> "War" [style=dashed, arrowhead=empty, label="4"];
+
+    "Origin" -> origin_adventuring_war [label="See the World"];
+    origin_adventuring_war [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+    origin_adventuring_war -> "Adventuring" [style=dashed, arrowhead=empty, label="1-3"];
+    origin_adventuring_war -> "War" [style=dashed, arrowhead=empty, label="4"];
+
+    "Adventuring" -> adventuring_city_war [label="Return to City"];
+    adventuring_city_war [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+    adventuring_city_war -> "City" [style=dashed, arrowhead=empty, label="1-3"];
+    adventuring_city_war -> "War" [style=dashed, arrowhead=empty, label="4"];
+
+    "City" -> city_adventuring_war [label="Leave Abroad"];
+    city_adventuring_war [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+    city_adventuring_war -> "Adventuring" [style=dashed, arrowhead=empty, label="1-3"];
+    city_adventuring_war -> "War" [style=dashed, arrowhead=empty, label="4"]; */
+}
