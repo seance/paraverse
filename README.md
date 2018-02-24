@@ -42,6 +42,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 	- [Trading](pages/wealth#trading)
 	- [Attrition](pages/wealth#attrition)
 	- [Collecting Junk](pages/wealth#collecting-junk)
+    - [Generating Loot](pages/wealth#generating-loot)
 - [Environment](pages/environment)
     - [Ambushes](pages/environment#ambushes)
     - [Climbing, Jumping and Falling](pages/environment#climbing-jumping-and-falling)
