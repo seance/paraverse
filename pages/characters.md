@@ -133,7 +133,7 @@ Your choices in following the arrows may represent what your character desires, 
 During the life path, there are certain restrictions to bonuses gained.
 - Primary stat values may change a maximum of `1` point
 - Secondary stat values may change a maximum of `2` points
-- Skills may gain a maximum of `+5`
+- Skills may gain a maximum of `+5` bonus
 - Bonuses to other life path `d4` checks have maximum `+1`
 
 #### Place of Origin
@@ -402,6 +402,7 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 |-|-:|-|
 | Back to Back | | **Assignment:** Join a friendly character's skirmish. |
 | Backstab | | |
+| Quickdraw | | If you succeed in a Sleight of hand ([Opposed](#opposed-skill-resolution): Awareness) check, [ambush](environment#ambushes) one non-hostile character even if they are aware of you. |
 | Bird Call | | If you succeed in a Sleight of hand ([Opposed](#opposed-skill-resolution): Awareness) check, lower the [alertness](#npc-alertness) of nearby NPCs from *Suspicious* to *On duty*. |
 | Sixth Sense | | When you are ambushed, instead of having [disadvantage](#advantage-and-disadvantage) to combat rolls on the first round, you have [advantage](#advantage-and-disadvantage).
 
