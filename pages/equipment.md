@@ -29,7 +29,9 @@ When a one-handed weapon is used with a shield, the [Weapon-and-shield](characte
 | Flail | 8 | Impact | One-handed. *Curving.* *Cumbersome(1).* |
 | Longsword | 8/9 | Blade | One-handed, two-handed. *Versatile.* |
 | Estoc | 9 | Pierce | Two-handed. *Penetration.* |
+| Quarterstaff | 9 | Impact | Two-handed. *Reach.* |
 | Claymore, greataxe | 10 | Blade | Two-handed |
+| Heavy flail | 11 | Impact | Two-handed. *Curving.* *Cumbersome(1).* |
 | Pike | 11 | Pierce | Two-handed *Reach.* |
 | Heavy maul | 12 | Impact | Two-handed. *Penetration.* *Cumbersome(1).* |
 
@@ -40,8 +42,8 @@ When a one-handed weapon is used with a shield, the [Weapon-and-shield](characte
 | Versatile | Can be used either one or two-handed, for lower/higher damage stat. |
 | Curving | Curve around opponent's shield, negating armor bonus from shield. |
 | Reach | TODO: Upside? Downside: malus in narrow spaces. |
-| Penetration | Target heavy armor protection is capped at 6. TODO: downside? |
-| Cumbersome(X) | Causes -X skill modifier to melee. |
+| Penetration | Target armor protection is capped at `6`. Costs `1` more [Wield](characters#secondary-stats) point than its base damage. |
+| Cumbersome(X) | Causes `-X` skill modifier to melee. |
 
 ### Ranged Weapons
 
@@ -117,9 +119,9 @@ Armor has a Armor Value property, which reduces incoming [damage](combat#attack-
 | Hardened leather  | 2 | Light |
 | Studded leather | 3 | Light |
 | Rawhide | 4 | Medium |
-| Light chain | 5 | Medium |
+| Chainmail | 5 | Medium |
 | Scale mail | 6 | Medium |
-| Heavy chain | 7 | Heavy |
+| Heavy chainmail | 7 | Heavy |
 | Splint mail | 8 | Heavy |
 | Plate mail | 9 | Heavy |
 

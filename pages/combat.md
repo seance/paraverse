@@ -152,7 +152,7 @@ See also [critical wound effects](#critical-wound-effects).
 |-|-|
 | Skull Fracture | [Incapacitation](#incapacitation), Cognition and Willpower based skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
 | Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
-| Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
+| Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 
 Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [camp](time-and-space#camp).
