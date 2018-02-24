@@ -7,7 +7,7 @@ digraph {
 
         "Adventuring" [shape=box];
 
-        "Adventuring" -> "Wilderness" -> "Ranger";
+        "Adventuring" -> "Wilderness" -> "Wastelands" -> "Ranger";
         "Adventuring" -> "Faraway Lands";
 
         "Faraway Lands" -> faraway_ruins_faraway [label="Exploring"];
