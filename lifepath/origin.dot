@@ -1,0 +1,16 @@
+digraph {
+    graph [compound=true, layout=dot, overlap=false, bgcolor="#f2f2f2"];
+    node [style=filled, color="#212121", fontcolor="#ffffff"];
+
+    subgraph cluster_origin {
+        label="Place of Origin";
+
+        "Origin" [shape=box];
+
+        "Origin" -> "Apprentice" -> "Craftsman";
+        "Origin" -> "Urchin" -> "Thief";
+        "Origin" -> "Brawler" -> "Fighter";
+        "Origin" -> "Student" -> "Initiate";
+        "Origin" -> "Disciple" -> "Novice";
+    }
+}

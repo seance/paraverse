@@ -1,0 +1,23 @@
+{
+  "name": "paraverse",
+  "version": "1.0.0",
+  "description": "A tabletop role-playing game system",
+  "main": "index.js",
+  "scripts": {
+    "lifepath": "dot -Tpng -o assets/lifepath/origin.png lifepath/origin.dot && dot -Tpng -o assets/lifepath/city.png lifepath/city.dot && dot -Tpng -o assets/lifepath/adventuring.png lifepath/adventuring.dot && dot -Tpng -o assets/lifepath/war.png lifepath/war.dot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seance/paraverse.git"
+  },
+  "keywords": [
+    "rpg", "d20", "tabletop"
+  ],
+  "author": "github/seance",
+  "license": "CC BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/seance/paraverse/issues"
+  },
+  "homepage": "http://paraverse.kadath.cloud"
+}

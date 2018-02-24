@@ -120,6 +120,162 @@ The base value of every primary stat is `10`.
 
 The life path represents the formative years of character development, in abstract terms.
 
+You begin at Place of Origin, and take *ten* rounds representing phases of character development. These phases may each be one year, or some other period of time.
+
+There are four main locales or themes &mdash; Place of Origin, Major City, Adventuring and War. Place of Origin is your home village, neighborhood in a city, or similar place where your earliest development occurs. The City has the most opportunities, but here you will also face competition and may fail in pursuing objectives. Adventuring represents sojourns into the wilderness and faraway lands, and War the many local wars to which any character can either volunteer to or be swept to by Fate.
+
+You can opt to leave to another major locale at each round, but once you leave Place of Origin, it cannot be returned to. At every change of major locale (except War), roll a `d4`. On a `1`, you end up in War instead.
+
+The dark squares are the starting points of each major locale, except War which begins in the dark ellipse labeled War. The squares do not represent actual development, they only act as starting points toward the ellipses. From each node (square or ellipse), you may follow an outbound arrow to pursue that course. If the arrow leads to a blue diamond, you will need to roll a `d4`, and then follow the path whose label contains your roll result. These represent forking points in Fate where your character does not have control over their destiny.
+
+Your choices in following the arrows may represent what your character desires, or you as the player may decide that Fate ordained some path for that characters.
+
+During the life path, there are certain restrictions to bonuses gained.
+- Primary stat values may change a maximum of `1` point
+- Secondary stat values may change a maximum of `2` points
+- Skills may gain a maximum of `5 XP`
+- Bonuses to other life path `d4` checks have maximum `+1`
+
+#### Place of Origin
+
+![Place of Origin](../assets/lifepath/origin.png)
+
+##### Urchin
+
+Life as a young street urchin. `+2 XP` Sneaking. Increases chance to become an *Enforcer* in City by `1`.
+
+##### Thief
+
+From a street urchin to nimble burglar in the night. `+1 XP` Lock picking, `+1 XP` Acrobatics. Increases chance to become *Assassin* in City by `1`.
+
+##### Brawler
+
+Playing fisticuffs for coin and a bit of wrestling. `+2 XP` Athletics. Increases chance to become *Gladiator* in City by `1`.
+
+##### Fighter
+
+Picking up the sword or axe comes easier with a big of fighting experience. `+1 XP` One-handed, `+1 XP` Two-handed. Increases chance to become *Champion* in City by `1`.
+
+##### Student
+
+Learning to read is beneficial for studies. TODO. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
+
+##### Initiate
+
+First forays into the secret arts of the Arcana. TODO. Increases chance to become *Scholar* in City by `1`.
+
+##### Disciple
+
+Humility, learning the gods, and discipline. TODO. Increases chance to be admitted into *Monastery* in City by `1`.
+
+##### Novice
+
+Discovering the Divine Light and its ways. TODO. Increases chance to become *Priest* in City by `1`.
+
+##### Apprentice
+
+Learning a trade is best done at a young age. `+2 XP` Field repair. Increases chance to become *Trader* in City by `1`.
+
+##### Craftsman
+
+Honing skills as a master craftsman. `+1` Traps/devices, `+1 XP` Mercantile, `+1` wealth. Increases chance to become *Merchant* in City by `1`.
+
+#### Major City
+
+![Major City](../assets/lifepath/city.png)
+
+##### Loiter
+
+Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least XP in.
+
+##### Arx Arcanum
+
+Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. TODO.
+
+##### Scholar
+
+Those who master the arcane arts are both feared and respected. `+1` COG, TODO.
+
+##### Gladiator
+
+Fighting in the Arena is dangerous but can be profitable and a valuable learning opportunity. `+2 XP` One-handed, `+2` wealth.
+
+##### Champion
+
+Only those with determination and accomplished skill in combat, but also a flair for the dramatic become Champions. `+1` PHY, `+2 XP` Two-handed.
+
+##### Trader
+
+Those with a head for numbers and a good eye for value can turn a hefty profit in the City. `+2 XP` Mercantile, `+3` wealth.
+
+##### Merchant
+
+To call oneself a Merchant implies one's connections reach far and wide. Exotic goods and coin aplenty find their way into your pockets. `+1` EMP, `+2` Interaction.
+
+##### Enforcer
+
+The shady underworld is an opportunity for those with the skills and wit to navigate its perils. `+2 XP` Sleight of hand, `+1 XP` Throwing.
+
+##### Assassin
+
+The unseen blade in the night, the assassin is a dark instrument of the will of the underworld. `+1` DEX, `+2 XP` Forgery/disguise.
+
+##### Monastery
+
+An austere and forbidding place for the study of the divine, often located in inaccessible places. TODO.
+
+##### Priest
+
+Ordained in the Light of the Divine, a Priest commands fear in the hearts of sinners, and no one is without sin. `+1` WIL, TODO.
+
+#### Adventuring
+
+![Adventuring](../assets/lifepath/adventuring.png)
+
+##### Wilderness
+
+The harsh wilderness has many lessons to those who survive its unforgiving tutelage. `+2 XP` Investigation/tracking.
+
+##### Wastelands
+
+The desolate places of the world that forces both natural and unnatural &mdash; those of the great war &mdash; have left all but lifeless. `+2 XP` Marksman, `+1 XP` Evasion.
+
+##### Ranger
+
+Those rugged individuals who have mastered the wastelands and have skill with bow and arrow are called Rangers. `+1` Awareness, `+1` Endurance. Increases chance to discover *Ancient Ruins* by `1`.
+
+##### Faraway Lands
+
+Many exotic lands await the intrepid adventurer with rich experiences and dangers. `+2 XP` Trauma treatment.
+
+##### Ancient Ruins
+
+Untold treasures of the ancient world are said to be found within the halls these relics. Roll on the Jackpot table.
+
+#### War
+
+![War](../assets/lifepath/war.png)
+
+##### War
+
+War is a dirty dangerous business, but many things can be learned on the battlefield. Still, victory and defeat do not depend on one person. `+2 XP` Weapon-and-shield.
+
+##### Drifter
+
+Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least XP in.
+
+##### Slave Pit
+
+The unfortunate warrior on the losing side of a war may find themselves in a slave pit, toiling in terrible conditions under the whip of the victors. `+1` Fortitude, `+1` Evasion.
+
+##### Veteran
+
+Those on the victor's side in a war mostly become Veterans, hardened by their experiences. `+2 XP` Stabilization, `+1` wealth.
+
+##### Captain
+
+Some of those who are lucky enough to be on the winning side, and have distinguished themselves, find rank and prestige. Mastercrafted(16) weapon, `+2` wealth.
+
 ## Skills
 
 Most character actions are resolved through the application of skills.

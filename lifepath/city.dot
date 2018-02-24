@@ -1,0 +1,60 @@
+digraph {
+    graph [compound=true, layout=dot, overlap=false, bgcolor="#f2f2f2"];
+    node [style=filled, color="#212121", fontcolor="#ffffff"];
+
+    subgraph cluster_city {
+        label="Major City";
+
+        "City" [shape=box];
+
+        "City" -> city_college_loiter [label="Study Arcana"];
+        city_college_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_college_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="1-2"];
+        city_college_loiter -> "Arx Arcanum" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Arx Arcanum" -> college_scholar_college [label="Mastery"];
+        college_scholar_college [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        college_scholar_college -> "Arx Arcanum" [style=dashed, arrowhead=empty, label="1-3"];
+        college_scholar_college -> "Scholar" [style=dashed, arrowhead=empty, label="4"];
+
+        "City" -> city_monastery_loiter [label="Study Faith"];
+        city_monastery_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_monastery_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="1-2"];
+        city_monastery_loiter -> "Monastery" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Monastery" -> monastery_priest_monastery [label="Ordainment"];
+        monastery_priest_monastery [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        monastery_priest_monastery -> "Monastery" [style=dashed, arrowhead=empty, label="1-3"];
+        monastery_priest_monastery -> "Priest" [style=dashed, arrowhead=empty, label="4"];
+
+        "City" -> city_gladiator_loiter [label="Bloodsport"];
+        city_gladiator_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_gladiator_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="1-2"];
+        city_gladiator_loiter -> "Gladiator" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Gladiator" -> gladiator_chamption_gladiator [label="Fame"];
+        gladiator_chamption_gladiator [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        gladiator_chamption_gladiator -> "Gladiator" [style=dashed, arrowhead=empty, label="1-3"];
+        gladiator_chamption_gladiator -> "Champion" [style=dashed, arrowhead=empty, label="4"];
+
+        "City" -> city_enforcer_loiter [label="Underworld"];
+        city_enforcer_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_enforcer_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="1-2"];
+        city_enforcer_loiter -> "Enforcer" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Enforcer" -> enforcer_assassin_enforcer [label="Wetwork"];
+        enforcer_assassin_enforcer [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        enforcer_assassin_enforcer -> "Enforcer" [style=dashed, arrowhead=empty, label="1-3"];
+        enforcer_assassin_enforcer -> "Assassin" [style=dashed, arrowhead=empty, label="4"];
+
+        "City" -> city_trader_loiter [label="Trade"];
+        city_trader_loiter [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        city_trader_loiter -> "Loiter" [style=dashed, arrowhead=empty, label="1-2"];
+        city_trader_loiter -> "Trader" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Trader" -> trader_merchant_trader [label="Big Money"];
+        trader_merchant_trader [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        trader_merchant_trader -> "Trader" [style=dashed, arrowhead=empty, label="1-3"];
+        trader_merchant_trader -> "Merchant" [style=dashed, arrowhead=empty, label="4"];
+    }
+}

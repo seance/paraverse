@@ -1,0 +1,33 @@
+digraph {
+    graph [compound=true, layout=dot, overlap=false, bgcolor="#f2f2f2"];
+    node [style=filled, color="#212121", fontcolor="#ffffff"];
+
+    subgraph cluster_war {
+        label="War";
+
+        "War" -> war_won_lost [label="Battles"];
+        war_won_lost [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+
+        "Defeat" [shape=box];
+
+        "Defeat" -> defeat_drifter_slave [label="Punishment"];
+        defeat_drifter_slave [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        defeat_drifter_slave -> "Slave Pit" [style=dashed, arrowhead=empty, label="1-3"];
+        defeat_drifter_slave -> "Drifter" [style=dashed, arrowhead=empty, label="4"];
+
+        "Slave Pit" -> slave_drifter_slave [label="Escape"];
+        slave_drifter_slave [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        slave_drifter_slave -> "Slave Pit" [style=dashed, arrowhead=empty, label="1-2"];
+        slave_drifter_slave -> "Drifter" [style=dashed, arrowhead=empty, label="3-4"];
+
+        "Victory" [shape=box];
+
+        "Victory" -> victory_veteran_captain [label="Rewards"];
+        victory_veteran_captain [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
+        victory_veteran_captain -> "Veteran" [style=dashed, arrowhead=empty, label="1-3"];
+        victory_veteran_captain -> "Captain" [style=dashed, arrowhead=empty, label="4"];
+
+        war_won_lost -> "Defeat" [style=dashed, arrowhead=empty, label="1-2"];
+        war_won_lost -> "Victory" [style=dashed, arrowhead=empty, label="3-4"];
+    }
+}
