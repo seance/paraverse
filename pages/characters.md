@@ -85,13 +85,13 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 Character creation proceeds with the following steps.
 
-1. Select your character's race. Record the racial stat modifiers and traits on your character sheet. Record your primary stats.
+1. Select your character's race. Record any racial traits on your character sheet.
 1. Select a name and gender for your character.
-1. Perform the [life path](#life-path) process.
-1. Derive and record your secondary stats.
-1. Record your base skill values.
-1. Assign modifiers and XP points from your life path.
+1. Perform the [life path](#life-path) process, assigning modifiers.
+1. Record your primary stats. Derive and record your secondary stats.
+1. Record your base skill modifier values, derived from primary stats.
 1. Assign XP points from group experience pool.
+1. Calculate and record skill modifier values.
 1. Acquire abilities based on your XP distribution.
 1. Purchase starting equipment.
 1. Bonus: Find a portrait image and print your [character card](game-props#character-card).
@@ -133,7 +133,7 @@ Your choices in following the arrows may represent what your character desires, 
 During the life path, there are certain restrictions to bonuses gained.
 - Primary stat values may change a maximum of `1` point
 - Secondary stat values may change a maximum of `2` points
-- Skills may gain a maximum of `5 XP`
+- Skills may gain a maximum of `+5`
 - Bonuses to other life path `d4` checks have maximum `+1`
 
 #### Place of Origin
@@ -142,19 +142,19 @@ During the life path, there are certain restrictions to bonuses gained.
 
 ##### Urchin
 
-Life as a young street urchin. `+2 XP` Sneaking. Increases chance to become an *Enforcer* in City by `1`.
+Life as a young street urchin. `+2` Sneaking. Increases chance to become an *Enforcer* in City by `1`.
 
 ##### Thief
 
-From a street urchin to nimble burglar in the night. `+1 XP` Lock picking, `+1 XP` Acrobatics. Increases chance to become *Assassin* in City by `1`.
+From a street urchin to nimble burglar in the night. `+1` Lock picking, `+1` Acrobatics. Increases chance to become *Assassin* in City by `1`.
 
 ##### Brawler
 
-Playing fisticuffs for coin and a bit of wrestling. `+2 XP` Athletics. Increases chance to become *Gladiator* in City by `1`.
+Playing fisticuffs for coin and a bit of wrestling. `+2` Athletics. Increases chance to become *Gladiator* in City by `1`.
 
 ##### Fighter
 
-Picking up the sword or axe comes easier with a big of fighting experience. `+1 XP` One-handed, `+1 XP` Two-handed. Increases chance to become *Champion* in City by `1`.
+Picking up the sword or axe comes easier with a big of fighting experience. `+1` One-handed, `+1` Two-handed. Increases chance to become *Champion* in City by `1`.
 
 ##### Student
 
@@ -174,11 +174,11 @@ Discovering the Divine Light and its ways. TODO. Increases chance to become *Pri
 
 ##### Apprentice
 
-Learning a trade is best done at a young age. `+2 XP` Field repair. Increases chance to become *Trader* in City by `1`.
+Learning a trade is best done at a young age. `+2` Field repair. Increases chance to become *Trader* in City by `1`.
 
 ##### Craftsman
 
-Honing skills as a master craftsman. `+1` Traps/devices, `+1 XP` Mercantile, `+1` wealth. Increases chance to become *Merchant* in City by `1`.
+Honing skills as a master craftsman. `+1` Traps/devices, `+1` Mercantile, `+1` [wealth](wealth#wealth-level). Increases chance to become *Merchant* in City by `1`.
 
 #### Major City
 
@@ -186,7 +186,7 @@ Honing skills as a master craftsman. `+1` Traps/devices, `+1 XP` Mercantile, `+1
 
 ##### Loiter
 
-Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least XP in.
+Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2` to any skill in the skillset you have least bonuses in.
 
 ##### Arx Arcanum
 
@@ -198,15 +198,15 @@ Those who master the arcane arts are both feared and respected. `+1` COG, TODO.
 
 ##### Gladiator
 
-Fighting in the Arena is dangerous but can be profitable and a valuable learning opportunity. `+2 XP` One-handed, `+2` wealth.
+Fighting in the Arena is dangerous but can be profitable and a valuable learning opportunity. `+2` One-handed, `+2` [wealth](wealth#wealth-level).
 
 ##### Champion
 
-Only those with determination and accomplished skill in combat, but also a flair for the dramatic become Champions. `+1` PHY, `+2 XP` Two-handed.
+Only those with determination and accomplished skill in combat, but also a flair for the dramatic become Champions. `+1` PHY, `+2` Two-handed.
 
 ##### Trader
 
-Those with a head for numbers and a good eye for value can turn a hefty profit in the City. `+2 XP` Mercantile, `+3` wealth.
+Those with a head for numbers and a good eye for value can turn a hefty profit in the City. `+2` Mercantile, `+3` [wealth](wealth#wealth-level).
 
 ##### Merchant
 
@@ -214,11 +214,11 @@ To call oneself a Merchant implies one's connections reach far and wide. Exotic 
 
 ##### Enforcer
 
-The shady underworld is an opportunity for those with the skills and wit to navigate its perils. `+2 XP` Sleight of hand, `+1 XP` Throwing.
+The shady underworld is an opportunity for those with the skills and wit to navigate its perils. `+2` Sleight of hand, `+1` Throwing.
 
 ##### Assassin
 
-The unseen blade in the night, the assassin is a dark instrument of the will of the underworld. `+1` DEX, `+2 XP` Forgery/disguise.
+The unseen blade in the night, the assassin is a dark instrument of the will of the underworld. `+1` DEX, `+2` Forgery/disguise.
 
 ##### Monastery
 
@@ -234,11 +234,11 @@ Ordained in the Light of the Divine, a Priest commands fear in the hearts of sin
 
 ##### Wilderness
 
-The harsh wilderness has many lessons to those who survive its unforgiving tutelage. `+2 XP` Investigation/tracking.
+The harsh wilderness has many lessons to those who survive its unforgiving tutelage. `+2` Investigation/tracking.
 
 ##### Wastelands
 
-The desolate places of the world that forces both natural and unnatural &mdash; those of the great war &mdash; have left all but lifeless. `+2 XP` Marksman, `+1 XP` Evasion.
+The desolate places of the world that forces both natural and unnatural &mdash; those of the great war &mdash; have left all but lifeless. `+2` Marksman, `+1` Evasion.
 
 ##### Ranger
 
@@ -246,7 +246,7 @@ Those rugged individuals who have mastered the wastelands and have skill with bo
 
 ##### Faraway Lands
 
-Many exotic lands await the intrepid adventurer with rich experiences and dangers. `+2 XP` Trauma treatment.
+Many exotic lands await the intrepid adventurer with rich experiences and dangers. `+2` Trauma treatment.
 
 ##### Ancient Ruins
 
@@ -258,11 +258,11 @@ Untold treasures of the ancient world are said to be found within the halls thes
 
 ##### War
 
-War is a dirty dangerous business, but many things can be learned on the battlefield. Still, victory and defeat do not depend on one person. `+2 XP` Weapon-and-shield.
+War is a dirty dangerous business, but many things can be learned on the battlefield. Still, victory and defeat do not depend on one person. `+2` Weapon-and-shield.
 
 ##### Drifter
 
-Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least XP in.
+Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2` to any skill in the skillset you have least bonuses in.
 
 ##### Slave Pit
 
@@ -270,11 +270,27 @@ The unfortunate warrior on the losing side of a war may find themselves in a sla
 
 ##### Veteran
 
-Those on the victor's side in a war mostly become Veterans, hardened by their experiences. `+2 XP` Stabilization, `+1` wealth.
+Those on the victor's side in a war mostly become Veterans, hardened by their experiences. `+2` Stabilization, `+1` [wealth](wealth#wealth-level).
 
 ##### Captain
 
-Some of those who are lucky enough to be on the winning side, and have distinguished themselves, find rank and prestige. Mastercrafted(16) weapon, `+2` wealth.
+Some of those who are lucky enough to be on the winning side, and have distinguished themselves, find rank and prestige. Mastercrafted(16) weapon, `+2` [wealth](wealth#wealth-level).
+
+### Starting Equipment
+
+Each character starts with `2` [wealth](wealth#wealth-level) and whatever earned during life path.
+
+Starting equipment purchases can be performed from the following table.
+
+| Equipment | Cost |
+|-|-:|
+| Any weapon | 1 |
+| Any shield | 1 |
+| Light armor (AV 1) | 1 |
+| Medium armor (AV 4) | 2 |
+| Heavy armor (AV 7) | 3 |
+
+All starting items have durability `12`, unless otherwise specified.
 
 ## Skills
 
