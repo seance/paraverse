@@ -23,8 +23,9 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Engagement and Disengaging](pages/combat#engagement-and-disengaging)
     - [Incapacitation](pages/combat#incapacitation)
     - [Dying and Death](pages/combat#dying-and-death)
-- [Sorcery and Divinity](#TODO)
-    - TODO
+- [Sorcery and Divinity](pages/sorcery-and-divinity)
+    - [Sorcery and Spellcasting](pages/sorcery-and-divinity#sorcery-and-spellcasting)
+    - [Divinity and Divine Prayer](pages/sorcery-and-divinity#divinity-and-divine-prayer)
 - [Time and Space](pages/time-and-space)
     - [Time Frames](pages/time-and-space#time-frames)
     - [Space aka Maps](pages/time-and-space#space-aka-maps)
