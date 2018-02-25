@@ -413,6 +413,7 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 | Utility | XP | Description |
 |-|-:|-|
 | TODO | TODO | TODO |
+| Eagle Eye | | Awareness `+2`. |
 
 ## Non-Player Characters
 
