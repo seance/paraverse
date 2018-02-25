@@ -360,7 +360,7 @@ Skills are divided into categories called skillsets. Some skills have associated
 |-|-|-|-|
 | Sneaking | DEX | *Stealth.* *Physical.* Move without being noticed. [Opposed](#opposed-skill-resolution): Awareness. See NPC [alertness](#npc-alertness). | **Partial:** Moved to destination, but cause [disturbance](#disturbance). **Failure:** Noticeable mid-movement. |
 | Lock picking | DEX | *Stealth.* *Manual.* Silently pick locks on doors etc. | **Partial:** Lock unpicked, cause [disturbance](#disturbance), can retry. **Failure:** Lock jammed and unpickable, cause [disturbance](#disturbance).
-| Sleight of hand | DEX | *Stealth.* *Manual.* Pick pockets, plant objects on persons, conceal weapons etc. See NPC [alertness](#npc-alertness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-attempt. |
+| Sleight of hand | DEX | *Stealth.* *Manual.* Pick pockets, plant objects on persons, conceal weapons etc. [Opposed](#opposed-skill-resolution): Awareness. See NPC [alertness](#npc-alertness). | **Partial:** Failed but unnoticed. Can retry with [disadvantage](#advantage-and-disadvantage). **Failure:** Noticed mid-attempt. |
 | Acrobatics | DEX | *Physical.* Scaling/climbing, tightrope walking, contortionism etc. | **Partial:** Stage fright, can retry. **Failure:** Fall, get stuck etc. |
 | Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. | **Partial:** Failed, can retry. **Failure:** Failed, trap sprung/device malfunction. |
 | Forgery/disguise | PER | Forge or identify a forged document or disguise a person. [Opposed](#opposed-skill-resolution): Forgery/disguise. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
