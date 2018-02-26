@@ -209,4 +209,4 @@ A dying character can be stabilized using the [Stabilization](characters#list-of
 
 [&laquo; Table of Contents](..)
 
-[&raquo; Sorcery and Divinity](#TODO)
+[&raquo; Sorcery and Divinity](sorcery-and-divinity)
