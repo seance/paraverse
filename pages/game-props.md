@@ -18,6 +18,8 @@ Character sheet is where all information concerning a single player character is
 - Armor
 - Abilities
 - Skills
+- Current fatigue
+- Current effects
 
 ## Group Sheet
 
