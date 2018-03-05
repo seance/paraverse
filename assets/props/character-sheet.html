@@ -1,228 +1,749 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Halant|UnifrakturMaguntia" rel="stylesheet">
-        <style>
-html, body {
-    font-family: 'Halant';
-    font-weight: 400;
-    padding: 0;
-    margin: 0;
+<head>
+	<meta charset="utf-8">
+	<title>Grid</title>
+	<link href="https://fonts.googleapis.com/css?family=Halant|UnifrakturMaguntia" rel="stylesheet">
+	<style>
+body {
+	font-family: Halant;
+	line-height: 1.2;
+	background-color: gray;
+	padding: 0;
+	margin: 0;
 }
-
-.title {
-    font-family: 'UnifrakturMaguntia';
-    flex: auto;
-}
-
-.version {
-    text-transform: uppercase;
-}
-
 .sheet {
-    display: grid;
-    grid: repeat(8, auto) / repeat(6, 1fr);
-    align-content: start;
-    grid-gap: 10px;
-    width: 210mm;
-    height: 297mm;
-    border: 3px solid gray;
-    overflow: hidden;
-    box-sizing: border-box;
-    padding: 10px;
+	display: grid;
+	grid: "character character character . title title" auto
+				"primary primary secondary secondary fatigue fatigue" auto
+				"lifepath lifepath lifepath equipment equipment equipment" auto
+				"martial martial martial cnd cnd cnd" auto
+				"util util util sorcery sorcery sorcery"
+				"divinity divinity divinity abilities abilities abilities" auto
+				/ 1fr 1fr 1fr 1fr 1fr 1fr;
+	align-content: start;
+	grid-gap: 2mm;
+	width: 210mm;
+	height: 297mm;
+	background-color: white;
+	padding: 2mm;
+	margin: 20px;
 }
-
-.sheet > header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-row: 1 / 2;
-    grid-column: 1 / 7;
+.character {
+	grid-area: character;
 }
-
-.character-box {
-    grid-row: 2 / 3;
-    grid-column: 1 / 4;
+.title {
+	grid-area: title;
+	justify-self: end;
+	text-align: center;
+	margin: 0 auto;
 }
-.primary-box {
-    grid-row: 3 / 4;
-    grid-column: 1 / 3;
+.title .paraverse {
+	font-family: UnifrakturMaguntia;
+	font-size: 2.5rem;
 }
-.secondary-box {
-    grid-row: 3 / 4;
-    grid-column: 3 / 5;
+.title .version {
+	font-variant: small-caps;
 }
-.fatigue-box {
-    grid-row: 3 / 4;
-    grid-column: 5 / 7;
+.primary {
+	grid-area: primary;
 }
-.lifepath-box {
-    grid-row: 4 / 6;
-    grid-column: 1 / 4;
+.secondary {
+	grid-area: secondary;
 }
-.weapons-box {
-    grid-row: 4 / 5;
-    grid-column: 4 / 7;
+.fatigue {
+	grid-area: fatigue;
 }
-.armor-box {
-    grid-row: 5 / 6;
-    grid-column: 4 / 7;
+.lifepath {
+	grid-area: lifepath;
 }
-.skills-box {
-    grid-row: 6 / 7;
-    grid-column: 1 / 7;
+.equipment {
+	grid-area: equipment;
 }
-.abilities-box {
-    grid-row: 7 / 8;
-    grid-column: 1 / 7;
+.martial {
+	grid-area: martial;
 }
-
+.cnd {
+	grid-area: cnd;
+}
+.util {
+	grid-area: util;
+}
+.sorcery {
+	grid-area: sorcery;
+}
+.divinity {
+	grid-area: divinity;
+}
+.abilities {
+	grid-area: abilities;
+}
 .box {
-    background-color: #ddd;
-    box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
 }
-.box > header {
-    display: inline-block;
-    color: white;
-    background: #212121;
-    padding: 0 10px;
+.box-head {
+	height: auto;
+	align-self: start;
+	color: white;
+	font-variant: small-caps;
+	background-color: black;
+	padding: 1mm 2mm;
 }
-.box > main {
-    border: 2px solid #212121;
+.box-body {
+	flex: auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 1mm;
 }
-        </style>
-    </head>
-    <body>
-        <article class="sheet">
-            <header>
-                <h1 class="title">Paraverse</h1>
-                <div class="version">Character sheet v0.1</div>
-            </header>
-
-            <section class="box character-box">
-                <header>
-                    Character
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box primary-box">
-                <header>
-                    Primary
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box secondary-box">
-                <header>
-                    Secondary
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box fatigue-box">
-                <header>
-                    Fatigue
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box lifepath-box">
-                <header>
-                    Life path
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box weapons-box">
-                <header>
-                    Weapons
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box armor-box">
-                <header>
-                    Armor
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box abilities-box">
-                <header>
-                    Abilities
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-            <section class="box skills-box">
-                <header>
-                    Skills
-                </header>
-                <main>
-                    Content
-                </main>
-            </section>
-
-        </article>
-    </body>
+.ph {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid black;
+	justify-self: center;
+}
+.ph-label {
+	font-size: 0.6rem;
+	justify-self: center;
+	font-variant: small-caps;
+}
+.abbr {
+	font-variant: small-caps;
+}
+.character-body {
+	display: grid;
+	grid: "name name-ph name-ph name-ph" auto
+				"race race-ph gender gender-ph" auto
+				/ 1fr 10fr 1fr 10fr;
+	grid-gap: 1mm;
+}
+.primary-body {
+	display: grid;
+	grid: repeat(8, auto) / auto auto 1fr auto 1fr 1fr 1fr;
+	grid-gap: 1mm;
+}
+.secondary-body {
+	display: grid;
+	grid: repeat(7, auto) / auto 1fr auto 1fr 1fr 1fr;
+	grid-gap: 1mm;
+}
+.lifepath-body {
+	display: grid;
+	grid: repeat(10, auto) / 5mm auto;
+}
+.lifepath-body .year {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 1rem;
+	height: 1rem;
+	font-size: 0.7rem;
+	color: white;
+	background-color: black;
+	border-radius: 50%;
+	margin: 0.5mm 0;
+}
+.equipment-body {
+	display: grid;
+	grid: repeat(6, auto) / auto 5fr 1fr 2fr 1fr 2fr;
+	grid-gap: 1mm;
+}
+.xp {
+	display: flex;
+	flex-direction: row;
+}
+.skillset-body {
+	display: grid;
+	grid: repeat(2, auto) / minmax(30%, auto) auto 1fr auto 1fr 1fr 1fr 1fr;
+	grid-gap: 1mm;
+}
+.abilities-body {
+	display: grid;
+	grid: repeat(4, 1rem) / auto auto auto;
+	grid-gap: 1mm;
+}
+	</style>
+</head>
+	<div class="sheet">
+		<div class="box character">
+			<div class="box-head">Character</div>
+			<div class="box-body character-body">
+				<div style="grid-area: name;">Name</div>
+				<div style="grid-area: name-ph;" class="ph"></div>
+				<div style="grid-area: race;">Race</div>
+				<div style="grid-area: race-ph;" class="ph"></div>
+				<div style="grid-area: gender;">Gender</div>
+				<div style="grid-area: gender-ph;" class="ph"></div>
+			</div>
+		</div>
+		<div class="box title">
+			<div class="paraverse">Paraverse</div>
+			<div class="version">Character Sheet v0.2</div>
+		</div>
+		<div class="box primary">
+			<div class="box-head">Primary</div>
+			<div class="box-body">
+				<div class="primary-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Race</div>
+					<div class="ph-label">Life</div>
+					<div class="ph-label">Other</div>
+					<div>Physique</div>
+					<div class="abbr">Phy</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Dexterity</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Constitution</div>
+					<div class="abbr">Con</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Willpower</div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Cognition</div>
+					<div class="abbr">Cog</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Empathy</div>
+					<div class="abbr">Emp</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Perception</div>
+					<div class="abbr">Per</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box secondary">
+			<div class="box-head">Secondary</div>
+			<div class="box-body">
+				<div class="secondary-body">
+					<div style="grid-area: 1 / span 3"></div>
+					<div class="ph-label">Base</div>
+					<div class="ph-label">Life</div>
+					<div class="ph-label">Other</div>
+					<div>Endurance</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Fortitude</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Wield Limit</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Critical Limit</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Spell Memory</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Spell Sustain</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box fatigue">
+			<div class="box-head">Fatigue &amp; Effects</div>
+			<div class="box-body"></div>
+		</div>
+		<div class="box lifepath">
+			<div class="box-head">Life Path</div>
+			<div class="box-body">
+				<div class="lifepath-body">
+					<div class="year">1</div>
+					<div class="ph"></div>
+					<div class="year">2</div>
+					<div class="ph"></div>
+					<div class="year">3</div>
+					<div class="ph"></div>
+					<div class="year">4</div>
+					<div class="ph"></div>
+					<div class="year">5</div>
+					<div class="ph"></div>
+					<div class="year">6</div>
+					<div class="ph"></div>
+					<div class="year">7</div>
+					<div class="ph"></div>
+					<div class="year">8</div>
+					<div class="ph"></div>
+					<div class="year">9</div>
+					<div class="ph"></div>
+					<div class="year">10</div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box equipment">
+			<div class="box-head">Equipment</div>
+			<div class="box-body">
+				<div class="equipment-body">
+					<div style="grid-area: 1 / span 2"></div>
+					<div class="ph-label">Base</div>
+					<div class="ph-label">Type</div>
+					<div class="ph-label">Durab</div>
+					<div class="ph-label">Tally</div>
+					<div>Primary</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Secondary</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Shield</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Ranged</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Sidearm</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Armor</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box martial">
+			<div class="box-head">Martial</div>
+			<div class="box-body">
+				<div class="skillset-body martial-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Stat</div>
+					<div class="ph-label">XP</div>
+					<div class="ph-label">XB</div>
+					<div class="ph-label">Other</div>
+					<div>One-handed</div>
+					<div class="abbr">Phy</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Two-handed</div>
+					<div class="abbr">Phy</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Weapon-and-shield</div>
+					<div class="abbr">Phy</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Marksman</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Throwing</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Evasion</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Athletics</div>
+					<div class="abbr">Phy</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box cnd">
+			<div class="box-head">Cloak-and-dagger</div>
+			<div class="box-body">
+				<div class="skillset-body cnd-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Stat</div>
+					<div class="ph-label">XP</div>
+					<div class="ph-label">XB</div>
+					<div class="ph-label">Other</div>
+					<div>Sneaking</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Lock picking</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Sleight of hand</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Acrobatics</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Traps/devices</div>
+					<div class="abbr">Dex</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Forgery/disguise</div>
+					<div class="abbr">Per</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box util">
+			<div class="box-head">Utility</div>
+			<div class="box-body">
+				<div class="skillset-body utility-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Stat</div>
+					<div class="ph-label">XP</div>
+					<div class="ph-label">XB</div>
+					<div class="ph-label">Other</div>
+					<div>Stabilization</div>
+					<div class="abbr">Cog</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Trauma treatment</div>
+					<div class="abbr">Cog</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Interaction</div>
+					<div class="abbr">Emp</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Mercantile</div>
+					<div class="abbr">Emp</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Investigation/tracking</div>
+					<div class="abbr">Per</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div>Field repair</div>
+					<div class="abbr">Per</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box sorcery">
+			<div class="box-head">Sorcery</div>
+			<div class="box-body">
+				<div class="skillset-body sorcery-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Stat</div>
+					<div class="ph-label">XP</div>
+					<div class="ph-label">XB</div>
+					<div class="ph-label">Other</div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box divinity">
+			<div class="box-head">Divinity</div>
+			<div class="box-body">
+				<div class="skillset-body divinity-body">
+					<div style="grid-area: 1 / span 4"></div>
+					<div class="ph-label">Stat</div>
+					<div class="ph-label">XP</div>
+					<div class="ph-label">XB</div>
+					<div class="ph-label">Other</div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="abbr">Wil</div>
+					<div class="ph"></div>
+					<div>=</div>
+					<div class="ph"></div>
+					<div class="xp">
+						<span>(</span>
+						<div class="ph"></div>
+						<span>)</span>
+					</div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+		<div class="box abilities">
+			<div class="box-head">Abilities</div>
+			<div class="box-body">
+				<div class="abilities-body">
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+					<div class="ph"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </html>
-
-<!--
-Paraverse
-
-Name: Jimbob
-Race: Gray Elf Gender: Male
-
-Primary Stats           Secondary Stats
-Physique     PHY 10     Endurance     10
-Dexterity    DEX 10     Fortitude     10
-Constitution CON 10     Wield         10
-Willpower    WIL 10     Spell memory  1
-Cognition    COG 10     Spell sustain 1
-Empathy      EMP 10     Awareness     10
-Perception   PER 10
-
-Life Path
- 1. Try to do this -> Actually this
- 2. Try to do this -> Actually this
- 3. Try to do this -> Actually this
- 4. Try to do this -> Actually this
- 5. Try to do this -> Actually this
- 6. Try to do this -> Actually this
- 7. Try to do this -> Actually this
- 8. Try to do this -> Actually this
- 9. Try to do this -> Actually this
-10. Try to do this -> Actually this
-
-Weapons & shield
-Primary:   Broadsword 7 B +1 = 11 !==
-Secondary: Warhammer  8 I  _ = 10 !==
-Ranged:    __________ _ _  _ = __
-
-Armor
-Hardened leather      2   Light   !==
-
-Abilities
-Bird call
-
-Martial             Total XP [  ]
-One-handed PHY 0 xp(__)=__ __ = 0
-Two-handed PHY 0 xp(__)=__ __ = 0
--->
