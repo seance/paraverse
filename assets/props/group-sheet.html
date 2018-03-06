@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Group Sheet</title>
+	<link href="https://fonts.googleapis.com/css?family=Halant|UnifrakturMaguntia" rel="stylesheet">
+	<style>
+body {
+    font-family: Halant;
+    line-height: 1.2;
+    background-color: gray;
+    padding: 0;
+    margin: 0;
+}
+.group-sheet {
+    display: grid;
+    grid: ". . . . title title" auto
+        "group group group group group-xp group-xp" auto
+        "quests quests quests quests group-wealth group-wealth" auto
+        "items items items items items items" 1fr
+        / 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: start;
+    grid-gap: 2mm;
+    width: 297mm;
+    height: 210mm;
+    background-color: white;
+    padding: 2mm;
+}
+.group {
+    grid-area: group;
+}
+.title {
+	grid-area: title;
+	justify-self: end;
+	text-align: center;
+	margin: 0 auto;
+}
+.title .paraverse {
+	font-family: UnifrakturMaguntia;
+	font-size: 2.5rem;
+}
+.title .version {
+	font-variant: small-caps;
+}
+.quests {
+    grid-area: quests;
+}
+.group-xp {
+    grid-area: group-xp;
+}
+.group-wealth {
+    grid-area: group-wealth;
+}
+.items {
+    grid-area: items;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+}
+.box-head {
+	height: auto;
+	align-self: start;
+	color: white;
+	font-variant: small-caps;
+	background-color: black;
+	padding: 1mm 2mm;
+}
+.box-body {
+	flex: auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 1mm;
+}
+.ph {
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid black;
+	justify-self: center;
+}
+.ph-label {
+	font-size: 0.6rem;
+	justify-self: center;
+	font-variant: small-caps;
+}
+.justify-left {
+    justify-self: start;
+}
+.checkbox {
+    justify-self: center;
+    height: 1rem;
+    width: 1rem;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.group-body {
+    display: grid;
+    grid: auto repeat(10, 1rem) / 6fr 5fr 10fr 1fr;
+    grid-gap: 1mm;
+}
+.quests-body {
+    display: grid;
+    grid: auto repeat(13, 1rem) / 10fr 1fr 1fr;
+    grid-gap: 1mm;
+}
+.items-body {
+    height: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="group-sheet">
+        <div class="box group">
+            <div class="box-head">Group</div>
+			<div class="box-body">
+                <div class="group-body">
+                    <div class="ph-label justify-left">Character</div>
+                    <div class="ph-label justify-left">Race</div>
+                    <div class="ph-label justify-left">Notes</div>
+                    <div class="ph-label">Dead?</div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="checkbox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box title">
+			<div class="paraverse">Paraverse</div>
+			<div class="version">Group Sheet v0.1</div>
+		</div>
+        <div class="box quests">
+            <div class="box-head">Quests</div>
+			<div class="box-body">
+                <div class="quests-body">
+                    <div class="ph-label justify-left">Quest/Objective</div>
+                    <div class="ph-label">Wealth</div>
+                    <div class="ph-label">XP</div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                    <div class="ph"></div>
+                </div>
+            </div>
+        </div>
+        <div class="box group-xp">
+            <div class="box-head">Experience</div>
+			<div class="box-body">
+                <div class="group-xp-body">
+                </div>
+            </div>
+        </div>
+        <div class="box group-wealth">
+            <div class="box-head">Wealth</div>
+			<div class="box-body">
+                <div class="group-wealth-body">
+                </div>
+            </div>
+        </div>
+        <div class="box items">
+            <div class="box-head">Quest Items &amp; Junk</div>
+			<div class="box-body items-body"></div>
+        </div>
+    </div>
+</body>
+</html>

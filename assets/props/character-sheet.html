@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Grid</title>
+	<title>Character Sheet</title>
 	<link href="https://fonts.googleapis.com/css?family=Halant|UnifrakturMaguntia" rel="stylesheet">
 	<style>
 body {
@@ -12,22 +12,21 @@ body {
 	padding: 0;
 	margin: 0;
 }
-.sheet {
+.character-sheet {
 	display: grid;
 	grid: "character character character . title title" auto
-				"primary primary secondary secondary fatigue fatigue" auto
-				"lifepath lifepath lifepath equipment equipment equipment" auto
-				"martial martial martial cnd cnd cnd" auto
-				"util util util sorcery sorcery sorcery"
-				"divinity divinity divinity abilities abilities abilities" auto
-				/ 1fr 1fr 1fr 1fr 1fr 1fr;
+		"primary primary secondary secondary fatigue fatigue" auto
+		"lifepath lifepath lifepath equipment equipment equipment" auto
+		"martial martial martial cnd cnd cnd" auto
+		"util util util sorcery sorcery sorcery"
+		"divinity divinity divinity abilities abilities abilities" auto
+		/ 1fr 1fr 1fr 1fr 1fr 1fr;
 	align-content: start;
 	grid-gap: 2mm;
 	width: 210mm;
 	height: 297mm;
 	background-color: white;
 	padding: 2mm;
-	margin: 20px;
 }
 .character {
 	grid-area: character;
@@ -164,7 +163,8 @@ body {
 }
 	</style>
 </head>
-	<div class="sheet">
+<body>
+	<div class="character-sheet">
 		<div class="box character">
 			<div class="box-head">Character</div>
 			<div class="box-body character-body">
@@ -746,4 +746,5 @@ body {
 			</div>
 		</div>
 	</div>
+<body>
 </html>
