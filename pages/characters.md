@@ -136,6 +136,8 @@ During the life path, there are certain restrictions to bonuses gained.
 - Skills may gain a maximum of `+5 XP` bonus
 - Bonuses to other life path `d4` checks have maximum `+1`
 
+The [Half Round Up](quests-and-experience#half-round-up) rule is suspended during the life path process.
+
 #### Place of Origin
 
 ![Place of Origin](../assets/lifepath/origin.png)
