@@ -178,7 +178,7 @@ A piece of equipment in disrepair can be restored to full functionality using th
 
 Repairing a piece does not restore its lost durability &mdash; this effect is permanent.
 
-The target difficulty for repairing a single piece of equipment is its current durability value, to a minimum of zero.
+The target difficulty for repairing a single piece of equipment is its current durability value, to a minimum of `10`.
 
 ## Equipment Special Traits
 
@@ -188,8 +188,8 @@ In addition to normal equipment traits, there are also special traits that refle
 
 Elven equipment is uncannily light but no less durable.
 
-- Elven weapons have a wield point cost of one less than their base damage.
-- Elven Medium armor counts as Light armor for restrictiveness
+- Elven weapons have a [wield point cost](#wield-limits) of one less than their base damage.
+- Elven Medium armor counts as Light armor for [restrictiveness](#armor-weight-classes)
 
 ### Dwarven Equipment
 
@@ -201,8 +201,8 @@ Dwarven equipment is exceptionally durable.
 
 Gnomish equipment is ingeniously constructed.
 
-- Gnomish weapons trigger Critical hits on both `19` and `20`
-- Gnomish Heavy armor counts as Medium armor for restrictiveness
+- Gnomish weapons trigger [Critical hits](combat#critical-hit) on both `19` and `20`
+- Gnomish Heavy armor counts as Medium armor for [restrictiveness](#armor-weight-classes)
 
 ### Enchanted Equipment
 
