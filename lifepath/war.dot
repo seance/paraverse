@@ -17,8 +17,8 @@ digraph {
 
         "Slave Pit" -> slave_drifter_slave [label="Escape"];
         slave_drifter_slave [label="d4", shape=diamond, style=filled, color="#0090ff", width=0.4, height=0.4, fixedsize=true];
-        slave_drifter_slave -> "Slave Pit" [style=dashed, arrowhead=empty, label="1-2"];
-        slave_drifter_slave -> "Drifter" [style=dashed, arrowhead=empty, label="3-4"];
+        slave_drifter_slave -> "Slave Pit" [style=dashed, arrowhead=empty, label="1"];
+        slave_drifter_slave -> "Drifter" [style=dashed, arrowhead=empty, label="2-4"];
 
         "Victory" [shape=box];
 

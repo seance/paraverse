@@ -33,10 +33,14 @@ They can be simple "bonus" tasks that yield rewards in [wealth](wealth) or [equi
 
 Suggested XP rewards for completing secondary objectives are detailed below.
 
-| Primary objective | Reward XP |
+| Secondary objective | Reward XP |
 |-|-:|
 | Bonus objective | 1 |
 | Story objective | 3-5 |
+
+### Quest Time Limits
+
+Many of the game mechanics rely on resting, which consumes time. Thus, a quest should have a set time limit, which acts as the resource for resting. A time limit need not be restrictive, as simply knowing of a time limit will oftentimes cause the players to not needlessly tarry.
 
 ## Experience and Character Progression
 

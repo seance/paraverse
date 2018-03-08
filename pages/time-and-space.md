@@ -80,6 +80,12 @@ Overland maps do not need to represent actual physical relative locations of pla
 
 TODO Random encounters, blocked passage, resting
 
+#### Finding Places of Interest
+
+The group may have learned the exact location of a place of interest, for example from an NPC. In such case, the group will know the travel time to that destination, and may simply opt to travel there.
+
+In other cases, the group may only have a rumor or a general idea of the location or direction of a point of interest. Then, the group may travel to their best guess of the location and use the [Investigation/tracking](characters#list-of-skills) skill to try to find what they seek. The travel time is decided by the Game Master, as is the difficulty of the investigation check. The investigation check will take one [watch](time-and-space#watches).
+
 ### Local Maps
 
 A local map is a tactical map that represents a location where moment-to-moment adventuring and combat occur.

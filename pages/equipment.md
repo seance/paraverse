@@ -131,14 +131,15 @@ Armor has a Armor Value property, which reduces incoming [damage](combat#attack-
 
 *Medium armor* has the following restrictions.
 
-- *Physical* skills cap at `TODO`
-- *Stealth* skills cap at `TODO`
+- *Physical* skills cap at `+8`
+- *Stealth* skills cap at `+8`
 
 *Heavy armor* has the following restrictions.
 
-- *Physical* skills cap at `TODO`
-- *Stealth* skills cap at `TODO`
-- Awareness caps at `TODO`
+- *Physical* skills cap at `+4`
+- *Stealth* skills cap at `+4`
+- Awareness caps at `+2`
+- Magic caps `TODO`
 
 A skill cap means that the *effective value* of a skill is limited while wearing armor, although the actual skill value is unchanged.
 
@@ -167,9 +168,17 @@ Equipment in disrepair can be restored via a [Field repair](characters#list-of-s
 
 To check whether a piece of equipment becomes in *disrepair*, roll a `d20`. If the roll value is *greater than* the *durability* of the piece of equipment, it becomes in disrepair.
 
-A piece of equipment that fails its disrepair check has its durability value reduced by `1` permanently.
+A piece of equipment that becomes in disrepair has its durability value reduced by `1` permanently.
 
 When it reaches zero, that piece of equipment becomes unusable and broken beyond repair.
+
+### Field Repair Resolution
+
+A piece of equipment in disrepair can be restored to full functionality using the [Field repair](characters#list-of-skills) skill during a [rest](time-and-space#rest) or [camp](time-and-space#camp).
+
+Repairing a piece does not restore its lost durability &mdash; this effect is permanent.
+
+The target difficulty for repairing a single piece of equipment is its current durability value, to a minimum of zero.
 
 ## Equipment Special Traits
 
