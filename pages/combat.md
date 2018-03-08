@@ -155,7 +155,7 @@ See also [critical wound effects](#critical-wound-effects).
 | Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 
-Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [camp](time-and-space#camp).
+Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [trauma treatment resolution](#trauma-treatment-resolution).
 
 | Supercritical Wound | Effect |
 |-|-|
@@ -206,6 +206,25 @@ A dying character can be stabilized using the [Stabilization](characters#list-of
 > **Example**
 >
 > A character takes a knock in the head and becomes incapacitated and bleeding, with 4 current Stamina. As such, they are dying, and must make a death check each watch. The character rolls 10 + 4 = 14, failing their first check.
+
+## Stabilization and Trauma Treatment
+
+### Stabilization Resolution
+
+Bleeding can be staunched using the [Stabilization](characters#list-of-skills) skill during a [rest](time-and-space#rest).
+
+The target difficulty for treating a bleeding wound is `15`.
+
+Once a Stabilization skill check succeeds, the bleeding wound is completely healed at the end of the rest.
+
+### Trauma Treatment Resolution
+
+Critical wounds (not supercritical wounds) can be healed using the [Trauma treatment](characters#list-of-skills) skill during a [camp](time-and-space#camp).
+
+The target difficulty for treating a single critical wound is `15`.
+
+Once a Trauma treatment skill check succeeds, the critical wound is completely healed at the end of the camp.
+
 
 [&laquo; Table of Contents](..)
 

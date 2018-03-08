@@ -76,10 +76,10 @@ Secondary stats are derived from primary stats, but may also have external modif
 |-|:-:|-|
 | Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The "current Endurance" is called Stamina. The "missing Endurance" is called Fatigue. Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
-| Wield | `PHY` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
+| Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
 | Spell memory | `⌊COG / 2⌋`|Number of spells memorizable at once. |
 | Spell sustain | `COG - 10` | Number of sustainable spell points. Minimum zero. |
-| Awareness | `PER` | Passive perception. |
+| Awareness | `PER - 10` | Passive perception. |
 
 ## Character Creation
 
@@ -133,7 +133,7 @@ Your choices in following the arrows may represent what your character desires, 
 During the life path, there are certain restrictions to bonuses gained.
 - Primary stat values may change a maximum of `1` point
 - Secondary stat values may change a maximum of `2` points
-- Skills may gain a maximum of `+5` bonus
+- Skills may gain a maximum of `+5 XP` bonus
 - Bonuses to other life path `d4` checks have maximum `+1`
 
 #### Place of Origin
@@ -142,19 +142,19 @@ During the life path, there are certain restrictions to bonuses gained.
 
 ##### Urchin
 
-Life as a young street urchin. `+2` Sneaking. Increases chance to become an *Enforcer* in City by `1`.
+Life as a young street urchin. `+2 XP` Sneaking. Increases chance to become an *Enforcer* in City by `1`.
 
 ##### Thief
 
-From a street urchin to nimble burglar in the night. `+1` Lock picking, `+1` Acrobatics. Increases chance to become *Assassin* in City by `1`.
+From a street urchin to nimble burglar in the night. `+1 XP` Lock picking, `+1 XP` Acrobatics. Increases chance to become *Assassin* in City by `1`.
 
 ##### Brawler
 
-Playing fisticuffs for coin and a bit of wrestling. `+2` Athletics. Increases chance to become *Gladiator* in City by `1`.
+Playing fisticuffs for coin and a bit of wrestling. `+2 XP` Athletics. Increases chance to become *Gladiator* in City by `1`.
 
 ##### Fighter
 
-Picking up the sword or axe comes easier with a big of fighting experience. `+1` One-handed, `+1` Two-handed. Increases chance to become *Champion* in City by `1`.
+Picking up the sword or axe comes easier with a big of fighting experience. `+1 XP` One-handed, `+1 XP` Two-handed. Increases chance to become *Champion* in City by `1`.
 
 ##### Student
 
@@ -174,11 +174,11 @@ Discovering the Divine Light and its ways. TODO. Increases chance to become *Pri
 
 ##### Apprentice
 
-Learning a trade is best done at a young age. `+2` Field repair. Increases chance to become *Trader* in City by `1`.
+Learning a trade is best done at a young age. `+2 XP` Field repair. Increases chance to become *Trader* in City by `1`.
 
 ##### Craftsman
 
-Honing skills as a master craftsman. `+1` Traps/devices, `+1` Mercantile, `+1` [wealth](wealth#wealth-level). Increases chance to become *Merchant* in City by `1`.
+Honing skills as a master craftsman. `+1 XP` Traps/devices, `+1 XP` Mercantile, `+1` [wealth](wealth#wealth-level). Increases chance to become *Merchant* in City by `1`.
 
 #### Major City
 
@@ -186,7 +186,7 @@ Honing skills as a master craftsman. `+1` Traps/devices, `+1` Mercantile, `+1` [
 
 ##### Loiter
 
-Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2` to any skill in the skillset you have least bonuses in.
+Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least bonuses in.
 
 ##### Arx Arcanum
 
@@ -198,27 +198,27 @@ Those who master the arcane arts are both feared and respected. `+1` COG, TODO.
 
 ##### Gladiator
 
-Fighting in the Arena is dangerous but can be profitable and a valuable learning opportunity. `+2` One-handed, `+2` [wealth](wealth#wealth-level).
+Fighting in the Arena is dangerous but can be profitable and a valuable learning opportunity. `+2 XP` One-handed, `+2` [wealth](wealth#wealth-level).
 
 ##### Champion
 
-Only those with determination and accomplished skill in combat, but also a flair for the dramatic become Champions. `+1` PHY, `+2` Two-handed.
+Only those with determination and accomplished skill in combat, but also a flair for the dramatic become Champions. `+1` PHY, `+2 XP` Two-handed.
 
 ##### Trader
 
-Those with a head for numbers and a good eye for value can turn a hefty profit in the City. `+2` Mercantile, `+3` [wealth](wealth#wealth-level).
+Those with a head for numbers and a good eye for value can turn a hefty profit in the City. `+2 XP` Mercantile, `+3` [wealth](wealth#wealth-level).
 
 ##### Merchant
 
-To call oneself a Merchant implies one's connections reach far and wide. Exotic goods and coin aplenty find their way into your pockets. `+1` EMP, `+2` Interaction.
+To call oneself a Merchant implies one's connections reach far and wide. Exotic goods and coin aplenty find their way into your pockets. `+1` EMP, `+2 XP` Interaction.
 
 ##### Enforcer
 
-The shady underworld is an opportunity for those with the skills and wit to navigate its perils. `+2` Sleight of hand, `+1` Throwing.
+The shady underworld is an opportunity for those with the skills and wit to navigate its perils. `+2 XP` Sleight of hand, `+1 XP` Throwing.
 
 ##### Assassin
 
-The unseen blade in the night, the assassin is a dark instrument of the will of the underworld. `+1` DEX, `+2` Forgery/disguise.
+The unseen blade in the night, the assassin is a dark instrument of the will of the underworld. `+1` DEX, `+2 XP` Forgery/disguise.
 
 ##### Monastery
 
@@ -234,11 +234,11 @@ Ordained in the Light of the Divine, a Priest commands fear in the hearts of sin
 
 ##### Wilderness
 
-The harsh wilderness has many lessons to those who survive its unforgiving tutelage. `+2` Investigation/tracking.
+The harsh wilderness has many lessons to those who survive its unforgiving tutelage. `+2 XP` Investigation/tracking.
 
 ##### Wastelands
 
-The desolate places of the world that forces both natural and unnatural &mdash; those of the great war &mdash; have left all but lifeless. `+2` Marksman, `+1` Evasion.
+The desolate places of the world that forces both natural and unnatural &mdash; those of the great war &mdash; have left all but lifeless. `+2 XP` Marksman, `+1 XP` Evasion.
 
 ##### Ranger
 
@@ -246,7 +246,7 @@ Those rugged individuals who have mastered the wastelands and have skill with bo
 
 ##### Faraway Lands
 
-Many exotic lands await the intrepid adventurer with rich experiences and dangers. `+2` Trauma treatment.
+Many exotic lands await the intrepid adventurer with rich experiences and dangers. `+2 XP` Trauma treatment.
 
 ##### Ancient Ruins
 
@@ -258,19 +258,19 @@ Untold treasures of the ancient world are said to be found within the halls thes
 
 ##### War
 
-War is a dirty dangerous business, but many things can be learned on the battlefield. Still, victory and defeat do not depend on one person. `+2` Weapon-and-shield.
+War is a dirty dangerous business, but many things can be learned on the battlefield. Still, victory and defeat do not depend on one person. `+2 XP` Weapon-and-shield.
 
 ##### Drifter
 
-Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2` to any skill in the skillset you have least bonuses in.
+Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least bonuses in.
 
 ##### Slave Pit
 
-The unfortunate warrior on the losing side of a war may find themselves in a slave pit, toiling in terrible conditions under the whip of the victors. `+1` Fortitude, `+1` Evasion.
+The unfortunate warrior on the losing side of a war may find themselves in a slave pit, toiling in terrible conditions under the whip of the victors. `+1` Fortitude, `+1 XP` Evasion.
 
 ##### Veteran
 
-Those on the victor's side in a war mostly become Veterans, hardened by their experiences. `+2` Stabilization, `+1` [wealth](wealth#wealth-level).
+Those on the victor's side in a war mostly become Veterans, hardened by their experiences. `+2 XP` Stabilization, `+1` [wealth](wealth#wealth-level).
 
 ##### Captain
 
