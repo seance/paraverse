@@ -55,6 +55,18 @@ Generally, [Marksman weapons](equipment#ranged-weapons) can target opponents in 
 
 However, at the Game Master's discretion, other targets can be designated. For example, a Marksman weapon could be used to target an opponent several areas away, if those areas represent locations which are not physically far separated, and provide line of sight. A thrown weapon could also target an area adjacent to your area, for example when there is an elevation difference between the areas.
 
+## Damage Types
+
+| Type | Critical Effect |
+|-|-|
+| Blade | *Physical.* [Locational](#critical-wounds-resolution). |
+| Impact | *Physical.* [Locational](#critical-wounds-resolution). |
+| Pierce | *Physical.* [Locational](#critical-wounds-resolution). |
+| Fire | *Elemental.* [Incineration](#critical-wound-effects). |
+| Frost | *Elemental.* [Frostburn](#critical-wound-effects). |
+| Acid | *Elemental.* [Corrosion](#critical-wound-effects). |
+| Poison | *Elemental.* [Poisoning](#critical-wound-effects). |
+
 ## Combat Resolution Rules
 
 ### Ranged Attack Resolution
@@ -154,6 +166,10 @@ See also [critical wound effects](#critical-wound-effects).
 | Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
 | Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
+| Incineration | Character suffers 2 Pain at each end phase until at zero Stamina, or until the character takes a full round to put out the fire. See also [incapacitation](#incapacitation). |
+| Frostburn | A character cannot regain Stamina through resting while suffering from frostburn. |
+| Corrosion | Armor becomes in disrepair immediately. |
+| Poisoning |Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 
 Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [trauma treatment resolution](#trauma-treatment-resolution).
 

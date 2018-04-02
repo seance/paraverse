@@ -11,7 +11,7 @@ Equipment includes weapons, shields, armor, quest items, and junk carried by cha
 Melee weapons have the following properties.
 
 - Base damage. See [attack damage](combat#attack-damage).
-- Damage type. For future reference.
+- Damage type.
 - Handedness. One-handed weapons can be used with shields.
 - Traits. Modifiers to weapon stats etc.
 
@@ -92,7 +92,7 @@ Shields have a Shield Value property, which has the following functions.
 A character can have at the ready the following weapons.
 
 - Primary melee weapon
-- Secondary melee weapon, if both primary and secondary are one-handed
+- Secondary melee weapon
 - A shield, if secondary weapon is not used
 - A ranged weapon, Throwing or Marksman
 - A small sidearm, either melee or ranged

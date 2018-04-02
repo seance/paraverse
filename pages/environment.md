@@ -117,9 +117,20 @@ Smiths and armorers offer weapons, shields and armor for sale, as well as provid
 >
 > In either case, a piece of equipment in a different category can be rolled up.
 
-#### Temples and Monasteries
+#### Alchemists
 
-Temples and monasteries offer healing and divinely restorative services to travelers who are missing limbs, or even resurrection, if a corpse and some coin is procured.
+- reagents
+- alloys
+
+#### Temples
+
+- elixirs
+- spirits
+- cordials
+
+#### Monasteries
+
+Monasteries offer healing and divinely restorative services to travelers who are missing limbs, or even resurrection, if a corpse and some coin is procured.
 
 Divine acts of restoration and resurrection are not exclusive to the rich &mdash; they simply cost *all* of your [wealth](wealth#wealth-level) &mdash; but you must first conclude a small negotiation.
 
