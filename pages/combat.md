@@ -57,13 +57,13 @@ However, at the Game Master's discretion, other targets can be designated. For e
 
 ## Damage Types
 
-| Type | Critical Effect |
+| Type | Critical Effects |
 |-|-|
 | Blade | *Physical.* [Locational](#critical-wounds-resolution). |
 | Impact | *Physical.* [Locational](#critical-wounds-resolution). |
 | Pierce | *Physical.* [Locational](#critical-wounds-resolution). |
 | Fire | *Elemental.* [Incineration](#critical-wound-effects). |
-| Frost | *Elemental.* [Frostburn](#critical-wound-effects). |
+| Frost | *Elemental.* [Hindering](#critical-wound-effects), [Frostburn](#critical-wound-effects). |
 | Acid | *Elemental.* [Corrosion](#critical-wound-effects). |
 | Poison | *Elemental.* [Poisoning](#critical-wound-effects). |
 
@@ -167,6 +167,7 @@ See also [critical wound effects](#critical-wound-effects).
 | Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 | Incineration | Character suffers 2 Pain at each end phase until at zero Stamina, or until the character takes a full round to put out the fire. See also [incapacitation](#incapacitation). |
+| Hindering | Character cannot move for one round. |
 | Frostburn | A character cannot regain Stamina through resting while suffering from frostburn. |
 | Corrosion | Armor becomes in disrepair immediately. |
 | Poisoning |Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
@@ -179,8 +180,12 @@ Critical wounds can be treated using the [Trauma treatment](characters#list-of-s
 | Crushed Torso | Instant death. |
 | Severed Arm | [Incapacitation](#incapacitation), permanent Fractured Arm effects. |
 | Severed Leg | [Incapacitation](#incapacitation), permanent Fractured Leg effects. |
+| Incineration | Instant death, body burned to cinder. |
+| Forstburn | Instant death, body shattered. |
+| Corrosion | Armor is destroyed, weapons and shields become in disrepair. |
+| Poisoning | [Incapacitation](#incapacitation), become dying. Medical skill checks cannot be used on character while dying. |
 
-Supercritical wounds are beyond the skills of adventurers to treat, but [temples](environment#temples-and-monasteries) may offer restoration and even resurrection services.
+Supercritical wounds are beyond the skills of adventurers to treat, but [monasteries](environment#monasteries) may offer restoration and even resurrection services.
 
 ## Shields
 
@@ -217,7 +222,7 @@ A death check is a roll with Target Difficulty of `15` and is modified by curren
 
 A dying character can be stabilized using the [Stabilization](characters#list-of-skills) skill by another character. See [rest](#time-and-space#rest).
 
-[Temples](environment#temples-and-monasteries) may offer restoration and even resurrection services.
+[Monasteries](environment#monasteries) may offer restoration and even resurrection services.
 
 > **Example**
 >

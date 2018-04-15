@@ -12,9 +12,27 @@ The more esoteric magical realms of Druidism, Dwarven Runecrafting and Gnomish A
 
 ## Memorizing Spells and Prayers
 
+Before spells can be casted or prayers recited, they must be memorized. A character whose [Spell memory](characters#secondary-stats) secondary stat value is `M` can memorize equally many spells or prayers.
+
+Memorizing a new set of spells or prayers can be done during a [rest](time-and-space#rest) or [camp](time-and-space#camp).
+
 ## Sustained Spells and Prayers
 
+A spell or prayer whose Duration is *Sustained(X)*, must be sustained for the spell or prayer to remain in effect. A character whose [Spell sustain](characters#secondary-stats) is `S` can sustain a total of equally many sustain points `X`.
+
+> **Example**
+>
+> A character's Spell sustain value is 4. They could sustain spells with Sustained(1) and Sustained(2), and still have 1 spell sustain point (4 - 1 - 2 = 1) available for another sustained spell.
+
 ## Ritual Spells and Prayers
+
+A spell or prayer with the *Ritual* keyword require a more complex ritual cast or recital. Such spells or prayers take 1 [watch](time-and-space#watches) to cast or recite.
+
+## Concentrating on a Spell or Prayer
+
+Some spells or prayers have duration marked as Concentration. These spells or prayers remain in effect while the caster is actively concentrating.
+
+Taking a critical wound or becoming incapacitated breaks concentration. Only one spell or prayer can be concentrated on at a time.
 
 ## Arcana and Spellcasting
 
@@ -49,20 +67,86 @@ A natural `20` is a success and natural `1` is a failure.
 
 #### Evocation
 
-| Spell | Diff | Target | Materials | Effect |
-|-|-:|-|-|-|
-| Fireball | | Area | | *Sorcery.* *Elemental.* Throw a blazing ball of fire that explodes for `20` points of [Fire](combat#damage-types) damage on contact. Roll Throwing skill, targeting your area or an adjacent area. All characters in the target area must use their Evasion skill against your roll. A successful evasion results in half damage. |
+Evocation is a discipline of Sorcery that focuses on the elemental powers of Fire and Frost and direct manipulation of the physical world. Spells are produced mentally, without the aid of material components, manifesting instantly, but may require physical manipulation in practical applications.
+
+| Evocation | |
+|-|-|
+| Difficulty | |
+| Target | |
+| Duration | |
+| Materials | |
+| Effects | |
+
+| Evocation | Ignition |
+|-|-|
+| Difficulty | |
+| Target | One character, Marksman targeting rules |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Elemental.* TODO Burn one target, autohit |
+
+| Evocation | Fireball |
+|-|-|
+| Difficulty | |
+| Target | One area, marksman rules |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Elemental.* Throw a blazing boulder of fire that explodes for `20` points of [Fire](combat#damage-types) damage on contact. Roll Throwing skill, targeting your area or an adjacent area. All characters in the target area must use their Evasion skill against your roll. A successful evasion results in half damage. Characters staying in cover take half damage. |
+
+| Evocation | Repulse |
+|-|-|
+| Difficulty | |
+| Target | One character in or entering your area |
+| Duration | Concentration |
+| Materials | &mdash; |
+| Effects | While you concentrate on the spell, the target cannot approach to melee engagement range with you, held back by a force emanating from you. |
+
+| Evocation | Telekinetic Hold |
+|-|-|
+| Difficulty | |
+| Target | One character in or entering your area |
+| Duration | Concentration |
+| Materials | &mdash; |
+| Effects | Lift one character into the air and hold them in place. The target makes a Physique save; on a success the spell has the effects of Repulse. While held, the target has disadvantage to Melee and Evasion rolls, and cannot move. |
+
+| Evocation | Shockwave |
+|-|-|
+| Difficulty | |
+| Target | Melee |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Strike a target with a shockwave of psychokinetic force. The target makes a Evasion check against your cast roll. The target takes damage as if struck by a 9 base damage impact weapon. On a hit, the target is flung back one area, or if they are performing a Acrobatics check, they fail it. On a miss, you are disengaged. |
+
+- frost aoe
+- frost aura
 
 #### Abjuration
 
-| Spell | Diff | Target | Materials | Effect |
-|-|-:|-|-|-|
-| Arcane Shield | | Touch | | *Sorcery.* *Sustained(1).* Target is enveloped by a magical barrier that deflects damage. A hit of `10` or more damage will cause the barrier to collapse, while still deflecting `10` points of damage. |
-| Feather Fall | | Touch | | *Sorcery.* Target will float gently to the ground, after which the spell dissipates. |
+Abjuration is the manifestation of Sorcery that is aligned obversely to other magical and fundamental forces. Many spells of this discipline thus can be used to counter and shield from other effects.
+
+| Abjuration | Arcane Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Target is enveloped by a magical barrier that deflects damage. A hit of `10` or more damage will cause the barrier to collapse, while still deflecting `10` points of damage. |
+
+| Abjuration | Feather Fall |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | While airborne |
+| Materials | &mdash; |
+| Effects | Target will float gently to the ground, after which the spell dissipates. |
+
+- wind: self ranged shield disadvantage
+- wind: ranged shield barrier
 
 #### Conjuring
 
 - illusion
+- summoning/planarism
 
 #### Transcendence
 
@@ -70,16 +154,101 @@ A natural `20` is a success and natural `1` is a failure.
 
 #### Druidism
 
+Druidism draws power from the living force of untamed nature through herbs, rituals and blood magic. Nature manifests not as a gentle nurturer, but as a brutal contest for survival, fitness and fertility.
+
+##### Biome Power Level
+
+Druidic magic waxes and wanes in power with the verdancy of the local biome. Each Place of Interest's verdancy is determined by the Game Master. The resulting Biome Power Level is referenced as `BPL` in the spell descriptions.
+
+| Verdancy | BPL |
+|-|-|
+| Barren | 0 |
+| Stunted | 1 |
+| Verdant | 3 |
+| Lush | 5 |
+
+##### Blood Magic
+
+Blood magic changes its nature by the blood used. Blood freely given yields more stable magic, while blood forcibly taken produces more powerful, unpredictable results.
+
+Blood can be harvested from any slain or wounded creature that has blood, or volunteered by any player character at the cost of `1` point of Stamina.
+
+| Druidism | |
+|-|-|
+| Difficulty | |
+| Target | |
+| Duration | |
+| Materials | |
+| Effects | |
+
+| Druidism | Hallucinogens |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | 1 watch |
+| Materials | Salt |
+| Effects | Mix and consume a hallucinogenic concoction which increases your Fortitude by `BPL`. |
+
+| Druidism | Stimulant |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | 1 watch |
+| Materials | Salt |
+| Effects | Mix and consume a stimulating concoction which negates the skill modifier from Fatigue for one watch. |
+
+| Druidism | Healing Herbs |
+|-|-|
+| Difficulty | |
+| Target | One character |
+| Duration | Instant |
+| Materials | Salt |
+| Effects | Prepare and apply a herbal paste that heals one point of Fatigue. |
+
+| Druidism | Barkskin |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | See effects |
+| Materials | Blood |
+| Effects | *Blood magic.* Your skin hardens to a bark-like substance that increases your Armor Value by `BPL`. Only usable while wearing no armor or Light armor. NPC disposition may be lowered while in this state. TODO Blood |
+
+| Druidism | Bloodbriar |
+|-|-|
+| Difficulty | |
+| Target | Any reasonably sized passage |
+| Duration | Permanent |
+| Materials | Blood |
+| Effects | *Blood magic.* Thick, barbed vines sprout out of the ground and block a connection, letting only the caster and persons close to them pass. TODO |
+
+| Druidism | Acid Spray |
+|-|-|
+| Difficulty | |
+| Target | One character in or entering your area |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Using druidic powers, spit a spray of thick, caustic acid from your mouth at a character. TODO |
+
+| Druidism | Whip of Thorns |
+|-|-|
+| Difficulty | |
+| Target | One character in or entering your area |
+| Duration | |
+| Materials | |
+| Effects | |
+
+| Druidism | Swarm of Insects |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | |
+| Materials | |
+| Effects | Summon a swarm of biting insects that surround you. Insect bites cause `1` Pain each round to any characters, up to `BPL`, engaged in melee combat with you. |
+
 | Spell | Diff | Target | Materials | Effect |
 |-|-:|-|-|-|
-| Hallucinogens | | Self | Salt | Mix and consume a hallucinogenic concoction which increases your Fortitude by `2` for one watch. |
-| Stimulant | | Self | Salt | Mix and consume a stimulating concoction which negates the skill modifier from Fatigue for one watch. |
-| Healing Herbs | | Touch | Salt | Heal one point of Fatigue. |
-| Barkskin | | Self | Blood | *Blood magic.* Your skin hardens to a bark-like substance that increases Armor Value by `3`. Only usable while wearing no armor or Light armor. NPC disposition may be lowered while in this state. TODO Blood |
-| Constricting Vines | | Connection | Blood | *Blood magic.* Thick, barbed vines sprout out of the ground and block a connection, letting only the caster and persons close to them pass. TODO |
-| Swarm of Insects | | Self | | Summon a swarm of biting insects that surround you. Insect bites cause `1` Pain each round to any characters engaged in melee combat with you. |
 | Murder of Crows | | Self | | Transform into a murder of crows and retreat, reforming in humanoid shape. |
-| Leshen Form | | Self | Blood, Sulfur | *Ritual.* Mask of skull, runes of blood, tangle of briars, you half transform into Leshen form. TODO |
+| Leshen Form | | Self | Blood, Sulfur | *Ritual.* *Blood magic.* Mask of skull, runes of blood, tangle of briars, you half transform into Leshen form. TODO |
 | Preserving | | Touch | | *Ritual.* The target dead body will last up to `5` days before becoming unresurrectable. |
 
 
