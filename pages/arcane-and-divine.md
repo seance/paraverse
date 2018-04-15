@@ -20,19 +20,21 @@ Memorizing a new set of spells or prayers can be done during a [rest](time-and-s
 
 A spell or prayer whose Duration is *Sustained(X)*, must be sustained for the spell or prayer to remain in effect. A character whose [Spell sustain](characters#secondary-stats) is `S` can sustain a total of equally many sustain points `X`.
 
+Sustained spells need to be recast after a [camp](time-and-space#camp).
+
 > **Example**
 >
 > A character's Spell sustain value is 4. They could sustain spells with Sustained(1) and Sustained(2), and still have 1 spell sustain point (4 - 1 - 2 = 1) available for another sustained spell.
 
 ## Ritual Spells and Prayers
 
-A spell or prayer with the *Ritual* keyword require a more complex ritual cast or recital. Such spells or prayers take 1 [watch](time-and-space#watches) to cast or recite.
+A spell or prayer with the *Ritual* keyword require a more complex ritual cast or recital. Such spells or prayers take one [watch](time-and-space#watches) to cast or recite.
 
 ## Concentrating on a Spell or Prayer
 
 Some spells or prayers have duration marked as Concentration. These spells or prayers remain in effect while the caster is actively concentrating.
 
-Taking a critical wound or becoming incapacitated breaks concentration. Only one spell or prayer can be concentrated on at a time.
+Taking a skill check other than Evasion, suffering pain or a critical wound or becoming incapacitated breaks concentration. Only one spell or prayer can be concentrated on at a time.
 
 ## Arcana and Spellcasting
 
@@ -61,21 +63,13 @@ A natural `20` is a success and natural `1` is a failure.
 | 14 | Caster is [incapacitated](combat#incapacitation) and starts [bleeding](combat#critical-wound-effects). |
 | 15 | Caster is [incapacitated](combat#incapacitation), starts [bleeding](combat#critical-wound-effects) and permanently loses `1` WIL. |
 | 16&ndash;18 | Caster is instantly killed (lost `1` WIL if resurrected). |
-| 19&ndash;20 | Caster is instantly killed, and the body is burned to cinder. |
+| 19&ndash;20 | Caster is instantly killed, and their body is burned to cinder. |
 
 ### Arcane Aspects
 
 #### Evocation
 
 Evocation is a discipline of Sorcery that focuses on the elemental powers of Fire and Frost and direct manipulation of the physical world. Spells are produced mentally, without the aid of material components, manifesting instantly, but may require physical manipulation in practical applications.
-
-| Evocation | |
-|-|-|
-| Difficulty | |
-| Target | |
-| Duration | |
-| Materials | |
-| Effects | |
 
 | Evocation | Ignition |
 |-|-|
@@ -88,7 +82,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Evocation | Fireball |
 |-|-|
 | Difficulty | |
-| Target | One area, marksman rules |
+| Target | One area, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
 | Effects | *Elemental.* Throw a blazing boulder of fire that explodes for `20` points of [Fire](combat#damage-types) damage on contact. Roll Throwing skill, targeting your area or an adjacent area. All characters in the target area must use their Evasion skill against your roll. A successful evasion results in half damage. Characters staying in cover take half damage. |
@@ -96,18 +90,18 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Evocation | Repulse |
 |-|-|
 | Difficulty | |
-| Target | One character in or entering your area |
+| Target | One character in your area |
 | Duration | Concentration |
 | Materials | &mdash; |
-| Effects | While you concentrate on the spell, the target cannot approach to melee engagement range with you, held back by a force emanating from you. |
+| Effects | *Telekinetic.* While you concentrate on the spell, the target cannot approach to melee engagement range with you, held back by a force emanating from you. |
 
-| Evocation | Telekinetic Hold |
+| Evocation | Constrict |
 |-|-|
 | Difficulty | |
-| Target | One character in or entering your area |
+| Target | One character in your area |
 | Duration | Concentration |
 | Materials | &mdash; |
-| Effects | Lift one character into the air and hold them in place. The target makes a Physique save; on a success the spell has the effects of Repulse. While held, the target has disadvantage to Melee and Evasion rolls, and cannot move. |
+| Effects | *Telekinetic.* Lift one character into the air and hold them in place. The target makes a Physique save; on a success the spell has the effects of Repulse. While held, the target has disadvantage to *Melee* and Evasion rolls, and cannot move. |
 
 | Evocation | Shockwave |
 |-|-|
@@ -115,16 +109,69 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Target | Melee |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | Strike a target with a shockwave of psychokinetic force. The target makes a Evasion check against your cast roll. The target takes damage as if struck by a 9 base damage impact weapon. On a hit, the target is flung back one area, or if they are performing a Acrobatics check, they fail it. On a miss, you are disengaged. |
+| Effects | *Telekinetic.* Strike a target with a shockwave of psychokinetic force. The target makes a Evasion check against your cast roll. The target takes damage as if struck by a 9 base damage impact weapon. On a hit, the target is flung back one area, or if they are performing a Acrobatics check, they fail it. On a miss, you are disengaged. |
 
-- frost aoe
-- frost aura
+| Evocation | Aura of Frost |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | *Elemental.*  Frost aura centered on and moving with self. TODO |
+
+| Evocation | Frost Storm |
+|-|-|
+| Difficulty | One area, Marksman targeting rules |
+| Target | |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Elemental.* Frost AoE TODO |
+
+| Evocation | Ice Spear |
+|-|-|
+| Difficulty | |
+| Target | One character, Marksman targeting rules |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Elemental.* Throwing frost attack. TODO |
+
+| Evocation | Radiant Orb |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | Concentration |
+| Materials | &mdash; |
+| Effects | Provide daylight for Investigation/tracking checks etc. |
+
+| Evocation | Wall of Earth |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | Permanent |
+| Materials | &mdash; |
+| Effects | Permanent obstacle. TODO |
+
+| Evocation | Shield Rend |
+|-|-|
+| Difficulty | |
+| Target | One character, Marksman targeting rules |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Shatter target's shield. |
+
+| Evocation | Water Breathing |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | X rounds |
+| Materials | &mdash; |
+| Effects | Cannot drown while spell is in effect. |
 
 #### Abjuration
 
 Abjuration is the manifestation of Sorcery that is aligned obversely to other magical and fundamental forces. Many spells of this discipline thus can be used to counter and shield from other effects.
 
-| Abjuration | Arcane Shield |
+| Abjuration | Force Shield |
 |-|-|
 | Difficulty | |
 | Target | Touch |
@@ -136,21 +183,39 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 |-|-|
 | Difficulty | |
 | Target | Touch |
-| Duration | While airborne |
+| Duration | While falling |
 | Materials | &mdash; |
 | Effects | Target will float gently to the ground, after which the spell dissipates. |
 
-- wind: self ranged shield disadvantage
-- wind: ranged shield barrier
+- Fire Shield: Touch sustain resistance to fire
+- Frost Shield: Touch sustain resistance to frost
+- Acid Shield: Touch sustain resistance to acid
+- Whirlwind: Self area, sustain, ranged attacks have disadvantage
+- Warding Glyph: Alarm sensors on rest/camp ground
+- ambush protection
+- Mind Shield: Touch sustain protect from mental/2ndary effects?
+- Force Cage: cage and magical lock, cast on existing structure
 
 #### Conjuring
 
-- illusion
-- summoning/planarism
+- Illusory Wealth: Create 1/2/5 illusory wealth for gambling/merchants. Disposition
+- Muffle: Perform a Sneaking check. On failure, there is no disturbance.
+- Soothing Whispers: Ranged single target alertness becomes relaxed, if alertness was on duty
+- Summon Wisp: Guards become distracted, then suspicious
+- Summon Fiend: Fighting monster, banished after combat / sustained
+- Phase Shift: Ranged single target is shifted for one round into another phase
+- Fade: Self resistant to physical damage, concentration
+- possession?
+- Blink: Precast, sustained, disengage from melee through a micro-teleportation
+- Planar Shortcut: reduce travel time on a path previously traveled by 1
 
 #### Transcendence
 
-- metamagic
+- Flashcast: Cast with another spell w/difficulty +X for spell, effect before ranged phase
+- Countermagic: Cause all Arcane magic to have difficulty level X/Y/Z
+- Dispel: dispel magical spells, not effects
+- probe/sense magic properties e.g. cast strength
+- haste
 
 #### Druidism
 
@@ -172,14 +237,6 @@ Druidic magic waxes and wanes in power with the verdancy of the local biome. Eac
 Blood magic changes its nature by the blood used. Blood freely given yields more stable magic, while blood forcibly taken produces more powerful, unpredictable results.
 
 Blood can be harvested from any slain or wounded creature that has blood, or volunteered by any player character at the cost of `1` point of Stamina.
-
-| Druidism | |
-|-|-|
-| Difficulty | |
-| Target | |
-| Duration | |
-| Materials | |
-| Effects | |
 
 | Druidism | Hallucinogens |
 |-|-|
@@ -245,19 +302,20 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 | Materials | |
 | Effects | Summon a swarm of biting insects that surround you. Insect bites cause `1` Pain each round to any characters, up to `BPL`, engaged in melee combat with you. |
 
-| Spell | Diff | Target | Materials | Effect |
-|-|-:|-|-|-|
-| Murder of Crows | | Self | | Transform into a murder of crows and retreat, reforming in humanoid shape. |
-| Leshen Form | | Self | Blood, Sulfur | *Ritual.* *Blood magic.* Mask of skull, runes of blood, tangle of briars, you half transform into Leshen form. TODO |
-| Preserving | | Touch | | *Ritual.* The target dead body will last up to `5` days before becoming unresurrectable. |
-
+- Murder of Crows: Transform into a murder of crows and retreat, reforming in humanoid shape at totem
+- Leshen Form: *Ritual.* *Blood magic.* Transform into a Leshen
+- Preserving: *Ritual.* The target dead body will last up to `5` days before becoming
 
 #### Runecraft
 
-| Spell | Diff | Target | Materials | Effect |
-|-|-:|-|-|-|
-| Fire Rune | | Weapon | Sulfur | Burn a rune to a weapon that can be activated by the wielder, causing `7` points additional Fire damage on the next hit. The rune dissolves on the next hit or when the skirmish ends. |
-| Rune of Keeping | | Weapon, Shield, Armor | Mercury | The rune absorbs the next disrepair check for the runed piece of equipment and then dissolves. |
+- Fire Rune: Weapon, activate, damage increased and type fire
+- Rune of Power: Weapon/armor, increase base damage/AV by X, permanent
+- Rune of Penetration: Weapon, add trait Penetration to weapon
+- Rune of Protection: Shield, increase SV by X, permanent
+- Rune of Deflection: Shield, if you'd take a critical hit, instead your shield shatters
+- Rune of Keeping: Equipment, absorb disrepair/shatter check or effect
+- Exploding Rune: Floor, wall, object explodes in fire
+- Rune of Accuracy: Ranged weapon, activate, if hit, hits targeted location
 
 #### Artifice
 
@@ -346,17 +404,43 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | 14 | Supplicant is [incapacitated](combat#incapacitation) and starts [bleeding](combat#critical-wound-effects). |
 | 15 | Supplicant is [incapacitated](combat#incapacitation), starts [bleeding](combat#critical-wound-effects) and permanently loses `1` WIL. |
 | 16&ndash;18 | Supplicant is instantly killed (lost `1` WIL if resurrected). |
-| 19&ndash;20 | Supplicant is instantly killed, and the body is burned to cinder. |
+| 19&ndash;20 | Supplicant is instantly killed, and their body is burned to cinder. |
 
 ### Divine Rites
 
 #### Rite of Life
 
+- Lay on Hands: Touch single target heal X Fatigue
+- Crucible of Pain: Ranged single target cause 1 Pain, reduce Fortitude by X
+- Inner Resolve: Touch increase Fortitude by X
+- assist trauma check by X
+- Bloodstill: stop bleeding of a conscious character
+- Recorporation: restore a limb
+- nullify arm/leg critical effects during a combat
+- Stasis: Delay death checks, sustained
+
 #### Rite of Death
+
+- Smite: Ranged single target cause head critical hit
+- Withering: Ranged single target reduce Crit limit by X
+- Drain: Self restore Stamina by draining a living, incapacitated humanoid creature
+- Cadaver: a fresh corpse will sustain a dead character for resurrection for X days
+- Resurrection: resurrect a dead character
+- Banish: summoned spirits
 
 #### Rite of Truth
 
-#### Cordial Preparation
+- Charm
+- Compulsion
+- Blessing: Consume blessing to be able to reroll any roll
+- Revelation/Psychic Shock: cause incapacitation
+- Noosphere: sense (approximate number/location/xxx of humanoid) minds in the vicinity
+
+#### Rite of Cordials
+
+- healing
+- melee buff
+- pain suspend
 
 ### Sacred Materials
 

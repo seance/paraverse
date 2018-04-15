@@ -113,8 +113,8 @@ The base value of every primary stat is `10`.
 | Redbeards          |  +3 |  -1 |  +4 |  -1 |  -2 |  -3 |  -2 |
 | Longbeards         |  +2 |  -2 |  +4 |  +2 |  +3 |  -2 |  -3 |
 | **Gnomes**         ||||||||
-| Tinker gnomes      |  -2 |  +3 |  +1 |     |     |  +2 |  +1 |
-| Astromancer gnomes |  -3 |  +1 |     |  +3 |  +4 |  +3 |     |
+| Tinkers            |  -2 |  +3 |  +1 |     |     |  +2 |  +1 |
+| Astromancers       |  -3 |  +1 |     |  +3 |  +4 |  +3 |     |
 
 ### Life Path
 
@@ -160,19 +160,19 @@ Picking up the sword or axe comes easier with a big of fighting experience. `+1 
 
 ##### Student
 
-Learning to read is beneficial for studies. TODO. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
+Learning to read is beneficial for studies. Spell memory `+1`. Unlock an Arcane Aspect and gain `+1 XP` in it. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
 
 ##### Initiate
 
-First forays into the secret arts of the Arcana. TODO. Increases chance to become *Scholar* in City by `1`.
+First forays into the secret arts of the Arcana. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect. Increases chance to become *Scholar* in City by `1`.
 
 ##### Disciple
 
-Humility, learning the gods, and discipline. TODO. Increases chance to be admitted into *Monastery* in City by `1`.
+Humility, learning the gods, and discipline. Spell memory `+1`. Unlock a Divine Rite and gain `+1 XP` in it. Increases chance to be admitted into *Monastery* in City by `1`.
 
 ##### Novice
 
-Discovering the Divine Light and its ways. TODO. Increases chance to become *Priest* in City by `1`.
+Discovering the Divine Light and its ways. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite. Increases chance to become *Priest* in City by `1`.
 
 ##### Apprentice
 
@@ -192,11 +192,11 @@ Not everything goes to plan always. Still, a moment to reflect may not be a bad 
 
 ##### Arx Arcanum
 
-Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. TODO.
+Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. Spell sustain `+1`. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
 
 ##### Scholar
 
-Those who master the arcane arts are both feared and respected. `+1` COG, TODO.
+Those who master the arcane arts are both feared and respected. `+1` COG. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
 
 ##### Gladiator
 
@@ -224,11 +224,11 @@ The unseen blade in the night, the assassin is a dark instrument of the will of 
 
 ##### Monastery
 
-An austere and forbidding place for the study of the divine, often located in inaccessible places. TODO.
+An austere and forbidding place for the study of the divine, often located in inaccessible places. Spell sustain `+1`. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
 
 ##### Priest
 
-Ordained in the Light of the Divine, a Priest commands fear in the hearts of sinners, and no one is without sin. `+1` WIL, TODO.
+Ordained in the Light of the Divine, a Priest commands fear in the hearts of sinners, and no one is without sin. `+1` WIL. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
 
 #### Adventuring
 
