@@ -26,6 +26,10 @@ Sustained spells need to be recast after a [camp](time-and-space#camp).
 >
 > A character's Spell sustain value is 4. They could sustain spells with Sustained(1) and Sustained(2), and still have 1 spell sustain point (4 - 1 - 2 = 1) available for another sustained spell.
 
+## Non-Combat (Unhurried?) Spells and Prayers
+
+Cannot be cast in combat, need some time, but won't progress the watch.
+
 ## Ritual Spells and Prayers
 
 A spell or prayer with the *Ritual* keyword require a more complex ritual cast or recital. Such spells or prayers take one [watch](time-and-space#watches) to cast or recite.
@@ -38,7 +42,7 @@ Taking a skill check other than Evasion, suffering pain or a critical wound or b
 
 ## Arcana and Spellcasting
 
-An Arcane sorcerer reaches with his mind to the Source and draws arcane power through raw willpower, bending the fabric of the universe to their will. A druid draws on the power of untamed nature through the mind's eye or blood rituals. Dwarven runesmiths craft runes from alchemical reagents, shaped to secret words of power. Gnomish artificers build mechanical constructs and imbue them with magic.
+An Arcane sorcerer reaches with his mind to the Source and draws arcane power through raw willpower, bending the fabric of the universe to their will. A druid draws on the power of untamed nature through the mind's eye or blood rituals. Dwarven runesmiths craft runes from alchemical reagents, shaped to secret words of power branded onto weapons and armor. Gnomish artificers build mechanical constructs and imbue them with magic.
 
 To become an arcanist, no formal education is necessary, although it can be beneficial. It simply suffices to unlock one of the Aspects, or Schools, of Arcane magic. But beware, for the flow of magic is treacherous, and will burn the careless dabbler to cinder in the blink of an eye.
 
@@ -190,11 +194,16 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 - Fire Shield: Touch sustain resistance to fire
 - Frost Shield: Touch sustain resistance to frost
 - Acid Shield: Touch sustain resistance to acid
+- Poison Shield: Touch sustain resistance to poison
 - Whirlwind: Self area, sustain, ranged attacks have disadvantage
 - Warding Glyph: Alarm sensors on rest/camp ground
 - ambush protection
 - Mind Shield: Touch sustain protect from mental/2ndary effects?
 - Force Cage: cage and magical lock, cast on existing structure
+- increase save checks
+- end/prevent magical condition
+- nullify single spell (effect?)
+
 
 #### Conjuring
 
@@ -207,7 +216,9 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 - Fade: Self resistant to physical damage, concentration
 - possession?
 - Blink: Precast, sustained, disengage from melee through a micro-teleportation
-- Planar Shortcut: reduce travel time on a path previously traveled by 1
+- Planar Paths: reduce travel time on a path previously traveled by 1
+- mark-recall portal
+- Planar Leap: jump with advantage
 
 #### Transcendence
 
@@ -216,6 +227,10 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 - Dispel: dispel magical spells, not effects
 - probe/sense magic properties e.g. cast strength
 - haste
+- temporal gap: stop one character for one round, acting in slow motion
+- antimagic aura
+- force reflux: damage spellcaster(s) in direct proportion to their cast limit
+- Masking: Arcane magic probes cannot detect spell, nor sense its cast strength
 
 #### Druidism
 
@@ -305,6 +320,7 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 - Murder of Crows: Transform into a murder of crows and retreat, reforming in humanoid shape at totem
 - Leshen Form: *Ritual.* *Blood magic.* Transform into a Leshen
 - Preserving: *Ritual.* The target dead body will last up to `5` days before becoming
+- Tranquil Grove: camp in 2 watches, though only in verdant biomes
 
 #### Runecraft
 
@@ -316,11 +332,23 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 - Rune of Keeping: Equipment, absorb disrepair/shatter check or effect
 - Exploding Rune: Floor, wall, object explodes in fire
 - Rune of Accuracy: Ranged weapon, activate, if hit, hits targeted location
+- channel rune: deliver touch magic via weapon attack
 
 #### Artifice
 
-- golems
-- mana wells
+Golems:
+- any chassic: 1-N module slots: X armor, Y structural, Z durability, W evasion
+- hexapod chassis: high armor, structural, stealthy
+- aquatic chassis: high armor, structural, undetectable
+- aerial chassis: low armor, structural, cause disturbance
+- armor module: increase armor by X
+- spell module: stores 1 spell, artificer casts the spell to store it in golem. Golem can cast spell until it fails casting - the module is exhausted until the golem is maintained.
+- sustain module: generate 1 sustain point
+- manipulator module: carry items, manipulate objects
+- enhanced logic module: more complicated instructions
+
+Talismans:
+- mana well, X points: consume well to add X to a spell cast check
 
 ### Alchemical Materials
 
@@ -418,6 +446,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 - Recorporation: restore a limb
 - nullify arm/leg critical effects during a combat
 - Stasis: Delay death checks, sustained
+- sacrifice: cause X points of pain to yourself; ranged single target takes 10X damage
+- sanctity: sustain autosucceed in a WIL save
 
 #### Rite of Death
 
@@ -427,14 +457,20 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 - Cadaver: a fresh corpse will sustain a dead character for resurrection for X days
 - Resurrection: resurrect a dead character
 - Banish: summoned spirits
+- query a corpse: gain info about how it died, some secret or something
+- weaken saves: PHY or WIL
 
 #### Rite of Truth
 
 - Charm
 - Compulsion
-- Blessing: Consume blessing to be able to reroll any roll
+- Blessing: Consume blessing to be able to reroll any single roll
 - Revelation/Psychic Shock: cause incapacitation
 - Noosphere: sense (approximate number/location/xxx of humanoid) minds in the vicinity
+- detect arcana (limited scope, no cast strength)
+- Guidance: Consume guidance to add 1d4 to any skill check
+- Judgment: ranged single target disadvantage to evasion
+- melee single target has disadvantage on melee against you
 
 #### Rite of Cordials
 
