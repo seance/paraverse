@@ -63,7 +63,7 @@ Primary stats describe the fundamental nature of a character, governing the char
 | Physique | PHY | Athleticism, strength and speed. | Athletics, melee combat, weapons, armor |
 | Dexterity | DEX | Gracefulness, balance, hand-eye-coordination, flexibility, fine-motor skills. | Acrobatics, ranged combat, stealth, sleight of hand |
 | Constitution | CON | Health and robustness of body. | Endurance, critical wounds |
-| Willpower | WIL | Presence of mind, focus, mental control. | Fortitude, magical/divine ability |
+| Willpower | WIL | Presence of mind, focus, mental control. | Fortitude, arcane/divine ability |
 | Cognition | COG | Comprehension, learning, memory, judgment. | Professional skills, magical/divine ability |
 | Empathy | EMP | Ability to read, anticipate and manipulate persons based on social cues. | Social interaction, mercantile skills |
 | Perception | PER | Awareness, sensory acuteness, attention to discrepancy. | Traps, ambushes, secrets, forgery, investigation |
@@ -74,11 +74,11 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 | Stat | Derived as | Description |
 |-|:-:|-|
-| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The "current Endurance" is called Stamina. The "missing Endurance" is called Fatigue. Suffering Fatigue is also called suffering Pain. |
+| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called Fatigue. Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
 | Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
-| Spell memory | `⌊COG / 2⌋`|Number of spells memorizable at once. |
-| Spell sustain | `COG - 10` | Number of sustainable spell points. Minimum zero. |
+| Memory | `⌊COG / 2⌋` | Number of spells or prayers memorizable at once. |
+| Sustain | `COG - 10` | Number of sustainable spell or prayer points. Minimum zero. |
 | Awareness | `PER - 10` | Passive perception. |
 
 ## Character Creation
@@ -286,8 +286,8 @@ Starting equipment purchases can be performed from the following table.
 
 | Equipment | Cost |
 |-|-:|
-| Any weapon | 1 |
-| Any shield | 1 |
+| Any weapon or shield | 1 |
+| Any weapon or shield, durability 15 | 2 |
 | Light armor (AV 1) | 1 |
 | Medium armor (AV 4) | 2 |
 | Heavy armor (AV 7) | 3 |
@@ -439,6 +439,7 @@ For purposes of stealth, NPCs have an *alertness* state, that affects how they r
 | Alertness | Notes |
 |-|-|
 | Relaxed | NPC is not paying attention, and is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
+| Distracted | NPC's attention is elsewhere, and NPC is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
 | On duty | Default alertness. NPC may be patrolling [areas](time-and-space#local-areas).
 | Suspicious | NPC may investigate. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |
 | Alerted | NPC raises [alarm](#alarms) and prepares for combat. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |

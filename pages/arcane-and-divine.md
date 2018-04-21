@@ -40,6 +40,12 @@ Some spells or prayers have duration marked as Concentration. These spells or pr
 
 Taking a skill check other than Evasion, suffering pain or a critical wound or becoming incapacitated breaks concentration. Only one spell or prayer can be concentrated on at a time.
 
+## Spell and Prayer Saves
+
+A spell or a prayer may grant a save check to the target of the spell or prayer. The save check has a governing stat, e.g. Physique, whose modifier (stat value minus 10) is `S`. The caster's Willpower modifier is `W`.
+
+The save is resolved as `d20 + S - W`. If the result is *greater than* 10, the save is successful. Otherwise the save has failed.
+
 ## Arcana and Spellcasting
 
 An Arcane sorcerer reaches with his mind to the Source and draws arcane power through raw willpower, bending the fabric of the universe to their will. A druid draws on the power of untamed nature through the mind's eye or blood rituals. Dwarven runesmiths craft runes from alchemical reagents, shaped to secret words of power branded onto weapons and armor. Gnomish artificers build mechanical constructs and imbue them with magic.
@@ -191,46 +197,260 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 | Materials | &mdash; |
 | Effects | Target will float gently to the ground, after which the spell dissipates. |
 
-- Fire Shield: Touch sustain resistance to fire
-- Frost Shield: Touch sustain resistance to frost
-- Acid Shield: Touch sustain resistance to acid
-- Poison Shield: Touch sustain resistance to poison
-- Whirlwind: Self area, sustain, ranged attacks have disadvantage
-- Warding Glyph: Alarm sensors on rest/camp ground
-- ambush protection
-- Mind Shield: Touch sustain protect from mental/2ndary effects?
-- Force Cage: cage and magical lock, cast on existing structure
-- increase save checks
-- end/prevent magical condition
-- nullify single spell (effect?)
+| Abjuration | Fire Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Target gains [resistance](combat#damage-resistance) to [fire](combat#damage-types). |
 
+| Abjuration | Frost Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Target gains [resistance](combat#damage-resistance) to [frost](combat#damage-types). |
+
+| Abjuration | Acid Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Target gains [resistance](combat#damage-resistance) to [acid](combat#damage-types). |
+
+| Abjuration | Poison Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Target gains [resistance](combat#damage-resistance) to [poison](combat#damage-types). |
+
+| Abjuration | Whirlwind |
+|-|-|
+| Difficulty | |
+| Target | Self, moves with you and affects the area |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | Non-magical ranged attacks passing through your area (fired from, to or through) have disadvantage. |
+
+| Abjuration | Warding Glyph |
+|-|-|
+| Difficulty | |
+| Target | Area of resting |
+| Duration | Rest/camp |
+| Materials | &mdash; |
+| Effects | Any character not designated by the caster entering the warded area causes a mental notice for the caster. See [ambushes](environment#ambushes) while resting. |
+
+| Abjuration | Ambush Ward |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | The caster cannot be ambushed, unless the ambushers are magically masked from detection. |
+
+| Abjuration | Mind Shield |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | *Psychic* spells or prayers cannot effect you. Spells or prayers cannot modify your secondary stats, unless you allow them to. |
+
+| Abjuration | Containment |
+|-|-|
+| Difficulty | |
+| Target | Touch, an enclosed existing structure with a door or latch |
+| Duration | Permanent, until destroyed |
+| Materials | Mercury |
+| Effects | Encloses an existing structure in a containment field, which cannot be forced from the inside using physical force. The doorway is locked and is [difficult](characters#skill-target-difficulties) to lock pick. From the outside, the Containment becomes a [construct](combat#constructs) with 200 structure and AV 15. The caster can open and close the doorway without a key at will. |
+
+| Abjuration | Magic Suppressor |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | All the target's spell and prayer saves have a `+2` modifier. |
+
+| Abjuration | Spell Breaker |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Sustained(1), see effects |
+| Materials | &mdash; |
+| Effects | Absorbs the next single target spell or prayer cast at you, nullifying its effects, then dissipates. |
+
+[//]: # (end/prevent magical condition)
 
 #### Conjuring
 
-- Illusory Wealth: Create 1/2/5 illusory wealth for gambling/merchants. Disposition
-- Muffle: Perform a Sneaking check. On failure, there is no disturbance.
-- Soothing Whispers: Ranged single target alertness becomes relaxed, if alertness was on duty
-- Summon Wisp: Guards become distracted, then suspicious
-- Summon Fiend: Fighting monster, banished after combat / sustained
-- Phase Shift: Ranged single target is shifted for one round into another phase
-- Fade: Self resistant to physical damage, concentration
-- possession?
-- Blink: Precast, sustained, disengage from melee through a micro-teleportation
-- Planar Paths: reduce travel time on a path previously traveled by 1
-- mark-recall portal
-- Planar Leap: jump with advantage
+Conjuring is the area of Sorcery that studies the very fabric of existence itself, and how sentient minds and material bodies interact and weave in and out of its myriad manifestations and planes. Illusions and Planarism are key areas of study.
+
+| Conjuring | Illusory Wealth |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Momentary |
+| Materials | &mdash; |
+| Effects | *Illusion.* Manifest 1/2/5 illusory wealth, that can be used to gamble or purchase wares from merchants. Targets of this spell make a Cognition save. On a successful save, they perceive the illusion, and may take offense, at the least lowering their [disposition](characters#npc-disposition). |
+
+| Conjuring | Muted Echo |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Illusion.* Your echo on the material plane is muted. Perform a Sneaking check. On partial failure, there is no disturbance. |
+
+| Conjuring | Soothing Whispers |
+|-|-|
+| Difficulty | |
+| Target | Single character in your area |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Illusion.* The target, whose alertness is [on duty](characters#npc-alertness), becomes [relaxed](characters#npc-alertness). Other NPCs interacting with this character may try to revitalize them. |
+
+| Conjuring | Summon Wisp |
+|-|-|
+| Difficulty | |
+| Target | Your area or adjacent |
+| Duration | 1 round |
+| Materials | &mdash; |
+| Effects | *Summoning.* Summon an ethereal wisp from another plane of existence. Guards in the target area or overlooking it become [distracted](characters#npc-alertness) for the duration of the spell, but become [suspicious](characters#npc-alertness) afterwards. |
+
+| Conjuring | Summon Fiend |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | *Summoning.* Summon a fiendish creature from some hellish plane of existence. The Fiend will obey your (very simple) commands, as long as there are some characters for it to kill. For any round there are not, roll `1d4`. On a `1` the Fiend will instead attack an ally. TODO: Fiend stats |
+
+| Conjuring | Phase Shift |
+|-|-|
+| Difficulty | |
+| Target | Ranged, Marksman targeting rules |
+| Duration | 1 round |
+| Materials | &mdash; |
+| Effects | *Planar.* The target character, whether friend or foe, is shifted for one round (the next round) to another phase of reality. While in the other phase, they can perform actions as normal, but cannot move or affect anything in the ordinary phase, and cannot be affected. |
+
+| Conjuring | Fade |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Concentration |
+| Materials | &mdash; |
+| Effects | *Planar.* You partially fade from the material plane, gaining [resistance](combat#damage-resistance) to all physical damage. |
+
+| Conjuring | Blink |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Sustained(1) |
+| Materials | &mdash; |
+| Effects | *Planar.* You may trigger blink any time you would be or are engaged in melee combat, consuming the spell and performing a micro-teleportation behind your attacker. You become disengaged, effectively denying the attacker's [zone of control](time-and-space#zone-of-control). The teleportation cannot pass through obstructions. |
+
+| Conjuring | Planar Paths |
+|-|-|
+| Difficulty | |
+| Target | Group |
+| Duration | Varying |
+| Materials | &mdash; |
+| Effects | *Planar.* Following little planar shortcuts invisible to the untrained eye, reduce travel time on a path previously traveled by one [watch](time-and-space#watches). |
+
+| Conjuring | Phase Leap |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | *Planar.* Perform an Athletics (jumping) check with [advantage](characters#advantage-and-disadvantage). |
+
+| Conjuring | Phase Tunnel |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | Momentary |
+| Materials | 1 Mercury per thing teleported |
+| Effects | *Planar.* *Ritual.* The Phase Tunnel has two parts. First, you create a Mark by casting the Phase Tunnel without the material component. Then, at any location from which the Mark is reachable without passing through obstacles, Phase Tunnel can be recast with `X` material components. The Phase Tunnel can then instantaneously teleport `X` characters or other, medium sized objects to the Mark while the tunnel is open. |
+
+[//]: # (spirit possession)
 
 #### Transcendence
 
-- Flashcast: Cast with another spell w/difficulty +X for spell, effect before ranged phase
-- Countermagic: Cause all Arcane magic to have difficulty level X/Y/Z
-- Dispel: dispel magical spells, not effects
-- probe/sense magic properties e.g. cast strength
-- haste
-- temporal gap: stop one character for one round, acting in slow motion
-- antimagic aura
-- force reflux: damage spellcaster(s) in direct proportion to their cast limit
-- Masking: Arcane magic probes cannot detect spell, nor sense its cast strength
+Transcendence is the meta-magical dimension of Sorcery that studies magic itself, as well as the non-material aspects of reality, including time.
+
+| Transcendence | Flash Cast |
+|-|-|
+| Difficulty | |
+| Target | Another spell |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Flash Cast is joined with another spell cast in combat. Their difficulty values are combined. The joined spell takes effect before the Ranged attack phase. |
+
+| Transcendence | Counter Magic |
+|-|-|
+| Difficulty | |
+| Target | Locale |
+| Duration | Sustained(3) |
+| Materials | &mdash; |
+| Effects | Counter Magic produces a field of magical energy that resists the shaping of all other spells. All spells cast under the influence of Counter Magic have a difficulty of at least TODO. The field extends over the entire locale. |
+
+| Transcendence | Sense Magic |
+|-|-|
+| Difficulty | |
+| Target | Your area or adjacent |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Sense all magical spells in the targeted area that have not been Masked, and their cast strengths. |
+
+| Transcendence | Dispel |
+|-|-|
+| Difficulty | Varying |
+| Target | Single active spell |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Dispel an active spell (not an active magically caused effect, like the fire spread from a fireball), by succeeding in this spell against that spell. The difficulty value of this spell is the cast strength of the target spell. |
+
+| Transcendence | Masking |
+|-|-|
+| Difficulty | |
+| Target | Single active spell  |
+| Duration | Duration of target spell |
+| Materials | &mdash; |
+| Effects | Neither the Sense Magic spell nor magic-sensing characters can detect the target spell, nor determine its cast strength. |
+
+| Transcendence | Force Reflux |
+|-|-|
+| Difficulty | |
+| Target | Single character in your area or adjacent  |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | A short circuited magical link forms between you and the target, creating a excruciating reflux of magical force. The target makes a Willpower save. On failure, the target takes `X` points of pain where `X` is the target's highest Arcane skill modifier, and you take `X / 2` points of pain (rounding up). On a success, `X` is halved to a minimum of 1. |
+
+| Transcendence | Haste Self |
+|-|-|
+| Difficulty | Varying |
+| Target | Self |
+| Duration | X rounds |
+| Materials | 1 Sulfur per round |
+| Effects | You Haste yourself, allowing you to move at double speed, traversing up to two areas each round, and to physically attack twice each round. While attacking or evading, you have [advantage](charaters#advantage-and-disadvantage) . You can still only cast one spell per round. The difficulty of this spell is TODO + `X`. |
+
+| Transcendence |  |
+|-|-|
+| Difficulty | |
+| Target |  |
+| Duration |  |
+| Materials | &mdash; |
+| Effects |  |
+
+[//]: # (temporal gap)
+[//]: # (antimagic aura)
 
 #### Druidism
 
@@ -272,7 +492,7 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 | Druidism | Healing Herbs |
 |-|-|
 | Difficulty | |
-| Target | One character |
+| Target | Touch |
 | Duration | Instant |
 | Materials | Salt |
 | Effects | Prepare and apply a herbal paste that heals one point of Fatigue. |
@@ -296,31 +516,52 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 | Druidism | Acid Spray |
 |-|-|
 | Difficulty | |
-| Target | One character in or entering your area |
+| Target | Single character in your area |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | Using druidic powers, spit a spray of thick, caustic acid from your mouth at a character. TODO |
+| Effects | Using druidic powers, you spit a spray of thick, caustic jelly from your mouth at the target. The target makes a Dexterity save. On a failure, the target takes 15 points of acid damage and their armor becomes in disrepair. On a success, they take 10 points of acid damage. |
 
 | Druidism | Whip of Thorns |
 |-|-|
 | Difficulty | |
-| Target | One character in or entering your area |
-| Duration | |
-| Materials | |
-| Effects | |
+| Target | Self |
+| Duration | Current fight |
+| Materials | Blood |
+| Effects | *Blood magic.* A thorned whip of vine sprouts from your hand. The whip is a one-handed weapon, has base damage `6 + BPL`, damage type piercing, wield cost of 6 and the trait *Curving*. The blood from lashing your foes nourishes the vine, but after the fight, the vine withers and dies. |
 
 | Druidism | Swarm of Insects |
 |-|-|
 | Difficulty | |
 | Target | Self |
 | Duration | |
-| Materials | |
-| Effects | Summon a swarm of biting insects that surround you. Insect bites cause `1` Pain each round to any characters, up to `BPL`, engaged in melee combat with you. |
+| Materials | &mdash; |
+| Effects | Summon a swarm of biting insects that surround you. Insect bites cause `1` Pain each round to characters, up to `BPL` in number, engaged in melee combat with you. After the first fight, the insects scatter. You may also dismiss the spell at any time. NPCs may be upset if you go indoors while this spell is active. |
 
-- Murder of Crows: Transform into a murder of crows and retreat, reforming in humanoid shape at totem
-- Leshen Form: *Ritual.* *Blood magic.* Transform into a Leshen
-- Preserving: *Ritual.* The target dead body will last up to `5` days before becoming
-- Tranquil Grove: camp in 2 watches, though only in verdant biomes
+| Druidism | Murder of Crows |
+|-|-|
+| Difficulty | |
+| Target | Self |
+| Duration | Momentary |
+| Materials | &mdash; |
+| Effects | You carry a small totem made of wood and carved bone that can be left anywhere in the current locale. When this spell is cast, you are transformed into a murder of crows, disengaging from any melee skirmish, and fly a maximum of `BPL` areas toward your totem before reforming in humanoid shape. |
+
+| Druidism | Nature's Preserving |
+|-|-|
+| Difficulty | |
+| Target | Touch, a dead body |
+| Duration | 5 days |
+| Materials | &mdash; |
+| Effects | *Ritual.* The target body will last up to five days before becoming unresurrectable. |
+
+| Druidism | Tranquil Grove |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | 2 watches |
+| Materials | 1 Salt |
+| Effects | The camp ground becomes tranquil and refreshing. A full [camp](time-and-space#camp) can be taken in just 2 watches. This spell can only be cast if the current biome is Verdant or Lush. |
+
+[//]: # (leshen form, ritual, blood magic)
 
 #### Runecraft
 
@@ -337,7 +578,7 @@ Blood can be harvested from any slain or wounded creature that has blood, or vol
 #### Artifice
 
 Golems:
-- any chassic: 1-N module slots: X armor, Y structural, Z durability, W evasion
+- any chassis: 1-N module slots: X armor, Y structural, Z durability, W evasion
 - hexapod chassis: high armor, structural, stealthy
 - aquatic chassis: high armor, structural, undetectable
 - aerial chassis: low armor, structural, cause disturbance

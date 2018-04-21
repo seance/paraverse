@@ -55,18 +55,6 @@ Generally, [Marksman weapons](equipment#ranged-weapons) can target opponents in 
 
 However, at the Game Master's discretion, other targets can be designated. For example, a Marksman weapon could be used to target an opponent several areas away, if those areas represent locations which are not physically far separated, and provide line of sight. A thrown weapon could also target an area adjacent to your area, for example when there is an elevation difference between the areas.
 
-## Damage Types
-
-| Type | Critical Effects |
-|-|-|
-| Blade | *Physical.* [Locational](#critical-wounds-resolution). |
-| Impact | *Physical.* [Locational](#critical-wounds-resolution). |
-| Pierce | *Physical.* [Locational](#critical-wounds-resolution). |
-| Fire | *Elemental.* [Incineration](#critical-wound-effects). |
-| Frost | *Elemental.* [Hindering](#critical-wound-effects), [Frostburn](#critical-wound-effects). |
-| Acid | *Elemental.* [Corrosion](#critical-wound-effects). |
-| Poison | *Elemental.* [Poisoning](#critical-wound-effects). |
-
 ## Combat Resolution Rules
 
 ### Ranged Attack Resolution
@@ -162,15 +150,15 @@ See also [critical wound effects](#critical-wound-effects).
 
 | Critical Wound | Effect |
 |-|-|
-| Skull Fracture | [Incapacitation](#incapacitation), Cognition and Willpower based skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
-| Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). |
-| Fractured Leg | *Melee*, *Ranged* and *Physical* skill rolls have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
+| Skull Fracture | [Incapacitation](#incapacitation), Cognition and Willpower based skill checks, including spells and prayers, have [disadvantage](characters/#advantage-and-disadvantage). |
+| Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill checks and spells and prayers have [disadvantage](characters/#advantage-and-disadvantage). |
+| Fractured Leg | *Melee*, *Ranged* and *Physical* skill checks have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 | Incineration | Character suffers 2 Pain at each end phase until at zero Stamina, or until the character takes a full round to put out the fire. See also [incapacitation](#incapacitation). |
 | Hindering | Character cannot move for one round. |
 | Frostburn | A character cannot regain Stamina through resting while suffering from frostburn. |
 | Corrosion | Armor becomes in disrepair immediately. |
-| Poisoning |Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
+| Poisoning | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 
 Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [trauma treatment resolution](#trauma-treatment-resolution).
 
@@ -246,6 +234,39 @@ The target difficulty for treating a single critical wound is `15`.
 
 Once a Trauma treatment skill check succeeds, the critical wound is completely healed at the end of the camp.
 
+## Damage Types
+
+| Type | Critical Effects |
+|-|-|
+| Blade | *Physical.* [Locational](#critical-wounds-resolution). |
+| Impact | *Physical.* [Locational](#critical-wounds-resolution). |
+| Pierce | *Physical.* [Locational](#critical-wounds-resolution). |
+| Fire | *Elemental.* [Incineration](#critical-wound-effects). |
+| Frost | *Elemental.* [Hindering](#critical-wound-effects), [Frostburn](#critical-wound-effects). |
+| Acid | *Elemental.* [Corrosion](#critical-wound-effects). |
+| Poison | *Elemental.* [Poisoning](#critical-wound-effects). |
+
+## Damage Resistance
+
+A character who is *resistant* to a type of damage has the attack damage multiplier of attacks made using that damage type reduced by one, to a minimum of zero.
+
+Attacks that do not use damage multiplier, such as some magical attacks, have their damage reduced by half.
+
+Characters who are *immune* to a damage type take no damage at all from attacks of that damage type.
+
+## Constructs
+
+*Constructs* are any non-living characters or structures. Constructs do not have Endurance or Fortitude, but instead have a *Structure* stat and have an intrinsic *Armor Value* and may have a durability value.
+
+When a construct with armor value `AV` suffers `D` points of damage, its structure is reduced by `D - AV` (minimum zero) points. When a construct is reduced to zero structure, it is destroyed.
+
+A Destroyed construct may still be repaired, unless its durability has been reduced to zero.
+
+Immobile constructs (walls, doors, chests, etc.) suffer the maximum damage of any attack. Attacking immobile constructs creates a [disturbance](charaters#disturbance).
+
+> **Example**
+>
+> A wooden door blocks the path. The door is a construct with 100 structure and 5 AV. A character wielding a Greataxe (base damage 10) will cause 25 points (3 × 10 - 5) of damage per attack, and will destroy the door, removing the obstacle, in 4 rounds. A character attacking the door with a dagger would require 15 turns.
 
 [&laquo; Table of Contents](..)
 
