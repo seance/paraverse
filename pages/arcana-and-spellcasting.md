@@ -668,7 +668,7 @@ Alchemical materials include the following.
 - Reagents: Salt (&#x1f714;), Sulfur (&#x1f70d;) and Mercury (&#x1f710;)
 - Alloys: Metal, Dwarven and Gnomish
 
-Reagents can be purchased from Alchemists and found in the world.
+Alchemical materials be purchased from Alchemists and found in the world.
 
 [&laquo; Table of Contents](..)
 

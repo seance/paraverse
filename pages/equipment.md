@@ -212,6 +212,16 @@ Enchanted weapons and armor can have skill modifiers or other effects. Some mons
 
 ## Generating Equipment
 
+### Trader Level
+
+| Trader Level | Roll |
+|-|-:|
+| Destitute | `d12` |
+| Poor | `d12 + 2` |
+| Moderate | `d12 + 4` |
+| Well-to-do | `d12 + 6` |
+| Wealthy |  `d12 + 8` |
+
 ### Perusing at a Store
 
 See [smiths and armorers](environment#smiths-and-armorers) for details on equipment trade.
@@ -253,6 +263,38 @@ See [smiths and armorers](environment#smiths-and-armorers) for details on equipm
 | 6&ndash;15 | Item has durability equal to the roll value. |
 | 16&ndash;18 | Mastercrafted(16) item. |
 | 19&ndash;20 | Mastercrafted(17) item. |
+
+### Alchemical Reagents
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No reagents in stock. |
+| 6&ndash;8 | Salt in stock. |
+| 9&ndash;11 | Salt and Mercury in stock. |
+| 12&ndash;15 | All reagents in stock. |
+| 16&ndash;18 | All reagents in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All reagents in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
+
+### Alchemical Alloys
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No alloys in stock. |
+| 6&ndash;8 | Metal in stock. |
+| 9&ndash;11 | Metal and Dwarvish alloy in stock. |
+| 12&ndash;15 | All alloys in stock. |
+| 16&ndash;18 | All alloys in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All alloys in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
+
+### Sacred Elixirs
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No elixirs in stock. |
+| 6&ndash;10 | Incense in stock. |
+| 11&ndash;15 | All elixirs in stock. |
+| 16&ndash;18 | All elixirs in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All elixirs in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
 
 [&laquo; Table of Contents](..)
 

@@ -259,29 +259,50 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | Target | Ranged, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects |  |
+| Effects | *Psychic.* The target makes a Cognition save. On failure, the target becomes [Incapacitated](combat#incapacitation). |
 
-- Revelation/Psychic Shock: cause incapacitation
-- Noosphere: sense (approximate number/location/xxx of humanoid) minds in the vicinity
-- detect arcana (limited scope, no cast strength)
-- Guidance: Consume guidance to add 1d4 to any skill check
-- Judgment: ranged single target disadvantage to evasion
-- melee single target has disadvantage on melee against you
+| Rite of Truth | Congregation of Souls |
+|-|-|
+| Difficulty | |
+| Target | Locale |
+| Duration | Instant |
+| Materials | 1 Incense |
+| Effects | Sense the approximate number and location of sentient minds in the vicinity. |
 
-#### Rite of Cordials
+| Rite of Truth | Guidance |
+|-|-|
+| Difficulty | |
+| Target | Touch |
+| Duration | Until spent |
+| Materials | 1 Myrrh |
+| Effects | The recipient of Guidance may choose to spend it before making a skill check to add `1d4` to their roll. |
 
-- healing
-- melee buff
-- pain suspend
+| Rite of Truth | Judgment |
+|-|-|
+| Difficulty | |
+| Target | Ranged, Marksman targeting rules |
+| Duration | Concentration |
+| Materials | &mdash; |
+| Effects | Target makes a Willpower save. On failure, the target will have [disadvantage](characters#advantage-and-disadvantage) to [Evasion](characters#list-of-skills) skill checks. |
+
+| Rite of Truth | Sense Arcana |
+|-|-|
+| Difficulty | |
+| Target | Your area |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Sense the presence of Arcane spells, although you cannot discern their cast strengths or particular nature. |
+
+[//]: # (melee single target has disadvantage on melee against you)
 
 ### Sacred Materials
 
-Alchemical materials include the following.
+Sacred materials include the following.
 
 - Elixirs: Incense, Myrrh
--
+- Purified spirits
 
-Reagents can be purchased from Alchemists and found in the world.
+Sacred materials can be purchased from Temples and found in the world.
 
 [&laquo; Table of Contents](..)
 
