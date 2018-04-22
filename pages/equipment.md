@@ -17,7 +17,7 @@ Melee weapons have the following properties.
 
 When a one-handed weapon is used with a shield, the [Weapon-and-shield](characters#list-of-skills) skill is used in [skirmishes](combat#melee-skirmish-resolution).
 
-| Example weapon | Base | Damage type | Notes |
+| Example Weapon | Base | Damage Type | Notes |
 |-|-:|-|-|
 | Dagger | 4 | Blade | One-handed |
 | Wooden club | 5 | Impact | One-handed |
@@ -54,7 +54,7 @@ Ranged weapons have the following properties.
 - Usage. Either Marksman or Thrown weapon.
 - Traits. Modifiers to weapon stats etc.
 
-| Example weapon | Base | Damage type | Notes |
+| Example Weapon | Base | Damage Type | Notes |
 |-|-:|-|-|-|
 | Rock | 4 | Impact | Throwing |
 | Throwing knives | 5 | Blade | Throwing |
@@ -81,7 +81,7 @@ Shields have a Shield Value property, which has the following functions.
 - Increase Evasion against [ranged attacks](combat#ranged-attack-resolution)
 - Act as extra armor against all [attack damage](combat#attack-damage)
 
-| Shield type | Value |
+| Shield Type | Value |
 |-|-:|
 | Buckler | 1 |
 | Heater | 2 |

@@ -77,7 +77,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 | Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called Fatigue. Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
 | Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
-| Memory | `⌊COG / 2⌋` | Number of spells or prayers memorizable at once. |
+| Memory | `COG - 7` | Number of spells or prayers memorizable at once. |
 | Sustain | `COG - 10` | Number of sustainable spell or prayer points. Minimum zero. |
 | Awareness | `PER - 10` | Passive perception. |
 
@@ -104,17 +104,76 @@ The base value of every primary stat is `10`.
 | Race               | PHY | DEX | CON | WIL | COG | EMP | PER |
 |-|-:|-:|-:|-:|-:|-:|-:|
 | **Men**            ||||||||
-| Scythians          |     |  +1 |  +1 |     |  -1 |  -1 |  +2 |
-| Garrandines        |  +1 |     |     |  +1 |  +1 |  +2 |  -1 |
+| Scythians          |     | `+1`| `+1`|     | `-1`| `-1`| `+2`|
+| Garrandines        | `+1`|     |     | `+1`| `+1`| `+2`| `-1`|
 | **Elves**          ||||||||
-| Gray elves         |  -1 |  +1 |  -3 |  +3 |  +2 |  +1 |  +3 |
-| Sylvan elves       |  +3 |  +3 |  -2 |     |  -2 |     |  +4 |
+| Gray elves         | `-1`| `+1`| `-3`| `+3`| `+2`| `+1`| `+3`|
+| Sylvan elves       | `+3`| `+3`| `-2`|     | `-2`|     | `+4`|
 | **Dwarves**        ||||||||
-| Redbeards          |  +3 |  -1 |  +4 |  -1 |  -2 |  -3 |  -2 |
-| Longbeards         |  +2 |  -2 |  +4 |  +2 |  +3 |  -2 |  -3 |
+| Redbeards          | `+3`| `-1`| `+4`| `-1`| `-2`| `-3`| `-2`|
+| Longbeards         | `+2`| `-2`| `+4`| `+2`| `+3`| `-2`| `-3`|
 | **Gnomes**         ||||||||
-| Tinkers            |  -2 |  +3 |  +1 |     |     |  +2 |  +1 |
-| Astromancers       |  -3 |  +1 |     |  +3 |  +4 |  +3 |     |
+| Tinkers            | `-2`| `+3`| `+1`|     |     | `+2`| `+1`|
+| Astromancers       | `-3`| `+1`|     | `+3`| `+4`| `+3`|     |
+
+### Racial Skill Modifiers
+
+Racial skill modifiers act as direct bonuses to skills.
+
+#### Men
+
+##### Scythians
+
+- Druidism (+1)
+- Throwing (+1)
+- Sneaking (+1)
+
+##### Garrandines
+
+- Interaction (+1)
+- Rite of Life (+1)
+- Abjuration (+1)
+
+#### Elves
+
+##### Gray Elves
+
+- Evocation (+1)
+- Rite of Truth (+1)
+- Athletics (+1)
+
+##### Sylvan Elves
+
+- Druidism (+1)
+- Marksman (+1)
+- Rite of Death (+1)
+
+#### Dwarves
+
+##### Redbeards
+
+- Stabilization (+1)
+- Two-handed (+1)
+- Mercantile (+1)
+
+##### Longbeards
+
+- Mercantile (+2)
+- Runecraft (+1)
+
+#### Gnomes
+
+##### Tinkers
+
+- Traps/devices (+1)
+- Field repair (+1)
+- Athletics (+1)
+
+##### Astromancers
+
+- Traps/devices (+1)
+- Conjuring (+1)
+- Transcendence (+1)
 
 ### Life Path
 
@@ -160,7 +219,7 @@ Picking up the sword or axe comes easier with a big of fighting experience. `+1 
 
 ##### Student
 
-Learning to read is beneficial for studies. Spell memory `+1`. Unlock an Arcane Aspect and gain `+1 XP` in it. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
+Learning to read is beneficial for studies. Memory `+1`. Unlock an Arcane Aspect and gain `+1 XP` in it. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
 
 ##### Initiate
 
@@ -168,7 +227,7 @@ First forays into the secret arts of the Arcana. Unlock an Arcane Aspect and gai
 
 ##### Disciple
 
-Humility, learning the gods, and discipline. Spell memory `+1`. Unlock a Divine Rite and gain `+1 XP` in it. Increases chance to be admitted into *Monastery* in City by `1`.
+Humility, learning the gods, and discipline. Memory `+1`. Unlock a Divine Rite and gain `+1 XP` in it. Increases chance to be admitted into *Monastery* in City by `1`.
 
 ##### Novice
 
@@ -188,11 +247,11 @@ Honing skills as a master craftsman. `+1 XP` Traps/devices, `+1 XP` Mercantile, 
 
 ##### Loiter
 
-Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least bonuses in.
+Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least experience in.
 
 ##### Arx Arcanum
 
-Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. Spell sustain `+1`. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
+Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. Sustain `+1`. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
 
 ##### Scholar
 
@@ -224,7 +283,7 @@ The unseen blade in the night, the assassin is a dark instrument of the will of 
 
 ##### Monastery
 
-An austere and forbidding place for the study of the divine, often located in inaccessible places. Spell sustain `+1`. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
+An austere and forbidding place for the study of the divine, often located in inaccessible places. Sustain `+1`. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
 
 ##### Priest
 
@@ -264,7 +323,7 @@ War is a dirty dangerous business, but many things can be learned on the battlef
 
 ##### Drifter
 
-Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least bonuses in.
+Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least experience in.
 
 ##### Slave Pit
 

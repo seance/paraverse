@@ -69,6 +69,12 @@ A ranged attack is resolved as follows.
 1. Calculate and apply pain using [pain resolution](#pain-resolution) and attack damage.
 1. Determine and apply critical wounds using [wounds resolution](#critical-wounds-resolution) and attack damage.
 
+#### Ranged Attacks Into Skirmishes
+
+When making a ranged attack against a character who is engaged in melee skirmish with another character, there is a risk that the projectile hits the other character.
+
+If the attack misses its target, perform ranged attack resolution against the other character. If there are multiple, the Game Master chooses one. If the attack still misses, the resolution ends.
+
 ### Melee Skirmish Resolution
 
 A melee skirmish with one or more characters on either side is resolved as follows.
@@ -211,6 +217,8 @@ A death check is a roll with Target Difficulty of `15` and is modified by curren
 A dying character can be stabilized using the [Stabilization](characters#list-of-skills) skill by another character. See [rest](#time-and-space#rest).
 
 [Monasteries](environment#monasteries) may offer restoration and even resurrection services.
+
+A character's body, unless magically or otherwise treated, generally stays for two days before becoming unresurrectable.
 
 > **Example**
 >
