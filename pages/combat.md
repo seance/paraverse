@@ -266,6 +266,8 @@ Characters who are *immune* to a damage type take no damage at all from attacks 
 
 *Constructs* are any non-living characters or structures. Constructs do not have Endurance or Fortitude, but instead have a *Structure* stat and have an intrinsic *Armor Value* and may have a durability value.
 
+Constructs cannot become [incapacitated](#incapacitation) or [bleeding](#critical-wound-effects) and are immune to [poison](#damage-types).
+
 When a construct with armor value `AV` suffers `D` points of damage, its structure is reduced by `D - AV` (minimum zero) points. When a construct is reduced to zero structure, it is destroyed.
 
 A Destroyed construct may still be repaired, unless its durability has been reduced to zero.

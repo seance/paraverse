@@ -46,6 +46,10 @@ A spell or a prayer may grant a save check to the target of the spell or prayer.
 
 The save is resolved as `d20 + S - W`. If the result is *greater than* 10, the save is successful. Otherwise the save has failed.
 
+## Spell or Prayer Cast Strength
+
+The cast strength of a spell or a prayer is the skill check result that spell or prayer was originally produced with, which is thus at least the target difficulty value of that spell or prayer.
+
 [&laquo; Table of Contents](..)
 
 [&raquo; Arcana and Spellcasting](arcana-and-spellcasting)

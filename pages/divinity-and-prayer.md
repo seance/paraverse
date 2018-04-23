@@ -83,7 +83,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Lay on Hands |
 |-|-|
-| Difficulty | |
+| Difficulty | 14 |
+| Zeal | Pious |
 | Target | Touch |
 | Duration | Instant |
 | Materials | 1 Incense |
@@ -91,7 +92,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Crucible of Pain |
 |-|-|
-| Difficulty | |
+| Difficulty | 19 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Current fight |
 | Materials | &mdash; |
@@ -99,23 +101,26 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Inner Resolve |
 |-|-|
-| Difficulty | |
+| Difficulty | 15 |
+| Zeal | Pious |
 | Target | Touch |
 | Duration | 1 watch |
-| Materials | &mdash; |
+| Materials | 1 Incense |
 | Effects | Increase target's Fortitude by `3`. Has no effect on [constructs](combat#constructs) or characters already benefiting from Inner Resolve. |
 
 | Rite of Life | Restoring Prayer |
 |-|-|
-| Difficulty | |
+| Difficulty | 16 |
+| Zeal | Pious |
 | Target | Touch |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | Assist a [Trauma treatment](characters#list-of-skills) skill check, adding a `+2` modifier. |
+| Effects | *Non-Combat.* Assist a [Trauma treatment](characters#list-of-skills) skill check, adding a `+2` modifier. |
 
 | Rite of Life | Bloodstopping |
 |-|-|
-| Difficulty | |
+| Difficulty | 17 |
+| Zeal | Pious |
 | Target | Touch |
 | Duration | Instant |
 | Materials | &mdash; |
@@ -123,7 +128,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Crutch of Faith |
 |-|-|
-| Difficulty | |
+| Difficulty | 20 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Current fight |
 | Materials | &mdash; |
@@ -131,7 +137,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Stasis |
 |-|-|
-| Difficulty | |
+| Difficulty | 21 |
+| Zeal | Pious |
 | Target | Touch, a dying character |
 | Duration | Sustain(1) |
 | Materials | &mdash; |
@@ -139,15 +146,17 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Sacrifice |
 |-|-|
-| Difficulty | |
+| Difficulty | 21 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | Cause `X` points of Pain to yourself, up to `3`. The target makes a Willpower save. On failure the target suffers a hit of `10X` points of Fire damage, or half as much on success. Stamina lost from causing Pain to yourself from Sacrifice can only be restored by resting. |
+| Effects | Cause `X` points of Pain to yourself, up to `3`. The target makes a Willpower save. On failure the target suffers `10X` points of Fire damage, or half as much on success. Stamina lost from causing Pain to yourself from Sacrifice can only be restored by resting. |
 
 | Rite of Life | Sanctity |
 |-|-|
-| Difficulty | |
+| Difficulty | 20 |
+| Zeal | Pious |
 | Target | Self |
 | Duration | Sustained(1) |
 | Materials | &mdash; |
@@ -155,33 +164,46 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Life | Recorporation |
 |-|-|
-| Difficulty | |
+| Difficulty | 23 |
+| Zeal | Pious |
 | Target | Touch |
 | Duration | Instant |
 | Materials | 1 Myrrh |
 | Effects | Allow target character to regenerate a lost limb over a [camp](time-and-space#camp). |
 
+| Rite of Life | Rex Gloriae |
+|-|-|
+| Difficulty | N/A |
+| Zeal | Fervent |
+| Target | Touch |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Target's Stamina is fully restored and all critical wounds are instantly healed. |
+
 #### Rite of Death
 
 | Rite of Death | Withering |
 |-|-|
-| Difficulty | |
+| Difficulty | 18 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Current fight |
 | Materials | &mdash; |
-| Effects | *Necromancy.* Target makes a Willpower save. On failure, their [Crit limit](characters#secondary-stats) is reduced by `2`. Has no effect on characters already suffering from Withering. |
+| Effects | *Necromancy.* Target makes a Willpower save. On failure, their [Crit limit](characters#secondary-stats) is reduced by `2`. Has no effect on constructs or  characters already suffering from Withering. |
 
 | Rite of Death | Drain Life |
 |-|-|
-| Difficulty | |
+| Difficulty | 17 |
+| Zeal | Pious |
 | Target | Touch, incapacited character |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | *Necromancy.* Restore 3 Stamina to self by draining life from an incapacitated humanoid character. Each drain counts as a failed death check. |
+| Effects | *Necromancy.* Restore 3 Stamina to self by draining life from an incapacitated, living humanoid character. Each drain counts as a failed death check. |
 
 | Rite of Death | Curse of the Flesh |
 |-|-|
-| Difficulty | |
+| Difficulty | 16 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Current fight |
 | Materials | &mdash; |
@@ -189,7 +211,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Death | Banish |
 |-|-|
-| Difficulty | |
+| Difficulty | 17 |
+| Zeal | Pious |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
@@ -197,41 +220,45 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Death | Interlocution |
 |-|-|
-| Difficulty | |
+| Difficulty | 15 |
+| Zeal | Pious |
 | Target | Touch, a dead body |
 | Duration | Momentary |
 | Materials | 1 Incense |
 | Effects | *Ritual.* *Necromancy.* Touch a dead body and learn something about its life, moment of death or some secret that it might have held in life. |
 
-| Rite of Death | Smite |
-|-|-|
-| Difficulty | |
-| Target | Melee |
-| Duration | Instant |
-| Materials | &mdash; |
-| Effects | Target makes a Willpower save. On failure, target suffers a [Skull Fracture](combat#critical-wound-effects). |
-
 | Rite of Death | Cadaver Link |
 |-|-|
-| Difficulty | |
+| Difficulty | 17 |
+| Zeal | Pious |
 | Target | Touch, a fresh corpse |
 | Duration | Varying |
 | Materials | &mdash; |
-| Effects | *Necromancy.* Link two dead bodies so that the fresh corpse sustains the other from decay. A body of the same race as the preserved character will sustain it for two days, while a body of another race will sustain it for one day. The bodies must remain in close proximity. |
+| Effects | *Necromancy.* Link two dead bodies so that the fresh corpse sustains the other from decay. A body of the same race as the preserved character will sustain it for two days, while a body of another race will sustain it for one day (beyond the usual decay time). The bodies must remain in close proximity. |
 
 | Rite of Death | Resurrection |
 |-|-|
-| Difficulty | |
+| Difficulty | 25 |
+| Zeal | Pious |
 | Target | Touch, a dead body |
 | Duration | Camp |
 | Materials | 1 Incense, 1 Myrrh |
 | Effects | *Ritual* Raise a character back to life from death, if the body has not decomposed. |
 
+| Rite of Death | Smite |
+|-|-|
+| Difficulty | N/A |
+| Zeal | Fervent |
+| Target | Melee |
+| Duration | Instant |
+| Materials | &mdash; |
+| Effects | Target suffers a [Skull Fracture](combat#critical-wound-effects) and is reduced to zero Stamina. |
+
 #### Rite of Truth
 
 | Rite of Truth | Charm |
 |-|-|
-| Difficulty | |
+| Difficulty | 15 |
 | Target | Touch |
 | Duration | Momentary |
 | Materials | &mdash; |
@@ -239,7 +266,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Compulsion |
 |-|-|
-| Difficulty | |
+| Difficulty | 20 |
 | Target | Touch |
 | Duration | Varying |
 | Materials | 1 Incense |
@@ -247,7 +274,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Blessing |
 |-|-|
-| Difficulty | |
+| Difficulty | 17 |
 | Target | Touch |
 | Duration | Until spent |
 | Materials | 1 Incense |
@@ -255,7 +282,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Terrible Revelation |
 |-|-|
-| Difficulty | |
+| Difficulty | 21 |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
@@ -263,7 +290,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Congregation of Souls |
 |-|-|
-| Difficulty | |
+| Difficulty | 14 |
 | Target | Locale |
 | Duration | Instant |
 | Materials | 1 Incense |
@@ -271,7 +298,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Guidance |
 |-|-|
-| Difficulty | |
+| Difficulty | 15 |
 | Target | Touch |
 | Duration | Until spent |
 | Materials | 1 Myrrh |
@@ -279,7 +306,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Judgment |
 |-|-|
-| Difficulty | |
+| Difficulty | 18 |
 | Target | Ranged, Marksman targeting rules |
 | Duration | Concentration |
 | Materials | &mdash; |
@@ -287,11 +314,11 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 | Rite of Truth | Sense Arcana |
 |-|-|
-| Difficulty | |
+| Difficulty | 13 |
 | Target | Your area |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | Sense the presence of Arcane spells, although you cannot discern their cast strengths or particular nature. |
+| Effects | Sense the presence of Arcane spells, although you cannot discern their exact locations, cast strengths or particular nature. |
 
 [//]: # (melee single target has disadvantage on melee against you)
 
