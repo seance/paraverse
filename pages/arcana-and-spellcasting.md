@@ -663,7 +663,7 @@ Talismans are small artifacts that have various purposes.
 
 Alchemical materials include the following.
 
-- Reagents: Salt (&#x1f714;), Sulfur (&#x1f70d;) and Mercury (&#x1f710;)
+- Reagents: Salt (&#x1f714;), Sulfur (&#x1f70d;) and Mercury (&#x263f;)
 - Alloys: Metal, Dwarven and Gnomish
 
 Alchemical materials be purchased from Alchemists and found in the world.
