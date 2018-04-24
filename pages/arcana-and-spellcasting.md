@@ -29,9 +29,7 @@ A natural `20` is a success and natural `1` is a failure.
 | 16&ndash;18 | Caster is instantly killed (lost `1` WIL if resurrected). |
 | 19&ndash;20 | Caster is instantly killed, and their body is burned to cinder. |
 
-## Arcane Aspects
-
-### Evocation
+## Evocation
 
 Evocation is a discipline of Sorcery that focuses on the elemental powers of Fire and Frost and direct manipulation of the physical world. Spells are produced mentally, without the aid of material components, manifesting instantly, but may require physical manipulation in practical applications.
 
@@ -131,7 +129,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Materials | &mdash; |
 | Effects | The spell is triggered when you would start drowning, and lasts its duration, including that turn. |
 
-### Abjuration
+## Abjuration
 
 Abjuration is the manifestation of Sorcery that is aligned obversely to other magical and fundamental forces. Many spells of this discipline thus can be used to counter and shield from other effects.
 
@@ -241,7 +239,7 @@ Abjuration is the manifestation of Sorcery that is aligned obversely to other ma
 
 [//]: # (end/prevent magical condition)
 
-### Conjuring
+## Conjuring
 
 Conjuring is the field of Sorcery that studies the very fabric of existence itself, and how sentient minds and material bodies interact and weave in and out of its myriad manifestations and planes. Illusions and Planarism are key areas of study.
 
@@ -335,7 +333,7 @@ Conjuring is the field of Sorcery that studies the very fabric of existence itse
 
 [//]: # (spirit possession)
 
-### Transcendence
+## Transcendence
 
 Transcendence is the meta-magical dimension of Sorcery that studies magic itself, as well as the non-material aspects of reality, including time.
 
@@ -398,11 +396,11 @@ Transcendence is the meta-magical dimension of Sorcery that studies magic itself
 [//]: # (temporal gap)
 [//]: # (antimagic aura)
 
-### Druidism
+## Druidism
 
 Druidism draws power from the living force of untamed nature through herbs, rituals and blood magic. Nature manifests not as a gentle nurturer, but as a brutal contest for survival, fitness and fertility.
 
-#### Biome Power Level
+### Biome Power Level
 
 Druidic magic waxes and wanes in power with the verdancy of the local biome. Each Place of Interest's verdancy is determined by the Game Master. The resulting Biome Power Level is referenced as `BPL` in the spell descriptions.
 
@@ -413,7 +411,7 @@ Druidic magic waxes and wanes in power with the verdancy of the local biome. Eac
 | Verdant | 3 |
 | Lush | 5 |
 
-#### Blood Magic
+### Blood Magic
 
 Blood magic changes its nature by the blood used. Blood freely given yields more stable magic, while blood forcibly taken produces more powerful, unpredictable results.
 
@@ -509,7 +507,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 [//]: # (leshen form, ritual, blood magic)
 
-### Runecraft
+## Runecraft
 
 Deep in their mountainside fortresses, the Dwarves have long devised their secret language. Runes written in this language, when branded on steel using alchemical means, gives weapons, shields and armor special powers and qualities.
 
@@ -583,11 +581,11 @@ Each piece of equipment (weapon, shield or armor) may only have one rune branded
 
 [//]: # (channel rune: deliver touch magic via weapon attack)
 
-### Artifice
+## Artifice
 
 Artifice is the Gnomish art of producing magically imbued artifacts of exceedingly finely crafted mechanical inner workings. No other races can match the clockwork precision required to make these constructs, thus generally only Gnome characters may unlock the Artifice Aspect.
 
-#### Golem Construction
+### Golem Construction
 
 The construction of true golems is a deeply involved art and science, which even few Gnomes master. Instead, mechanically and magically gifted Gnomish adventurers find much more utility in so-called *mini-golems*, which are [constructs](combat#constructs) the size of a buckler shield and come in several varieties.
 
@@ -595,7 +593,7 @@ A mini-golem consists of a metallic alloy *chassis*, or frame, and any number of
 
 To construct a chassis, the [Traps/devices](characters#list-of-skills) skill is used in conjunction with *alloys* determined by the desired chassis properties, including module slots.
 
-##### Hexapod Chassis
+#### Hexapod Chassis
 
 Hexapod golems move on the ground and can climb and jump. They have [Athletics](characters#list-of-skills) 5 and [Evasion](characters#list-of-skills) 5. Their Armor Value (AV) and Structural points (S) depend on the construction as follows.
 
@@ -606,7 +604,7 @@ Hexapod golems move on the ground and can climb and jump. They have [Athletics](
 | Gnomish (`1 + M`) | 4&ndash;6 | 10/100 | 12 | `18 + M` |
 | Gnomish (`M`), Dwarven (`3`) | 4&ndash;6 | 15/150 | 15 | `20 + M` |
 
-##### Aquatic Chassis
+#### Aquatic Chassis
 
 Aquatic golems move in water and perform Athletics (swim) checks only in very difficult conditions. They have [Athletics](characters#list-of-skills) 10 and [Evasion](characters#list-of-skills) 7. Their Armor Value (AV) and Structural points (S) depend on the construction as follows.
 
@@ -617,7 +615,7 @@ Aquatic golems move in water and perform Athletics (swim) checks only in very di
 | Gnomish (`1 + M`) | 4&ndash;6 | 10/80 | 12 | `18 + M` |
 | Gnomish (`M`), Dwarven (`3`) | 4&ndash;6 | 15/120 | 15 | `20 + M` |
 
-##### Aerial Chassis
+#### Aerial Chassis
 
 Aerial golems use four mechanical wings to become airborne, and can maneuver at a low altitude. They have [Evasion](characters#list-of-skills) 10. Their Armor Value (AV) and Structural points (S) depend on the construction as follows.
 
@@ -628,7 +626,7 @@ Aerial golems use four mechanical wings to become airborne, and can maneuver at 
 | Gnomish (`1 + M`) | 3&ndash;4 | 6/55 | 12 | `18 + M` |
 | Gnomish (`M`), Dwarven (`3`) | 3&ndash;4 | 9/80 | 15 | `20 + M` |
 
-##### Modules
+#### Modules
 
 Modules are constructed using the Artifice skill and alchemical reagents required.
 
@@ -642,7 +640,7 @@ Modules are constructed using the Artifice skill and alchemical reagents require
 | Enhanced Logic Unit | 1 Sulfur | Enables conditional and more complex instructions to the golem. | 16 |
 | ... | ... | ... | ... |
 
-#### Golem Operation
+### Golem Operation
 
 A mini-golem can be carried in the sidearm equipment slot.
 
@@ -652,7 +650,7 @@ After each operation, a durability check needs to be made on the chassis.
 
 Structural damage can be repaired using one unit of the alloy most used in the chassis and a [Field repair](characters#list-of-skills) check during a [rest](time-and-space#rest).
 
-#### Talismans
+### Talismans
 
 Talismans are small artifacts that have various purposes.
 

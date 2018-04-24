@@ -1,6 +1,6 @@
 [&laquo; Table of Contents](..)
 
-## Divinity and Divine Prayer
+# Divinity and Divine Prayer
 
 Anyone who has accepted the Divine to their heart is a Faithful. It is only necessary to pledge your soul to a Deity.
 
@@ -8,7 +8,7 @@ The Faithful of the Divine express their faith through piety and fervent prayers
 
 While many claim to have done so, the Deities do not speak to mortals, and their will is perceived only indirectly through so-called *precepts*. No one knows exactly how this happens, but upon waking from slumber, the Faithful seem to possess absolute certainty of how they should conduct themselves.
 
-### Precepts
+## Precepts
 
 A true Faithful walks a difficult path, where mortal needs and desires must be tempered by the will of the Divine.
 
@@ -17,8 +17,13 @@ A Faithful is always under a precept. Upon taking a [camp](time-and-space#camp),
 | Precept | Obligations |
 |-|-|
 | Rancor | Walk among the heathen with fire and sword. Always choose the more severe and harsh judgment. |
+| Benevolence | Your Deity is mercy, love and life itself. Always choose the more lenient and merciful judgment. |
+| Austerity | Pleasures of the flesh and material wealth are mortal sin. Never spend wealth or accept material assistance. |
+| Opulence | Let the unbelievers see the wealth and opulent generosity of your Deity. Always spend wealth and give and receive freely. |
+| Proselytism | The incessant prayers of the masses are Manna to your Deity. Preach the gospel and bring the pagans to the Light. |
+| Piety | A true faithful follows a narrow path toward the Heavens. Observe your strictures to the utmost degree. |
 
-### Favor and Disfavor
+## Favor and Disfavor
 
 Whenever a Faithful acts upon a precept, whether honoring its obligations or either neglecting or even contravening them, they gain Favor or Disfavor.
 
@@ -26,11 +31,15 @@ A Faithful is not absolutely beholden to the precepts &mdash; they may choose to
 
 However, if there is one thing the Deities do not tolerate, it appears to be Arcane magic. Whenever a Faithful casts an Arcane spell, they gain Disfavor.
 
-### Oblivious Deities
+## Oblivious Deities
 
 At the end of each session, one Favor is forgotten by the deities, while Disfavor is not.
 
-### Divine Prayer
+## Having your Deity's Ear
+
+To call upon your Deity for Divine judgment in a [Fervent](#fervent-prayer-resolution) prayer, you must have at least as many [Favors](#favor-and-disfavor) as you have [Disfavors](#favor-and-disfavor).
+
+## Divine Prayer
 
 There are two levels of zeal of prayers, *Pious* and *Fervent* prayer.
 
@@ -38,7 +47,7 @@ A Pious prayer is one where the supplicant offers their worship for a lesser fav
 
 A Fervent prayer is when the supplicant calls Divine Judgment upon themselves in recognition of their deeds and to grant a greater favor. Whatever the outcome, a Fervent prayer resets the accrued Favor and Disfavor.
 
-#### Pious Prayer Resolution
+### Pious Prayer Resolution
 
 To utter a divine prayer, you must first have memorized it.
 
@@ -48,7 +57,7 @@ Roll `d20` and add `S`. If the result is *greater than* `T`, the prayer has been
 
 A natural `20` is Favored and natural `1` is Disfavored.
 
-#### Fervent Prayer Resolution
+### Fervent Prayer Resolution
 
 Let Favor value `F` be twice the number of accrued Favors, and Disfavor value `D` be twice the number of accrued Disfavors.
 
@@ -64,7 +73,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 >
 > A character has accrued three Favors and one Disfavor. Hence the Favor value is 2 × 3 = 6 and Disfavor value is 2 × 1 = 2. The die roll result is 14, and the prayer is unfortunately ignored. If the roll value had been just one higher, the prayer would have been Favored (15 > 20 - 6).
 
-#### Prayer Disfavor
+### Prayer Disfavor
 
 | Roll | Result |
 |-:|-|
@@ -77,9 +86,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | 16&ndash;18 | Supplicant is instantly killed (lost `1` WIL if resurrected). |
 | 19&ndash;20 | Supplicant is instantly killed, and their body is burned to cinder. |
 
-### Divine Rites
-
-#### Rite of Life
+## Rite of Life
 
 | Rite of Life | Lay on Hands |
 |-|-|
@@ -180,7 +187,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | Materials | &mdash; |
 | Effects | Target's Stamina is fully restored and all critical wounds are instantly healed. |
 
-#### Rite of Death
+## Rite of Death
 
 | Rite of Death | Withering |
 |-|-|
@@ -254,7 +261,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | Materials | &mdash; |
 | Effects | Target suffers a [Skull Fracture](combat#critical-wound-effects) and is reduced to zero Stamina. |
 
-#### Rite of Truth
+## Rite of Truth
 
 | Rite of Truth | Charm |
 |-|-|
@@ -322,7 +329,7 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 [//]: # (melee single target has disadvantage on melee against you)
 
-### Sacred Materials
+## Sacred Materials
 
 Sacred materials include the following.
 
