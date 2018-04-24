@@ -63,7 +63,7 @@ Primary stats describe the fundamental nature of a character, governing the char
 | Physique | PHY | Athleticism, strength and speed. | Athletics, melee combat, weapons, armor |
 | Dexterity | DEX | Gracefulness, balance, hand-eye-coordination, flexibility, fine-motor skills. | Acrobatics, ranged combat, stealth, sleight of hand |
 | Constitution | CON | Health and robustness of body. | Endurance, critical wounds |
-| Willpower | WIL | Presence of mind, focus, mental control. | Fortitude, magical/divine ability |
+| Willpower | WIL | Presence of mind, focus, mental control. | Fortitude, arcane/divine ability |
 | Cognition | COG | Comprehension, learning, memory, judgment. | Professional skills, magical/divine ability |
 | Empathy | EMP | Ability to read, anticipate and manipulate persons based on social cues. | Social interaction, mercantile skills |
 | Perception | PER | Awareness, sensory acuteness, attention to discrepancy. | Traps, ambushes, secrets, forgery, investigation |
@@ -74,11 +74,11 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 | Stat | Derived as | Description |
 |-|:-:|-|
-| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The "current Endurance" is called Stamina. The "missing Endurance" is called Fatigue. Suffering Fatigue is also called suffering Pain. |
+| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called Fatigue. Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
 | Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
-| Spell memory | `⌊COG / 2⌋`|Number of spells memorizable at once. |
-| Spell sustain | `COG - 10` | Number of sustainable spell points. Minimum zero. |
+| Memory | `COG - 7` | Number of spells or prayers memorizable at once. |
+| Sustain | `COG - 10` | Number of sustainable spell or prayer points. Minimum zero. |
 | Awareness | `PER - 10` | Passive perception. |
 
 ## Character Creation
@@ -104,17 +104,76 @@ The base value of every primary stat is `10`.
 | Race               | PHY | DEX | CON | WIL | COG | EMP | PER |
 |-|-:|-:|-:|-:|-:|-:|-:|
 | **Men**            ||||||||
-| Scythians          |     |  +1 |  +1 |     |  -1 |  -1 |  +2 |
-| Garrandines        |  +1 |     |     |  +1 |  +1 |  +2 |  -1 |
+| Scythians          |     | `+1`| `+1`|     | `-1`| `-1`| `+2`|
+| Garrandines        | `+1`|     |     | `+1`| `+1`| `+2`| `-1`|
 | **Elves**          ||||||||
-| Gray elves         |  -1 |  +1 |  -3 |  +3 |  +2 |  +1 |  +3 |
-| Sylvan elves       |  +3 |  +3 |  -2 |     |  -2 |     |  +4 |
+| Gray elves         | `-1`| `+1`| `-3`| `+3`| `+2`| `+1`| `+3`|
+| Sylvan elves       | `+3`| `+3`| `-2`|     | `-2`|     | `+4`|
 | **Dwarves**        ||||||||
-| Redbeards          |  +3 |  -1 |  +4 |  -1 |  -2 |  -3 |  -2 |
-| Longbeards         |  +2 |  -2 |  +4 |  +2 |  +3 |  -2 |  -3 |
+| Redbeards          | `+3`| `-1`| `+4`| `-1`| `-2`| `-3`| `-2`|
+| Longbeards         | `+2`| `-2`| `+4`| `+2`| `+3`| `-2`| `-3`|
 | **Gnomes**         ||||||||
-| Tinker gnomes      |  -2 |  +3 |  +1 |     |     |  +2 |  +1 |
-| Astromancer gnomes |  -3 |  +1 |     |  +3 |  +4 |  +3 |     |
+| Tinkers            | `-2`| `+3`| `+1`|     |     | `+2`| `+1`|
+| Astromancers       | `-3`| `+1`|     | `+3`| `+4`| `+3`|     |
+
+### Racial Skill Modifiers
+
+Racial skill modifiers act as direct bonuses to skills.
+
+#### Men
+
+##### Scythians
+
+- Druidism (+1)
+- Throwing (+1)
+- Sneaking (+1)
+
+##### Garrandines
+
+- Interaction (+1)
+- Rite of Life (+1)
+- Abjuration (+1)
+
+#### Elves
+
+##### Gray Elves
+
+- Evocation (+1)
+- Rite of Truth (+1)
+- Athletics (+1)
+
+##### Sylvan Elves
+
+- Druidism (+1)
+- Marksman (+1)
+- Rite of Death (+1)
+
+#### Dwarves
+
+##### Redbeards
+
+- Stabilization (+1)
+- Two-handed (+1)
+- Mercantile (+1)
+
+##### Longbeards
+
+- Mercantile (+2)
+- Runecraft (+1)
+
+#### Gnomes
+
+##### Tinkers
+
+- Traps/devices (+1)
+- Field repair (+1)
+- Athletics (+1)
+
+##### Astromancers
+
+- Traps/devices (+1)
+- Conjuring (+1)
+- Transcendence (+1)
 
 ### Life Path
 
@@ -160,19 +219,19 @@ Picking up the sword or axe comes easier with a big of fighting experience. `+1 
 
 ##### Student
 
-Learning to read is beneficial for studies. TODO. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
+Learning to read is beneficial for studies. Memory `+1`. Unlock an Arcane Aspect and gain `+1 XP` in it. Increases chance to be admitted to *Arx Arcanum* in City by `1`.
 
 ##### Initiate
 
-First forays into the secret arts of the Arcana. TODO. Increases chance to become *Scholar* in City by `1`.
+First forays into the secret arts of the Arcana. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect. Increases chance to become *Scholar* in City by `1`.
 
 ##### Disciple
 
-Humility, learning the gods, and discipline. TODO. Increases chance to be admitted into *Monastery* in City by `1`.
+Humility, learning the gods, and discipline. Memory `+1`. Unlock a Divine Rite and gain `+1 XP` in it. Increases chance to be admitted into *Monastery* in City by `1`.
 
 ##### Novice
 
-Discovering the Divine Light and its ways. TODO. Increases chance to become *Priest* in City by `1`.
+Discovering the Divine Light and its ways. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite. Increases chance to become *Priest* in City by `1`.
 
 ##### Apprentice
 
@@ -188,15 +247,15 @@ Honing skills as a master craftsman. `+1 XP` Traps/devices, `+1 XP` Mercantile, 
 
 ##### Loiter
 
-Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least bonuses in.
+Not everything goes to plan always. Still, a moment to reflect may not be a bad thing. `+2 XP` to any skill in the skillset you have least experience in.
 
 ##### Arx Arcanum
 
-Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. TODO.
+Arx Arcanum, or *secret citadel*, is a place for studying the mysteries of the arcane arts. Sustain `+1`. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
 
 ##### Scholar
 
-Those who master the arcane arts are both feared and respected. `+1` COG, TODO.
+Those who master the arcane arts are both feared and respected. `+1` COG. Unlock an Arcane Aspect and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Aspect.
 
 ##### Gladiator
 
@@ -224,11 +283,11 @@ The unseen blade in the night, the assassin is a dark instrument of the will of 
 
 ##### Monastery
 
-An austere and forbidding place for the study of the divine, often located in inaccessible places. TODO.
+An austere and forbidding place for the study of the divine, often located in inaccessible places. Sustain `+1`. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
 
 ##### Priest
 
-Ordained in the Light of the Divine, a Priest commands fear in the hearts of sinners, and no one is without sin. `+1` WIL, TODO.
+Ordained in the Light of the Divine, a Priest commands fear in the hearts of sinners, and no one is without sin. `+1` WIL. Unlock a Divine Rite and gain `+2 XP` in it, or gain `+1 XP` in an already unlocked Rite.
 
 #### Adventuring
 
@@ -264,7 +323,7 @@ War is a dirty dangerous business, but many things can be learned on the battlef
 
 ##### Drifter
 
-Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least bonuses in.
+Those who are lucky become drifters when a war is lost, wandering the lands looking for new purpose. `+2 XP` to any skill in the skillset you have least experience in.
 
 ##### Slave Pit
 
@@ -286,8 +345,8 @@ Starting equipment purchases can be performed from the following table.
 
 | Equipment | Cost |
 |-|-:|
-| Any weapon | 1 |
-| Any shield | 1 |
+| Any weapon or shield | 1 |
+| Any weapon or shield, durability 15 | 2 |
 | Light armor (AV 1) | 1 |
 | Medium armor (AV 4) | 2 |
 | Heavy armor (AV 7) | 3 |
@@ -439,6 +498,7 @@ For purposes of stealth, NPCs have an *alertness* state, that affects how they r
 | Alertness | Notes |
 |-|-|
 | Relaxed | NPC is not paying attention, and is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
+| Distracted | NPC's attention is elsewhere, and NPC is not patrolling. Stealth rolls have [advantage](#advantage-and-disadvantage). |
 | On duty | Default alertness. NPC may be patrolling [areas](time-and-space#local-areas).
 | Suspicious | NPC may investigate. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |
 | Alerted | NPC raises [alarm](#alarms) and prepares for combat. Stealth rolls have [disadvantage](#advantage-and-disadvantage). NPC cannot be ambushed. |

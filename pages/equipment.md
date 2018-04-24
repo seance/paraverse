@@ -11,13 +11,13 @@ Equipment includes weapons, shields, armor, quest items, and junk carried by cha
 Melee weapons have the following properties.
 
 - Base damage. See [attack damage](combat#attack-damage).
-- Damage type. For future reference.
+- Damage type.
 - Handedness. One-handed weapons can be used with shields.
 - Traits. Modifiers to weapon stats etc.
 
 When a one-handed weapon is used with a shield, the [Weapon-and-shield](characters#list-of-skills) skill is used in [skirmishes](combat#melee-skirmish-resolution).
 
-| Example weapon | Base | Damage type | Notes |
+| Example Weapon | Base | Damage Type | Notes |
 |-|-:|-|-|
 | Dagger | 4 | Blade | One-handed |
 | Wooden club | 5 | Impact | One-handed |
@@ -54,7 +54,7 @@ Ranged weapons have the following properties.
 - Usage. Either Marksman or Thrown weapon.
 - Traits. Modifiers to weapon stats etc.
 
-| Example weapon | Base | Damage type | Notes |
+| Example Weapon | Base | Damage Type | Notes |
 |-|-:|-|-|-|
 | Rock | 4 | Impact | Throwing |
 | Throwing knives | 5 | Blade | Throwing |
@@ -81,7 +81,7 @@ Shields have a Shield Value property, which has the following functions.
 - Increase Evasion against [ranged attacks](combat#ranged-attack-resolution)
 - Act as extra armor against all [attack damage](combat#attack-damage)
 
-| Shield type | Value |
+| Shield Type | Value |
 |-|-:|
 | Buckler | 1 |
 | Heater | 2 |
@@ -92,7 +92,7 @@ Shields have a Shield Value property, which has the following functions.
 A character can have at the ready the following weapons.
 
 - Primary melee weapon
-- Secondary melee weapon, if both primary and secondary are one-handed
+- Secondary melee weapon
 - A shield, if secondary weapon is not used
 - A ranged weapon, Throwing or Marksman
 - A small sidearm, either melee or ranged
@@ -212,6 +212,16 @@ Enchanted weapons and armor can have skill modifiers or other effects. Some mons
 
 ## Generating Equipment
 
+### Trader Level
+
+| Trader Level | Roll |
+|-|-:|
+| Destitute | `d12` |
+| Poor | `d12 + 2` |
+| Moderate | `d12 + 4` |
+| Well-to-do | `d12 + 6` |
+| Wealthy |  `d12 + 8` |
+
 ### Perusing at a Store
 
 See [smiths and armorers](environment#smiths-and-armorers) for details on equipment trade.
@@ -253,6 +263,38 @@ See [smiths and armorers](environment#smiths-and-armorers) for details on equipm
 | 6&ndash;15 | Item has durability equal to the roll value. |
 | 16&ndash;18 | Mastercrafted(16) item. |
 | 19&ndash;20 | Mastercrafted(17) item. |
+
+### Alchemical Reagents
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No reagents in stock. |
+| 6&ndash;8 | Salt in stock. |
+| 9&ndash;11 | Salt and Mercury in stock. |
+| 12&ndash;15 | All reagents in stock. |
+| 16&ndash;18 | All reagents in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All reagents in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
+
+### Alchemical Alloys
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No alloys in stock. |
+| 6&ndash;8 | Metal in stock. |
+| 9&ndash;11 | Metal and Dwarvish alloy in stock. |
+| 12&ndash;15 | All alloys in stock. |
+| 16&ndash;18 | All alloys in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All alloys in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
+
+### Sacred Elixirs
+
+| Roll | Result |
+|-:|-|
+| 1&ndash;5 | No elixirs in stock. |
+| 6&ndash;10 | Incense in stock. |
+| 11&ndash;15 | All elixirs in stock. |
+| 16&ndash;18 | All elixirs in stock. Sold at a moderate discount (`-2` target difficulty). |
+| 19&ndash;20 | All elixirs in stock. Sold at a large discount (`-4` target difficulty, two-for-one deal). |
 
 [&laquo; Table of Contents](..)
 

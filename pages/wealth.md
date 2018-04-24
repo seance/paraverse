@@ -72,7 +72,7 @@ Junk picked up from the battlefield is not worth its weight, other than to repla
 
 Merchants do not usually buy mundane things from adventurers.
 
-## Generating Loot
+## Generating Treasure
 
 The Game Master may specify the exact wealth levels that a found treasure is worth, or the wealth level can be generated using the table below, based on the nominal treasure magnitude.
 

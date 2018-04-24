@@ -92,22 +92,14 @@ Gambling occurs normally by a simple `d20` roll, with a `12+` result winning the
 Smiths and armorers offer weapons, shields and armor for sale, as well as provide repair services.
 
 - Have a piece of equipment in [disrepair](equipment#durability-and-disrepair) repaired by a smith. Requires a [Mercantile](characters#list-of-skills) check with a target difficulty value *half* of item [sales target difficulty](wealth#trading-target-difficulties). Multiple pieces can be repaired at a single visit, but each requires separate check.
-- Peruse items for a rare find. Roll according to Trader Level and refer to the [perusing finds table](equipment#perusing-at-a-store). Only one peruse roll can be performed per visit.
-- Purchase an item of a specific kind. Roll according to Trader Level and refer to the [specific item table](equipment#purchase-item-of-specific-kind). Separate specific item rolls can be performed for the following item categories per visit, unless each generated item is purchased.
+- Peruse items for a rare find. Roll according to [Trader Level](equipment#trader-level) and refer to the [perusing finds table](equipment#perusing-at-a-store). Only one peruse roll can be performed per visit.
+- Purchase an item of a specific kind. Roll according to [Trader Level](equipment#trader-level) and refer to the [specific item table](equipment#purchase-item-of-specific-kind). Separate specific item rolls can be performed for the following item categories per visit, unless each generated item is purchased.
     - One-handed weapons
     - Two-handed weapons
     - Thrown weapons
     - Marksman weapons
     - Shields
     - Armor
-
-| Trader Level | Roll |
-|-|-:|
-| Destitute | `d12` |
-| Poor | `d12 + 2` |
-| Moderate | `d12 + 4` |
-| Well-to-do | `d12 + 6` |
-| Wealthy |  `d12 + 8` |
 
 > **Example**
 >
@@ -117,15 +109,46 @@ Smiths and armorers offer weapons, shields and armor for sale, as well as provid
 >
 > In either case, a piece of equipment in a different category can be rolled up.
 
-#### Temples and Monasteries
+#### Alchemists
 
-Temples and monasteries offer healing and divinely restorative services to travelers who are missing limbs, or even resurrection, if a corpse and some coin is procured.
+Alchemists offer alchemical materials for sale.
+
+- Purchase Reagents. Roll according to [Trader Level](equipment#trader-level) and refer to the [alchemical reagents table](equipment#alchemical-reagents) for availabilities. The Reagents table below has the target difficulty values for purchases.
+- Purchase Alloys. Roll according to [Trader Level](equipment#trader-level) and refer to the [alchemical alloys table](equipment#alchemical-alloys). The Alloys table below has the target difficulty values for purchases.
+
+| Reagent | Diff |
+|-|-|
+| Salt (&#x1f714;) | 10 |
+| Mercury (&#x1f710;) | 15 |
+| Sulfur (&#x1f70d;) | 20 |
+
+| Alloy | Diff |
+|-|-|
+| Metal | 10 |
+| Dwarven | 15 |
+| Gnomish | 20 |
+
+#### Temples
+
+Temples offer sacred materials for sale.
+
+- Purchase Elixirs. Roll according to [Trader Level](equipment#trader-level) and refer to the [sacred elixirs table](equipment#sacred-elixirs) for availabilities. The Elixirs table below has the target difficulty values for purchases.
+- Purchase Purified Spirits. TODO.
+
+| Elixir | Diff |
+|-|-|
+| Incense | 10 |
+| Myrrh | 20 |
+
+#### Monasteries
+
+Monasteries offer healing and divinely restorative services to travelers who are missing limbs, or even resurrection, if a corpse and some coin is procured.
 
 Divine acts of restoration and resurrection are not exclusive to the rich &mdash; they simply cost *all* of your [wealth](wealth#wealth-level) &mdash; but you must first conclude a small negotiation.
 
 - Healing at a temple or monastery is free. Full [stamina](characters#secondary-stats) and all [critical wounds](combat#critical-wound-effects) are healed, in one or two [watches](time-and-space#watches), respectively.
 - Restoration of a single limb requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `15`. The missing limb is not necessary.
-- Resurrection requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `20`. The dead character's corpse is required. Resurrection may come with the catch of becoming a devout follower of the local deity.
+- Resurrection requires a [Mercantile](characters#list-of-skills) check with a target difficulty value `20`. The dead character's corpse is required. Multiple characters from the player group can be bundled into one deal. Resurrection may come with the catch of becoming a devout follower of the local deity.
 
 ### Other Points of Interest
 
