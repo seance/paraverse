@@ -1,1 +1,1 @@
-Creative Commons Attribution-NonCommercial 4.0 International License
+Creative Commons Attribution-ShareAlike 4.0 International License
