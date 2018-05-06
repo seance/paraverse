@@ -21,6 +21,8 @@ Character sheet is where all information concerning a single player character is
 - Current fatigue
 - Current effects
 
+[&raquo; HTML Character Sheet](../../assets/props/character-sheet.html)
+
 ## Group Sheet
 
 Group sheet is where information concerning the whole player character group is recorded.
@@ -31,6 +33,8 @@ Group sheet is where information concerning the whole player character group is 
 - Total group XP
 - Group wealth level
 - Quest items and other junk
+
+[&raquo; HTML Group Sheet](../../assets/props/group-sheet.html)
 
 ## Character Card
 
