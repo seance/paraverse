@@ -74,6 +74,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 | Stat | Derived as | Description |
 |-|:-:|-|
+| Critical | `CON` | Threshold for suffered damage to cause a critical wound to you. |
 | Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called Fatigue. Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
 | Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
@@ -85,15 +86,15 @@ Secondary stats are derived from primary stats, but may also have external modif
 
 Character creation proceeds with the following steps.
 
-1. Select your character's race. Record any racial traits on your character sheet.
+1. Select your character's race. Record any racial traits on your [character sheet](game-props#character-sheet).
 1. Select a name and gender for your character.
 1. Perform the [life path](#life-path) process, assigning modifiers.
-1. Record your primary stats. Derive and record your secondary stats.
+1. Record your [primary stats](#primary-stats). Derive and record your [secondary stats](#secondary-stats).
 1. Record your base skill modifier values, derived from primary stats.
-1. Assign XP points from group experience pool.
-1. Calculate and record skill modifier values.
-1. Acquire abilities based on your XP distribution.
-1. Purchase starting equipment.
+1. Assign XP points from the [group experience pool](quests-and-experience#group-experience).
+1. [Calculate](quests-and-experience#assigning-xp) and record skill modifier values.
+1. Acquire [abilities](#abilities) based on your XP distribution.
+1. Purchase [starting equipment](#starting-equipment).
 1. Bonus: Find a portrait image and print your [character card](game-props#character-card).
 1. Bonus: Write a bio for your character based on the life path.
 
@@ -124,56 +125,56 @@ Racial skill modifiers act as direct bonuses to skills.
 
 ##### Scythians
 
-- Druidism (+1)
-- Throwing (+1)
-- Sneaking (+1)
+- Druidism (`+1`)
+- Throwing (`+1`)
+- Sneaking (`+1`)
 
 ##### Garrandines
 
-- Interaction (+1)
-- Rite of Life (+1)
-- Abjuration (+1)
+- Interaction (`+1`)
+- Rite of Life (`+1`)
+- Abjuration (`+1`)
 
 #### Elves
 
 ##### Gray Elves
 
-- Evocation (+1)
-- Rite of Truth (+1)
-- Athletics (+1)
+- Evocation (`+1`)
+- Rite of Truth (`+1`)
+- Athletics (`+1`)
 
 ##### Sylvan Elves
 
-- Druidism (+1)
-- Marksman (+1)
-- Rite of Death (+1)
+- Druidism (`+1`)
+- Marksman (`+1`)
+- Rite of Death (`+1`)
 
 #### Dwarves
 
 ##### Redbeards
 
-- Stabilization (+1)
-- Two-handed (+1)
-- Mercantile (+1)
+- Stabilization (`+1`)
+- Two-handed (`+1`)
+- Mercantile (`+1`)
 
 ##### Longbeards
 
-- Mercantile (+2)
-- Runecraft (+1)
+- Mercantile (`+2`)
+- Runecraft (`+1`)
 
 #### Gnomes
 
 ##### Tinkers
 
-- Traps/devices (+1)
-- Field repair (+1)
-- Athletics (+1)
+- Traps/devices (`+1`)
+- Field repair (`+1`)
+- Athletics (`+1`)
 
 ##### Astromancers
 
-- Traps/devices (+1)
-- Conjuring (+1)
-- Transcendence (+1)
+- Traps/devices (`+1`)
+- Conjuring (`+1`)
+- Transcendence (`+1`)
 
 ### Life Path
 
@@ -345,11 +346,11 @@ Starting equipment purchases can be performed from the following table.
 
 | Equipment | Cost |
 |-|-:|
-| Any weapon or shield | 1 |
-| Any weapon or shield, durability 15 | 2 |
-| Light armor (AV 1) | 1 |
-| Medium armor (AV 4) | 2 |
-| Heavy armor (AV 7) | 3 |
+| Any [weapon](equipment#weapons) or [shield](equipment#shields) | 1 |
+| Any [weapon](equipment#weapons) or [shield](equipment#shields), durability 15 | 2 |
+| Light [armor](equipment#armor) (AV 1) | 1 |
+| Medium [armor](equipment#armor) (AV 4) | 2 |
+| Heavy [armor](equipment#armor) (AV 7) | 3 |
 
 All starting items have durability `12`, unless otherwise specified.
 
@@ -426,9 +427,21 @@ Skills are divided into categories called skillsets. Some skills have associated
 | Traps/devices | DEX | *Mechanical.* Set or disarm traps and operate devices. | **Partial:** Failed, can retry. **Failure:** Failed, trap sprung/device malfunction. |
 | Forgery/disguise | PER | Forge or identify a forged document or disguise a person. [Opposed](#opposed-skill-resolution): Forgery/disguise. | **Partial:** Technicality. **Failure:** Discovered as forged/believe authentic. |
 
-| Magic and divinity | Stat | Notes |
-|-|-|-|
-|TODO|TODO|TODO|
+| Arcane | Stat | Notes | Resolution |
+|-|-|-|-|
+| Evocation | WIL | *Sorcery.* See [Evocation](arcana-and-spellcasting#evocation). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Abjuration | WIL | *Sorcery.* See [Abjuration](arcana-and-spellcasting#abjuration). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Conjuring | WIL | *Sorcery.* See [Conjuring](arcana-and-spellcasting#conjuring). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Transcendence | WIL | *Sorcery.* See [Transcendence](arcana-and-spellcasting#transcendence). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Druidism | WIL | See [Druidism](arcana-and-spellcasting#druidism). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Runecraft | WIL | See [Runecraft](arcana-and-spellcasting#runecraft). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+| Artifice | WIL | See [Artifice](arcana-and-spellcasting#artifice). | See [spellcasting resolution](arcana-and-spellcasting#spellcasting-resolution). |
+
+| Divine | Stat | Notes | Resolution |
+|-|-|-|-|
+| Rite of Life | WIL | See [Rite of Life](divinity-and-prayer#rite-of-life). | See [Divine prayer](divinity-and-prayer#divine-prayer). |
+| Rite of Death | WIL | See [Rite of Death](divinity-and-prayer#rite-of-death). | See [Divine prayer](divinity-and-prayer#divine-prayer). |
+| Rite of Truth | WIL | See [Rite of Truth](divinity-and-prayer#rite-of-truth). | See [Divine prayer](divinity-and-prayer#divine-prayer). |
 
 | Utility | Stat | Notes | Resolution |
 |-|-|-|-|
@@ -451,7 +464,7 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 
 | Martial | XP | Description |
 |-|-:|-|
-| Taunt | | **Assigment:** Assign two opponents to yourself in a skirmish. |
+| Taunt | | **Assignment:** Assign two opponents to yourself in a skirmish. |
 | Duelist | | Gain `+1` skill modifier when in melee with a single opponent. |
 | Skirmisher | | Gain `+2` skill modifier when in melee with multiple opponents. |
 | Shield Rush | | **Move:** When using a shield, push through opponents' [zone of control](time-and-space#zone-of-control). |
@@ -467,7 +480,11 @@ Only one ability may be unlocked per required XP level, so if multiple abilities
 | Bird Call | | If you succeed in a Sleight of hand ([Opposed](#opposed-skill-resolution): Awareness) check, lower the [alertness](#npc-alertness) of nearby NPCs from *Suspicious* to *On duty*. |
 | Sixth Sense | | When you are ambushed, instead of having [disadvantage](#advantage-and-disadvantage) to combat rolls on the first round, you have [advantage](#advantage-and-disadvantage).
 
-| Magic and divinity | XP | Description |
+| Arcane | XP | Description |
+|-|-:|-|
+| TODO | TODO | TODO |
+
+| Divine | XP | Description |
 |-|-:|-|
 | TODO | TODO | TODO |
 

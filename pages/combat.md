@@ -133,7 +133,7 @@ The pain sustained by the target character is `⌈D / F⌉`.
 
 ### Critical Wounds Resolution
 
-Let `D` be the damage dealt, `L` be the hit location and `C` be the target character's [Constitution](characters#primary-stats) primary stat value.
+Let `D` be the damage dealt, `L` be the hit location and `C` be the target character's [Critical](characters#secondary-stats) secondary stat value.
 
 If `D` is *equal or greater than* `C`, but less than `3C`, the target character suffers a *critical wound* based on the hit location `L` from the table below.
 
