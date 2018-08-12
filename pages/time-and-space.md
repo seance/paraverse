@@ -38,6 +38,8 @@ During a rest, each character heals one point of Stamina, and may take one of th
 - Re-memorize a new set of spells or prayers
 - Change [equipment loadout](equipment#equipment-slots)
 
+During a rest, healing occurs before actions, reducing negative skill modifier from [Fatigue](characters#fatigue-in-skill-checks).
+
 > A rest consists of finding a suitable resting place, personal maintenance, field tasks and resting with one eye open.
 
 ### Camp
@@ -50,6 +52,8 @@ During a camp, each character heals all their Stamina, and may take one of the f
 - Use [Trauma treatment](characters#list-of-skills) to treat a critical wound
 - Re-memorize a new set of spells or prayers
 - Change [equipment loadout](equipment#equipment-slots)
+
+During a camp, negative skill modifier from [Fatigue](characters#fatigue-in-skill-checks) is not applied, unless the camp is [interrupted](#interrupting-a-rest-or-a-camp).
 
 > A camp consists of finding a suitable camp ground and preparing it, setting campfires, personal maintenance, medical and field tasks, sleeping and watch duty.
 

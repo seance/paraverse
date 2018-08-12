@@ -415,7 +415,7 @@ Skills are divided into categories called skillsets. Some skills have associated
 | Weapon-and-shield | PHY | *Melee.* Fighting with a shield.  | See [skirmishing](combat#melee-skirmish-resolution), [wield limits](equipment#wield-limits). |
 | Marksman | DEX | *Ranged.* Bows, crossbows, guns etc. | See [ranged attacks](combat#ranged-attack-resolution), [ranged targeting](combat#ranged-targeting), [wield limits](equipment#wield-limits). |
 | Throwing | DEX | *Ranged.* Knives, hatchets, javelins etc.  | See [ranged attacks](combat#ranged-attack-resolution), [ranged targeting](combat#ranged-targeting), [wield limits](equipment#wield-limits). |
-| Evasion | DEX | *Physical.* Evading melee or ranged attacks passively. | See [combat](combat). |
+| Evasion | DEX | Evading melee or ranged attacks passively. | See [combat](combat). |
 | Athletics | PHY | *Physical.* Jumping, swimming/diving, feats of strength etc. | **Partial:** Failed, can retry. **Failure:** Failed, with possible injury. |
 
 | Cloak-and-dagger | Stat | Notes | Resolution |

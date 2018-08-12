@@ -73,7 +73,7 @@ A ranged attack is resolved as follows.
 
 When making a ranged attack against a character who is engaged in melee skirmish with another character, there is a risk that the projectile hits the other character.
 
-If the attack misses its target, perform ranged attack resolution against the other character. If there are multiple, the Game Master chooses one. If the attack still misses, the resolution ends.
+If the attack misses its target, perform ranged attack resolution against the other character using the natural roll value. If there are multiple, the Game Master chooses one. If the attack still misses, the resolution ends.
 
 ### Melee Skirmish Resolution
 
@@ -158,13 +158,13 @@ See also [critical wound effects](#critical-wound-effects).
 |-|-|
 | Skull Fracture | [Incapacitation](#incapacitation), Cognition and Willpower based skill checks, including spells and prayers, have [disadvantage](characters/#advantage-and-disadvantage). |
 | Fractured Arm | *Melee*, *Ranged*, *Physical* and *Manual* skill checks and spells and prayers have [disadvantage](characters/#advantage-and-disadvantage). |
-| Fractured Leg | *Melee*, *Ranged* and *Physical* skill checks have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
+| Fractured Leg | *Melee*, *Ranged*, *Physical* and Evasion skill checks have [disadvantage](characters/#advantage-and-disadvantage). Traveling times are *one and half* times as long. |
 | Bleeding | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
 | Incineration | Character suffers 2 Pain at each end phase until at zero Stamina, or until the character takes a full round to put out the fire. See also [incapacitation](#incapacitation). |
 | Hindering | Character cannot move for one round. |
 | Frostburn | A character cannot regain Stamina through resting while suffering from frostburn. |
 | Corrosion | Armor becomes in disrepair immediately. |
-| Poisoning | Character suffers 1 Fatigue at each end phase until at zero Stamina. See also [incapacitation](#incapacitation). |
+| Poisoning | Character has `-2` [Critical](characters#secondary-stats) and [Fortitude](characters#secondary-stats) secondary stat values. |
 
 Critical wounds can be treated using the [Trauma treatment](characters#list-of-skills) skill. See [trauma treatment resolution](#trauma-treatment-resolution).
 
