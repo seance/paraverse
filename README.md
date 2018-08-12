@@ -12,7 +12,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
     - [Player Character Races](pages/characters#player-character-races)
     - [Primary and Secondary Stats](pages/characters#primary-and-secondary-stats)
     - [Character Creation](pages/characters#character-creation)
-    - [Skills](pages/characters#skills)
+    - [List of Skills](pages/characters#list-of-skills)
     - [Abilities](pages/characters#abilities)
     - [Non-Player Characters](pages/characters#non-player-characters)
 - [Combat](pages/combat)

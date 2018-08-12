@@ -107,7 +107,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 
 | Evocation | Wall of Earth |
 |-|-|
-| Difficulty | |
+| Difficulty | 16 |
 | Target | Your area |
 | Duration | Permanent |
 | Materials | &mdash; |
