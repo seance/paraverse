@@ -427,7 +427,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Stimulant |
 |-|-|
-| Difficulty | 16 |
+| Difficulty | 17 - `BPL` |
 | Target | Self |
 | Duration | 1 watch |
 | Materials | Salt |
@@ -435,7 +435,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Healing Herbs |
 |-|-|
-| Difficulty | 14 |
+| Difficulty | 15 - `BPL` |
 | Target | Touch |
 | Duration | Instant |
 | Materials | Salt |
@@ -451,7 +451,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Bloodbriar |
 |-|-|
-| Difficulty | 16 |
+| Difficulty | 17 - `BPL` |
 | Target | Any reasonably sized passage |
 | Duration | Permanent |
 | Materials | Blood |
@@ -459,7 +459,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Acid Spray |
 |-|-|
-| Difficulty | 18 |
+| Difficulty | 19 - `BPL` |
 | Target | Single character in your area |
 | Duration | Instant |
 | Materials | &mdash; |
@@ -491,7 +491,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Nature's Preserving |
 |-|-|
-| Difficulty | 19 |
+| Difficulty | 20 - `BPL` |
 | Target | Touch, a dead body |
 | Duration | 5 days |
 | Materials | &mdash; |
@@ -499,7 +499,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Tranquil Grove |
 |-|-|
-| Difficulty | 16 |
+| Difficulty | 17 - `BPL` |
 | Target | Your area |
 | Duration | 2 watches |
 | Materials | 1 Salt |
