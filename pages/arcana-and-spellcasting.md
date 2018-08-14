@@ -499,7 +499,7 @@ Blood can be harvested from any bleeding or slain creature that has blood (Blood
 
 | Druidism | Tranquil Grove |
 |-|-|
-| Difficulty | 17 - `BPL` |
+| Difficulty | 19 - `BPL` |
 | Target | Your area |
 | Duration | 2 watches |
 | Materials | 1 Salt |
