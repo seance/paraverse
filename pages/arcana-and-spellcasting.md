@@ -47,7 +47,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Target | One area, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | *Elemental.* Throw a blazing boulder of fire that explodes for `20` points of [Fire](combat#damage-types) damage on contact. Roll Throwing skill, targeting your area or an adjacent area. All characters in the target area must use their Evasion skill against your roll. A successful evasion results in half damage. Characters staying in solid cover take half damage. |
+| Effects | *Elemental.* Throw a blazing boulder of fire that explodes for `20` points of [Fire](combat#damage-types) damage on contact. Roll Throwing skill, targeting your area or an adjacent area. Multiple characters in the target area must use their Evasion skill against your roll. A successful evasion results in half damage. Characters staying in solid cover take half damage. |
 
 | Evocation | Repulse |
 |-|-|
@@ -79,7 +79,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Target | Self |
 | Duration | Sustained(1) |
 | Materials | &mdash; |
-| Effects | *Elemental.* A deathly cold emanates from your person. Any characters engaged in melee with you suffer `8 + d8` points of Frost damage. |
+| Effects | *Elemental.* A deathly cold emanates from your person. Any characters engaging in melee with you suffer `8 + d8` points of Frost damage. Then, the aura has a 50% chance of collapsing, after inflicting its damage. |
 
 | Evocation | Frost Storm |
 |-|-|
@@ -87,7 +87,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Target | One area, Marksman targeting rules |
 | Duration | Instant |
 | Materials | &mdash; |
-| Effects | *Elemental.* A deadly storm of frost engulfs an area, freezing everyone within. All characters in the area suffer `15 + d10` points of Frost damage. |
+| Effects | *Elemental.* A deadly storm of frost engulfs an area, freezing everyone within. Multiple characters in the area suffer `15 + d10` points of Frost damage. |
 
 | Evocation | Ice Spear |
 |-|-|
@@ -111,7 +111,7 @@ Evocation is a discipline of Sorcery that focuses on the elemental powers of Fir
 | Target | Your area |
 | Duration | Permanent |
 | Materials | &mdash; |
-| Effects | The ground groans and rumbles as you bend it up, forming a solid wall of earth and stone. The wall is a [construct](combat#constructs) with 5 AV and 150 Structure, blocking all passage until cleared. |
+| Effects | The ground groans and rumbles as you bend it up, forming a solid wall of earth and stone. The wall is a [construct](combat#constructs) with 5 AV and 150 Structure, blocking normal passage until cleared. |
 
 | Evocation | Shield Rend |
 |-|-|
@@ -281,7 +281,7 @@ Conjuring is the field of Sorcery that studies the very fabric of existence itse
 | Target | Your area |
 | Duration | Sustained(1) |
 | Materials | &mdash; |
-| Effects | *Summoning.* Summon a fiendish creature from some hellish plane of existence. The Fiend will obey your (very simple) commands, as long as there are some hostile characters for it to kill. For any round there are not, roll `1d4`. On a `1` the Fiend will instead attack an ally. TODO: Fiend stats |
+| Effects | *Summoning.* Summon a fiendish creature from some hellish plane of existence. The Fiend will obey your (very simple) commands, as long as there are some hostile characters for it to kill. For any round there are not, roll `1d4`. On a `1` the Fiend will instead attack an ally. |
 
 | Conjuring | Phase Shift |
 |-|-|
@@ -313,7 +313,7 @@ Conjuring is the field of Sorcery that studies the very fabric of existence itse
 | Target | Group |
 | Duration | Varying |
 | Materials | &mdash; |
-| Effects | *Planar.* Following little planar shortcuts invisible to the untrained eye, reduce travel time on a path previously traveled by one [watch](time-and-space#watches). |
+| Effects | *Planar.* Following little planar shortcuts invisible to the untrained eye, reduce travel time on a path previously traveled by one [watch](time-and-space#watches) (to a minimum of one). |
 
 | Conjuring | Phase Leap |
 |-|-|
