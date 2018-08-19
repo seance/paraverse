@@ -31,6 +31,14 @@ A Faithful is not absolutely beholden to the precepts &mdash; they may choose to
 
 However, if there is one thing the Deities do not tolerate, it appears to be Arcane magic. Whenever a Faithful casts an Arcane spell, they gain Disfavor.
 
+The table below outlines how Favor can be gained through acts upholding your precepts. The more the Faithful acts in accordance of their current precept, especially against their mortal desires and rational common sense, the more Favor is gained.
+
+| Act | Description | Favor |
+|-|-|-:|
+| Routine | An act where the player's design aligns with the instruction of the precept or has no particular material consequence. | 1 |
+| Inconvenience | An act where the precept imposes an inconvenience to rational planning, such as not obtaining proper equipment, causing upset to another character, or other such act which may potentially cause trouble down the line. | 2 |
+| Sacrifice | An act which is clearly not in the rational best interest of the player character, such as executing a conniving NPC who could have acted as a witness, sparing another NPC who is likely to try to take revenge on the player characters, or other act which is likely to be harmful to the party in the foreseeable future. | 3 |
+
 ## Oblivious Deities
 
 At the end of each session, one Favor is forgotten by the deities, while Disfavor is not.
