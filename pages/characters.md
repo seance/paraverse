@@ -75,7 +75,7 @@ Secondary stats are derived from primary stats, but may also have external modif
 | Stat | Derived as | Description |
 |-|:-:|-|
 | Critical | `CON` | Threshold for suffered damage to cause a critical wound to you. |
-| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called Fatigue. Suffering Fatigue is also called suffering Pain. |
+| Endurance | `⌊(CON - 7) / 2⌋ + 4` | Exhaustion limit from hardship and pain. The current Endurance is called Stamina. The missing Endurance is called [Fatigue](#fatigue-in-skill-checks). Suffering Fatigue is also called suffering Pain. |
 | Fortitude | `⌊(WIL - 7) / 2⌋ + 4` | Resistance to pain and shock from damage. |
 | Wield | `⌊(PHY + CON) / 2⌋` | Soft limit on wieldable weapons and shields. For each point that the Wield limit is exceeded, a `-2` modifier is applied to the relevant combat skill. |
 | Memory | `COG - 7` | Number of spells or prayers memorizable at once. |

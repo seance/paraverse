@@ -146,10 +146,11 @@ body {
 .damage-values {
     display: grid;
     grid:
-        "single single-ph" auto
-        "double double-ph" auto
-        "triple triple-ph" auto
-        / auto auto;
+		". base disrepair" auto
+        "single single-ph single-disrepair-ph" auto
+        "double double-ph double-disrepair-ph" auto
+        "triple triple-ph triple-disrepair-ph" auto
+        / auto auto auto;
     grid-gap: 1mm;
     position: absolute;
     left: 0;
@@ -278,12 +279,17 @@ body {
         <div style="grid-area: wbase-ph;" class="ph"></div>
         <div style="grid-area: dgrid;" class="damage-grid">
             <div class="damage-values">
+				<div style="grid-area: base;" class="ph-label">Base</div>
+				<div style="grid-area: disrepair;" class="ph-label">Disrep</div>
                 <div style="grid-area: single;" class="damage-value">Single</div>
                 <div style="grid-area: single-ph;" class="box-ph"></div>
+				<div style="grid-area: single-disrepair-ph;" class="box-ph"></div>
                 <div style="grid-area: double;" class="damage-value">Double</div>
                 <div style="grid-area: double-ph;" class="box-ph"></div>
+				<div style="grid-area: double-disrepair-ph;" class="box-ph"></div>
                 <div style="grid-area: triple;" class="damage-value">Triple</div>
                 <div style="grid-area: triple-ph;" class="box-ph"></div>
+				<div style="grid-area: triple-disrepair-ph;" class="box-ph"></div>
             </div>
         </div>
     </script>
