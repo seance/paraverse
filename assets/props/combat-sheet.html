@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Combat Sheet</title>
+	<link href="https://fonts.googleapis.com/css?family=Halant|UnifrakturMaguntia" rel="stylesheet">
+	<style>
+body {
+	font-family: Halant;
+	line-height: 1.2;
+	background-color: gray;
+	padding: 0;
+	margin: 0;
+}
+@media print {
+    body { background-color: white };
+}
+.combat-sheet {
+    display: grid;
+    grid:
+        "character character character . title title" auto
+        "armor1 armor1 armor2 armor2 armor3 armor3" auto
+        "weapon1 weapon1 weapon1 weapon2 weapon2 weapon2" auto
+        / 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: start;
+    grid-gap: 2mm;
+    width: 210mm;
+    height: 297mm;
+    background-color: white;
+    padding: 2mm;
+}
+.title .paraverse {
+	font-family: UnifrakturMaguntia;
+	font-size: 2.5rem;
+}
+.title .version {
+	font-variant: small-caps;
+}
+.character {
+    grid-area: character;
+}
+.character-body {
+    display: grid;
+	grid:
+        "name name-ph" auto
+		/ 1fr 10fr;
+    align-content: center;
+	grid-gap: 1mm;
+}
+.title {
+    grid-area: title;
+    justify-self: end;
+	text-align: center;
+	margin: 0 auto;
+}
+.armor1 {
+    grid-area: armor1;
+}
+.armor2 {
+    grid-area: armor2;
+}
+.armor3 {
+    grid-area: armor3;
+}
+.weapon1 {
+    grid-area: weapon1;
+}
+.weapon2 {
+    grid-area: weapon2;
+}
+.armor-grid {
+    display: grid;
+    grid:
+        "armor armor-ph av av-ph" auto
+        ". . . ." 2mm
+        ". . base disrepair" auto
+        ". pain1 pain1-ph pain1-ph2" auto
+        ". pain2 pain2-ph pain2-ph2" auto
+        ". pain3 pain3-ph pain3-ph2" auto
+        ". pain4 pain4-ph pain4-ph2" auto
+        ". pain5 pain5-ph pain5-ph2" auto
+        ". crit crit-ph crit-ph2" auto
+        ". scrit scrit-ph scrit-ph2" auto
+        / 1fr 5fr 1fr 1fr;
+    align-content: start;
+	grid-gap: 1mm;
+}
+.pain {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-variant: small-caps;
+    margin-right: 1mm;
+}
+.weapon-grid {
+    display: grid;
+    grid:
+        "weapon weapon-ph wbase wbase-ph" auto
+        ". . . ." 2mm
+        "dgrid dgrid dgrid dgrid" auto
+        / 1fr 8fr 2fr 1fr;
+    align-content: start;
+	grid-gap: 1mm;
+}
+.damage-grid {
+    display: grid;
+    grid: repeat(21, 1fr) / repeat(21, 1fr);
+    position: relative;
+}
+.damage-grid-label {
+    text-align: center;
+}
+.damage-grid-label.top {
+    border-left: 1px solid #aaa;
+}
+.damage-grid-label.right {
+    border-bottom: 1px solid #aaa;
+}
+.damage-grid-square {
+    color: transparent;
+    text-align: center;
+}
+.damage-grid-square.single {
+    color: #ccc;
+    background-color: #eee;
+    border-left: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.damage-grid-square.double {
+    color: #bbb;
+    background-color: #ddd;
+    border-left: 1px solid #999;
+    border-bottom: 1px solid #999;
+}
+.damage-grid-square.triple {
+    color: #aaa;
+    background-color: #ccc;
+    border-left: 1px solid #888;
+    border-bottom: 1px solid #888;
+}
+.damage-grid-square.threshold {
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    /* border-bottom-left-radius: 2px; */
+}
+.damage-values {
+    display: grid;
+    grid:
+		". base disrepair" auto
+        "single single-ph single-disrepair-ph" auto
+        "double double-ph double-disrepair-ph" auto
+        "triple triple-ph triple-disrepair-ph" auto
+        / auto auto auto;
+    grid-gap: 1mm;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 2mm;
+}
+.damage-value {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-variant: small-caps;
+    margin-right: 2mm;
+}
+.box {
+	display: flex;
+	flex-direction: column;
+}
+.box-head {
+	height: auto;
+	align-self: start;
+	color: white;
+	font-variant: small-caps;
+	background-color: black;
+	padding: 1mm 2mm;
+}
+.box-body {
+	flex: auto;
+	border: 1px solid black;
+	box-sizing: border-box;
+	padding: 1mm;
+}
+.ph {
+	width: 100%;
+	border-bottom: 1px solid black;
+	justify-self: center;
+}
+.ph-label {
+	font-size: 0.6rem;
+	justify-self: center;
+	font-variant: small-caps;
+}
+.box-ph {
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 1px solid black;
+}
+    </style>
+</head>
+<body>
+	<div class="combat-sheet">
+        <div class="box character">
+            <div class="box-head">Character</div>
+            <div class="box-body character-body">
+                <div style="grid-area: name;">Name</div>
+                <div style="grid-area: name-ph;" class="ph"></div>
+            </div>
+        </div>
+        <div class="box title">
+            <div class="paraverse">Paraverse</div>
+			<div class="version">Combat Sheet v0.1</div>
+        </div>
+        <div class="box armor1">
+            <div class="box-head">Armor</div>
+            <div class="box-body armor-grid armor-placeholder">
+                <!-- Populated from armor template -->
+            </div>
+        </div>
+        <div class="box armor2">
+            <div class="box-head">Armor</div>
+            <div class="box-body armor-grid armor-placeholder">
+                <!-- Populated from armor template -->
+            </div>
+        </div>
+        <div class="box armor3">
+            <div class="box-head">Armor</div>
+            <div class="box-body armor-grid armor-placeholder">
+                <!-- Populated from armor template -->
+            </div>
+        </div>
+        <div class="box weapon1 weapon-grid">
+            <div class="box-head">Weapon</div>
+            <div class="box-body weapon-grid weapon-placeholder">
+                <!-- Populated from weapon template -->
+            </div>
+        </div>
+        <div class="box weapon2 weapon-grid">
+            <div class="box-head">Weapon</div>
+            <div class="box-body weapon-grid weapon-placeholder">
+                <!-- Populated from weapon template -->
+            </div>
+        </div>
+    </div>
+    <script id="armor" type="text/template">
+        <div style="grid-area: armor;">Armor</div>
+        <div style="grid-area: armor-ph;" class="ph"></div>
+        <div style="grid-area: av; text-align: right;">AV</div>
+        <div style="grid-area: av-ph;" class="ph"></div>
+        <div style="grid-area: base;" class="ph-label">Base</div>
+        <div style="grid-area: disrepair;" class="ph-label">Disrep</div>
+        <div style="grid-area: pain1;" class="pain">1 pain</div>
+        <div style="grid-area: pain1-ph;" class="box-ph"></div>
+        <div style="grid-area: pain1-ph2;" class="box-ph"></div>
+        <div style="grid-area: pain2;" class="pain">2 pain</div>
+        <div style="grid-area: pain2-ph;" class="box-ph"></div>
+        <div style="grid-area: pain2-ph2;" class="box-ph"></div>
+        <div style="grid-area: pain3;" class="pain">3 pain</div>
+        <div style="grid-area: pain3-ph;" class="box-ph"></div>
+        <div style="grid-area: pain3-ph2;" class="box-ph"></div>
+        <div style="grid-area: pain4;" class="pain">4 pain</div>
+        <div style="grid-area: pain4-ph;" class="box-ph"></div>
+        <div style="grid-area: pain4-ph2;" class="box-ph"></div>
+        <div style="grid-area: pain5;" class="pain">5 pain</div>
+        <div style="grid-area: pain5-ph;" class="box-ph"></div>
+        <div style="grid-area: pain5-ph2;" class="box-ph"></div>
+        <div style="grid-area: crit;" class="pain">Critical wound</div>
+        <div style="grid-area: crit-ph;" class="box-ph"></div>
+        <div style="grid-area: crit-ph2;" class="box-ph"></div>
+        <div style="grid-area: scrit;" class="pain">Supercritical wound</div>
+        <div style="grid-area: scrit-ph;" class="box-ph"></div>
+        <div style="grid-area: scrit-ph2;" class="box-ph"></div>
+    </script>
+    <script id="weapon" type="text/template">
+        <div style="grid-area: weapon;">Weapon</div>
+        <div style="grid-area: weapon-ph;" class="ph"></div>
+        <div style="grid-area: wbase; text-align: right;">Base</div>
+        <div style="grid-area: wbase-ph;" class="ph"></div>
+        <div style="grid-area: dgrid;" class="damage-grid">
+            <div class="damage-values">
+				<div style="grid-area: base;" class="ph-label">Base</div>
+				<div style="grid-area: disrepair;" class="ph-label">Disrep</div>
+                <div style="grid-area: single;" class="damage-value">Single</div>
+                <div style="grid-area: single-ph;" class="box-ph"></div>
+				<div style="grid-area: single-disrepair-ph;" class="box-ph"></div>
+                <div style="grid-area: double;" class="damage-value">Double</div>
+                <div style="grid-area: double-ph;" class="box-ph"></div>
+				<div style="grid-area: double-disrepair-ph;" class="box-ph"></div>
+                <div style="grid-area: triple;" class="damage-value">Triple</div>
+                <div style="grid-area: triple-ph;" class="box-ph"></div>
+				<div style="grid-area: triple-disrepair-ph;" class="box-ph"></div>
+            </div>
+        </div>
+    </script>
+    <script>
+        const armorHTML = document.querySelector('#armor').innerHTML;
+        document.querySelectorAll('.armor-placeholder').forEach((p) => {
+            p.innerHTML = armorHTML;
+        });
+        const weaponHTML = document.querySelector('#weapon').innerHTML;
+        document.querySelectorAll('.weapon-placeholder').forEach((p) => {
+            p.innerHTML = weaponHTML;
+        });
+
+        function range(low, high) {
+            return [...Array(high - low + 1).keys()].map(x => x + low);
+        }
+
+        function gridElement(label, classes) {
+            const div = document.createElement('div');
+            const txt = document.createTextNode(label);
+            classes.filter(c => c).forEach((c) => {
+                div.classList.add(c);
+            });
+            div.appendChild(txt);
+            return div;
+        }
+
+        function gridLabel(label, ...classes) {
+            return gridElement(label, ['damage-grid-label', ...classes]);
+        }
+
+        function gridSquare(label, ...classes) {
+            return gridElement(label, ['damage-grid-square', ...classes]);
+        }
+
+        function damageMultiplier(attackRoll, defendRoll) {
+            const diff = attackRoll - defendRoll;
+            return (
+                diff > 10 ? 3 :
+                diff > 5 ? 2 :
+                diff > 0 ? 1 :
+                0
+            );
+        }
+
+        function isThreshold(attackRoll, defendRoll) {
+            const diff = attackRoll - defendRoll;
+            return diff === 11 || diff === 6;
+        }
+
+        document.querySelectorAll('.damage-grid').forEach((g) => {
+            range(5, 24).forEach((c) => {
+                g.appendChild(gridLabel(c, 'top'));
+            });
+            g.appendChild(gridLabel(''));
+            range(1, 20).forEach((r) => {
+                range(5, 24).forEach((c) => {
+                    const m = damageMultiplier(c, r);
+                    const label = r > (20 - c + 5) ? c : r;
+                    g.appendChild(gridSquare(
+                        label,
+                        m === 1 && 'single',
+                        m === 2 && 'double',
+                        m === 3 && 'triple',
+                        isThreshold(c, r) && 'threshold',
+                    ));
+                });
+                g.appendChild(gridLabel(r, 'right'));
+            });
+        });
+    </script>
+</body>
+</html>
