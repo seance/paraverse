@@ -85,6 +85,7 @@ Paraverse is a tabletop roleplaying game system for a high-fantasy, sword and so
 - [Game Props](pages/game-props)
     - [Character Sheet](pages/game-props#character-sheet)
     - [Group Sheet](pages/game-props#group-sheet)
+    - [Combat Sheet](pages/game-props#combat-sheet)
     - [Character Card](pages/game-props#character-card)
     - [Effect Cards](pages/game-props#effect-cards)
     - [Watch Clock](pages/game-props#watch-clock)
