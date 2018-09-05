@@ -71,17 +71,18 @@ body {
 .armor-grid {
     display: grid;
     grid:
-        "armor armor-ph av av-ph" auto
-        ". . . ." 2mm
-        ". . base disrepair" auto
-        ". pain1 pain1-ph pain1-ph2" auto
-        ". pain2 pain2-ph pain2-ph2" auto
-        ". pain3 pain3-ph pain3-ph2" auto
-        ". pain4 pain4-ph pain4-ph2" auto
-        ". pain5 pain5-ph pain5-ph2" auto
-        ". crit crit-ph crit-ph2" auto
-        ". scrit scrit-ph scrit-ph2" auto
-        / 1fr 5fr 1fr 1fr;
+        "armor armor-ph armor-ph armor-ph av av-ph" auto
+		"shield shield-ph shield-ph shield-ph sv sv-ph" auto
+        ". . . . . ." 2mm
+        ". . base av-dis sv-dis both-dis" auto
+        "pain1 pain1 pain1-ph1 pain1-ph2 pain1-ph3 pain1-ph4" auto
+        "pain2 pain2 pain2-ph1 pain2-ph2 pain2-ph3 pain2-ph4" auto
+        "pain3 pain3 pain3-ph1 pain3-ph2 pain3-ph3 pain3-ph4" auto
+        "pain4 pain4 pain4-ph1 pain4-ph2 pain4-ph3 pain4-ph4" auto
+        "pain5 pain5 pain5-ph1 pain5-ph2 pain5-ph3 pain5-ph4" auto
+        "crit crit crit-ph1 crit-ph2 crit-ph3 crit-ph4" auto
+        "scrit scrit scrit-ph1 scrit-ph2 scrit-ph3 scrit-ph4" auto
+        / 1fr 5fr 1fr 1fr 1fr 1fr;
     align-content: start;
 	grid-gap: 1mm;
 }
@@ -188,8 +189,10 @@ body {
 	justify-self: center;
 }
 .ph-label {
+	display: flex;
 	font-size: 0.6rem;
 	justify-self: center;
+	align-items: flex-end;
 	font-variant: small-caps;
 }
 .box-ph {
@@ -210,7 +213,7 @@ body {
         </div>
         <div class="box title">
             <div class="paraverse">Paraverse</div>
-			<div class="version">Combat Sheet v0.1</div>
+			<div class="version">Combat Sheet v0.2</div>
         </div>
         <div class="box armor1">
             <div class="box-head">Armor</div>
@@ -246,31 +249,51 @@ body {
     <script id="armor" type="text/template">
         <div style="grid-area: armor;">Armor</div>
         <div style="grid-area: armor-ph;" class="ph"></div>
-        <div style="grid-area: av; text-align: right;">AV</div>
+		<div style="grid-area: av; text-align: right;">AV</div>
         <div style="grid-area: av-ph;" class="ph"></div>
+		<div style="grid-area: shield;">Shield</div>
+        <div style="grid-area: shield-ph;" class="ph"></div>
+		<div style="grid-area: sv; text-align: right;">SV</div>
+        <div style="grid-area: sv-ph;" class="ph"></div>
         <div style="grid-area: base;" class="ph-label">Base</div>
-        <div style="grid-area: disrepair;" class="ph-label">Disrep</div>
+        <div style="grid-area: av-dis;" class="ph-label">Armor<br/>Disrep</div>
+		<div style="grid-area: sv-dis;" class="ph-label">Shield<br/>Disrep</div>
+		<div style="grid-area: both-dis;" class="ph-label">Both<br/>Disrep</div>
         <div style="grid-area: pain1;" class="pain">1 pain</div>
-        <div style="grid-area: pain1-ph;" class="box-ph"></div>
+        <div style="grid-area: pain1-ph1;" class="box-ph"></div>
         <div style="grid-area: pain1-ph2;" class="box-ph"></div>
+		<div style="grid-area: pain1-ph3;" class="box-ph"></div>
+		<div style="grid-area: pain1-ph4;" class="box-ph"></div>
         <div style="grid-area: pain2;" class="pain">2 pain</div>
-        <div style="grid-area: pain2-ph;" class="box-ph"></div>
+        <div style="grid-area: pain2-ph1;" class="box-ph"></div>
         <div style="grid-area: pain2-ph2;" class="box-ph"></div>
+		<div style="grid-area: pain2-ph3;" class="box-ph"></div>
+		<div style="grid-area: pain2-ph4;" class="box-ph"></div>
         <div style="grid-area: pain3;" class="pain">3 pain</div>
-        <div style="grid-area: pain3-ph;" class="box-ph"></div>
+        <div style="grid-area: pain3-ph1;" class="box-ph"></div>
         <div style="grid-area: pain3-ph2;" class="box-ph"></div>
+		<div style="grid-area: pain3-ph3;" class="box-ph"></div>
+		<div style="grid-area: pain3-ph4;" class="box-ph"></div>
         <div style="grid-area: pain4;" class="pain">4 pain</div>
-        <div style="grid-area: pain4-ph;" class="box-ph"></div>
+        <div style="grid-area: pain4-ph1;" class="box-ph"></div>
         <div style="grid-area: pain4-ph2;" class="box-ph"></div>
+		<div style="grid-area: pain4-ph3;" class="box-ph"></div>
+		<div style="grid-area: pain4-ph4;" class="box-ph"></div>
         <div style="grid-area: pain5;" class="pain">5 pain</div>
-        <div style="grid-area: pain5-ph;" class="box-ph"></div>
+        <div style="grid-area: pain5-ph1;" class="box-ph"></div>
         <div style="grid-area: pain5-ph2;" class="box-ph"></div>
-        <div style="grid-area: crit;" class="pain">Critical wound</div>
-        <div style="grid-area: crit-ph;" class="box-ph"></div>
+		<div style="grid-area: pain5-ph3;" class="box-ph"></div>
+		<div style="grid-area: pain5-ph4;" class="box-ph"></div>
+        <div style="grid-area: crit;" class="pain">Critical</div>
+        <div style="grid-area: crit-ph1;" class="box-ph"></div>
         <div style="grid-area: crit-ph2;" class="box-ph"></div>
-        <div style="grid-area: scrit;" class="pain">Supercritical wound</div>
-        <div style="grid-area: scrit-ph;" class="box-ph"></div>
+		<div style="grid-area: crit-ph3;" class="box-ph"></div>
+		<div style="grid-area: crit-ph4;" class="box-ph"></div>
+        <div style="grid-area: scrit;" class="pain">Supercritical</div>
+        <div style="grid-area: scrit-ph1;" class="box-ph"></div>
         <div style="grid-area: scrit-ph2;" class="box-ph"></div>
+		<div style="grid-area: scrit-ph3;" class="box-ph"></div>
+		<div style="grid-area: scrit-ph4;" class="box-ph"></div>
     </script>
     <script id="weapon" type="text/template">
         <div style="grid-area: weapon;">Weapon</div>
