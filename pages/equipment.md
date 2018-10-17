@@ -32,7 +32,7 @@ When a one-handed weapon is used with a shield, the [Weapon-and-shield](characte
 | Quarterstaff | 9 | Impact | Two-handed. *Reach.* |
 | Claymore, greataxe | 10 | Blade | Two-handed |
 | Heavy flail | 11 | Impact | Two-handed. *Curving.* *Cumbersome(1).* |
-| Pike | 11 | Pierce | Two-handed *Reach.* |
+| Pike | 11 | Pierce | Two-handed. *Reach.* |
 | Heavy maul | 12 | Impact | Two-handed. *Penetration.* *Cumbersome(1).* |
 
 #### Melee Weapon Traits
