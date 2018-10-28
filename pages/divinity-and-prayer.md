@@ -41,7 +41,7 @@ The table below outlines how Favor can be gained through acts upholding your pre
 
 ## Oblivious Deities
 
-At the end of each session, one Favor is forgotten by the deities, while Disfavor is not.
+At the end of each session during which you did not gain Favor or Disfavor, one Favor is forgotten by the deities, while Disfavor is not.
 
 ## Having your Deity's Ear
 
@@ -95,6 +95,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | 19&ndash;20 | Supplicant is instantly killed, and their body is burned to cinder. |
 
 ## Rite of Life
+
+To live is to suffer. The Faithful of the Rite of Life embrace this hard truth as they walk this difficult path, gaining mastery over the weakness of flesh. The sanguine Rite of Life deals with pain and suffering, blood and integrity of the mind and body.
 
 | Rite of Life | Lay on Hands |
 |-|-|
@@ -197,6 +199,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 
 ## Rite of Death
 
+A life is but a glowing mote in the vast blackness of un-life. At the heart of the Rite of Death is that narrow bridge that crosses these realms &mdash; known as death &mdash; and the souls that dwell in the darkness. These unhallow arts are called Necromancy and Exorcism.
+
 | Rite of Death | Withering |
 |-|-|
 | Difficulty | 18 |
@@ -270,6 +274,8 @@ Whatever the outcome, accrued Favor and Disfavor are reset.
 | Effects | Target suffers a [Skull Fracture](combat#critical-wound-effects) and is reduced to zero Stamina. |
 
 ## Rite of Truth
+
+Ever are their own craven, greedy and lustful minds the undoing of the wretched masses. It is only through the rigorous perseverance of the Rite of Truth that these sinners can be brought to salvation &mdash; if their feeble minds can withstand the intricate manipulations of Psyche and Fate wrought by this radiant Rite.
 
 | Rite of Truth | Charm |
 |-|-|
